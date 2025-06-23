@@ -5,7 +5,7 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": ["- crée un nouveau compte.", "new <gb/jp> <android/ios>"],
             "it": [],
             "ko": [],
             "pt": [],
@@ -20,7 +20,7 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": ["- crée plusieurs comptes.", "reroll <gb/jp> <android/ios> <nombre>"],
             "it": [],
             "ko": [],
             "pt": [],
@@ -35,7 +35,7 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": ["- ajouter depuis facebook/google.", "link <fb/ggl> <gb/jp> <android/ios>"],
             "it": [],
             "ko": [],
             "pt": [],
@@ -50,7 +50,7 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": ["- charger depuis une sauvegarde.", "load <file> - charge le compte.", "load <file,file...> - charger plusieurs comptes." ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -65,7 +65,7 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [ "- paramètres.", "settings <option>" ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -82,7 +82,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- quitter farmbot.\n%error%!! passer de ios à android / android à ios entraînera la perte des pierres du dragon. !!"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -101,7 +103,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Compte"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -120,7 +124,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Farming"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -139,7 +145,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Gérer les unités"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -158,7 +166,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Activer"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -177,7 +187,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Commandes personalisées"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -196,7 +208,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Parcourir les pages d'aides"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -215,7 +229,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Arrêter une tâche"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -234,7 +250,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Menu principal"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -428,7 +446,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Information du compte."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -447,7 +467,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Accepter les cadeaux et missions."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -467,7 +489,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Restaurer l'endurance. (-1 stone)",
+                "optionnel: stamina <meat ID> - restaure l'endurance avec de la viande."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -486,7 +511,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Liste des items."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -505,7 +532,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Liste des médailles."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -524,7 +553,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Rafraîchir la session."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -544,7 +575,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Renomer le compte.",
+                "name <name> - nouveau nom du compte."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -567,7 +601,13 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Amis.",
+                "friends list - liste des amis et des demandes en attente .",
+                "friends search <ID> - rechercher un utilisateur par ID.",
+                "friends request <ID> - envoyer une demande d'ami.",
+                "friends accept <ID> - accepter une demande d'ami."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -590,7 +630,13 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Connexion.",
+                "link list - liste des méthodes de lien.",
+                "link unlink <fb/ggl> - dissocier une méthode de lien.",
+                "link fb - lier le compte à facebook.",
+                "link ggl - lier le compte à google."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -611,7 +657,11 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Fond d'écran.",
+                "wallpaper list - liste des fond d'écrans.",
+                "wallpaper set <ID> - appliquer un fond d'écran."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -632,7 +682,11 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Record de completion.",
+                "records stage <stage ID> <difficulty> - afficher les records du niveau.",
+                "records eza <EZA ID> - afficher les records des Z Battles."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -659,7 +713,17 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Liste des ID.",
+                "list banners - liste des ID des bannières .",
+                "list types - liste des types de cartes.",
+                "list rarity - liste des raretés.",
+                "list category - liste des catégories.",
+                "list awakens <card ID> - liste des éveils d'une carte.",
+                "list links / list links <card ID> - liste des compétences de lien.",
+                "list transforms <card ID> - liste des transformation d'une carte.",
+                "list raisepercent <card ID> <card ID> - calculateur de pourcentage d'augmentation de Super Attaque."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -685,7 +749,14 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Niveaux.",
+                "list - liste des évènement actifs.",
+                "quests - liste des quêtes dokkan.",
+                "stories - liste des histoires de dragon ball.",
+                "stage <stage ID> <difficulty> - termine un niveau.",
+                "area <area ID> - termine tout les niveaux d'une zone ."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -708,7 +779,13 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Extreme Z battle.",
+                "list - liste des Z Battle.",
+                "clear <EZA ID> - termine un Z Battle.",
+                "lvl <EZA ID> <level> - termine un niveau spécifique du Z Battle.",
+                "exact <EZA ID> <level 1> <level 2> - termine les niveaux de A à Z."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -728,7 +805,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Terminer le Virtual Dokkan.",
+                "optionnel: clash retire - abandonner le Virtual Dokkan ."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -747,7 +827,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Pettan battle."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -771,7 +853,14 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Clear specific type of content.",
+                "quests - finir les quêtes non terminées.",
+                "events - finir les événements non terminés.",
+                "ezas - finir les Z Battle non terminés.",
+                "clash - faire le mode clash",
+                "stories - finir toutes les histoires de Dragon Ball non terminées."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -796,7 +885,15 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Terminer un ensemble spécifique d'évènement.",
+                "daily - termine les niveaux quotidiens.",
+                "weekly - termine les niveaux hebdomadaires.",
+                "hp - termine la punch machine.",
+                "orbs - termine les niveaux pour les orbes de potentiel.",
+                "limits - termine les niveaux avec restriction d'équipe.",
+                "zarea - termine les zones Z actives."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -820,7 +917,14 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Dragonballs.",
+                "dbs list - localiser les dragonballs.",
+                "dbs seek - rechercher les dragonballs.",
+                "dbs wish - liste des voeux.",
+                "dbs wish <wish ID> - faire un voeux avec les dragonballs.",
+                "dbs auto - rechercher et faire un voeu automatiquement."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -858,7 +962,28 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Farm des matériaux.",
+                "farm medal <ID> <count> - farmer des médailles.",
+                "farm dupe <card ID> <count> - farm des doublons.",
+                "farm zeni <count> - farmer des zeni.",
+                "farm rank <count> - farmer le rang.",
+                "farm gem <count> - farmer des gemmes incroyables.",
+                "farm fp <count> - farmer des points amis.",
+                "farm links - farmer les niveaux de liens.",
+                "farm equip <ID> <count> - farmer des equipments.",
+                "farm orbs <ID> <count> - farmer des orbes de potentiel.",
+                "farm film <ID> <count> - farerm des film.",
+                "farm support <ID> <count> - farmer des items de soutiens.",
+                "farm memory <ID> <count> - farmer des mémoires de soutiens.",
+                "farm location <ID> <count> - farmer des lieux d'entrainement.",
+                "farm train <ID> <count> - farmer des items d'entrainement.",
+                "farm treasure <ID> <count> - farmer des trésors.",
+                "farm zmedal <medal ID> <count> - farmer des médailles ztur.",
+                "farm bgem <count> - farmer des  gemmes blueues.",
+                "farm fpkais - farmer des kais sur le portail ami.",
+                "farm linkorb <ID> <count> - farmer des orbes de lien."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -897,7 +1022,29 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Terminer les missions.",
+                "missions 0 - farmer les doublons et médailles du Vegetto LR PUI.",
+                "missions 1 - medailles nuage magique",
+                "missions 2 - Goku Rush.",
+                "missions 3 - Vegeta Rush.",
+                "missions 4 - GT Rush.",
+                "missions 5 - \"plus grand guerrier\" panneau.",
+                "missions 6 - redzone.",
+                "missions 7 - cooler MDL.",
+                "missions 8 - cell max.",
+                "missions 9 - Histoire de DB.",
+                "missions 10 - batailles épique.",
+                "missions 11 - 8eme anniversaire.",
+                "missions 12 - trunks MDL.",
+                "missions 13 - blue zone.",
+                "missions 14 - combats mémorables.",
+                "missions 15 - dragons maléfique.",
+                "missions 16 - broly MDL.",
+                "missions 17 - Freezer Rush.",
+                "missions 18 - SBR.",
+                "missions 19 - ESBR."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -916,7 +1063,9 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Finir le contenu non terminer."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -938,7 +1087,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Voir la box.",
+                "Optionnel: box items - Afficher les cartes objets. (Kais, hercules)"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -958,7 +1110,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Augementer la capacité de la box.",
+                "capacity <count> - nombre de fois où augmenter la capacité de 5+ (-1 pierre)"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -978,7 +1133,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Verouiller une carte.",
+                "favorite <card UID> - favori/verrouiller une carte."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -998,7 +1156,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Vente.",
+                "sell junk - vendre les cartes N & statues contre des zeni."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1018,7 +1179,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Baba shop.",
+                "baba junk - échanger les R/SR contre des points baba."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1039,7 +1203,11 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Invocation.",
+                "summon <banner ID> <S / M> - invoquer sur la bannière choisie.",
+                "optionnel: summon history - voir l'historique des invocations."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1064,7 +1232,15 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Équipes.",
+                "team set <deck number> - définir le deck actuel.",
+                "team build <card UID,card UID...> - crée une équipe avec des cartes spécifiques.",
+                "optionnel: build mono <type> - crée une équipe mono-type.",
+                "optionnel: build rain - crée une équipe avec tout les types.",
+                "optionnel: build class <class> - crée une équipe avec une classe spécifique.",
+                "optionnel: build cat <category ID> - crée une équipe avec une catégorie spécifique."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1087,7 +1263,13 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Entraînement.",
+                "train <card UID> - faire s'entraîner une carte.",
+                "optionnel: <dupe UID/kai ID> / <UID,UID...> - entraîner un doublon ou un kai sur une carte.",
+                "optionnel: <location ID> - s'entrainer avec un lieu d'entraînement.",
+                "optionnel: <item IDxQuantity> / <IDxQuantity,IDxQuantity...> - s'entraîner avec des items."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1107,7 +1289,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Eveil.",
+                "awaken <card UID> - faire éveiller une carte."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1128,7 +1313,11 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Eveille inversée.",
+                "reverse <card UID> - faire l'éveille inversée d'une carte.",
+                "optionnel: reverse awaken <card UID> - annuler l'inversion."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1149,7 +1338,11 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Potentiel caché.",
+                "potential dupes <card UID> - débloquer le potentiel d'une carte en utilisant des doublons.",
+                "potential orbs <card UID> - débloquer le potentiel en utilisant des orbes."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1169,7 +1362,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Equipment.",
+                "equip <card UID> - donner des sphères d'aptitude à une carte."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1189,7 +1385,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Augmenter les lien via les orbes.",
+                "lvlink <card UID> - la carte à faire level-up ses liens."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1209,7 +1408,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Farmer un carte F2P et la maxer.",
+                "f2p <card ID> - la carte à farmer et maxer."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1229,7 +1431,10 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Améliorer une carte jusqu'à son max.",
+                "upgrade <card UID> - la carte à améliorer."
+            ],
             "it": [],
             "ko": [],
             "pt": [],
@@ -1281,7 +1486,40 @@
             "ro": [],
             "de": [],
             "es": [],
-            "fr": [],
+            "fr": [
+                "- Activer les préférences.",
+                "<stone> - utiliser des pierres pour restaurer l'endurance. (activé par défaut)",
+                "<tb> - crée l'équipe selon les condition du niveau. (désactivé par défaut)",
+                "<capacity> - augmenter la taille de la box avec des pierres. (activé par défaut)",
+                "<meat> - utiliser de la viande pour restaurer l'endurance. (désactivé par défaut)",
+                "<keys> - utiliser des clés sur les niveaux inactifs. (désactivé par défaut)",
+                "<boost> - utiliser le boost de drop si disponible. (désactivé par défaut)",
+                "<baba> - baba R & SR. (hors cadeaux) (désactivé par défaut)",
+                "<autosell> - vendre les N & statues. (activé par défaut)",
+                "<sellpulls> - vendre automatiquement après invocation. (désactivé par défaut)",
+                "<autonode> - débloquer la route si un doublon est invoqué. (désactivé par défaut)",
+                "<summongift> - accepter les cadeaux après invocation. (désactivé par défaut)",
+                "<dbseek> - compléter les voeux de shenron en omega. (désactivé par défaut)",
+                "<items> - définir les objects de soutien pour jouer un niveau.",
+                "<memory> - définir la mémoir de soutiens pour jouer un niveau.",
+                "<befriend> - envoyer des demandes d'amis aux supports. (désactivé par défaut)",
+                "<zenieza> - definir le Z Battler pour \"farm zeni\".",
+                "<lockpulls> - verrouiller toutes les unités SSR lors des invocations. (désactivé par défaut)",
+                "<linkstage> - définir le niveau pour farm les liens.",
+                "<keyprompt> - demander avant d'utiliser des clés sur les niveaux inactifs. (OFF by default)",
+                "<babassr> - baba les SSR qui ne peuvent pas devenir UR/LR. (désactivé par défaut)",
+                "<zeniendlv> - définir le niveau final du Z Battle pour \"farm zeni\".",
+                "<autosupport> - choisir le support selon les conditions du niveau. (désactivé par défaut)",
+                "<fpssr> - baba uniquement les SSR de la bannière ami. (désactivé par défaut)",
+                "<autosupport> - choisir le leader support requis. (désactivé par défaut)",
+                "<turns> - définir le nombre de tours pour le combat de boss.",
+                "<cleartime> - définir le temps de complétion d'un niveau/zbattle.",
+                "<supers> - utiliser les super et les compétences en combat. (désactivé par défaut)",
+                "<swapmax> - augmenter le niveau des lien de chaque UR/LR dans la box durant \"farm links\" (désactivé par défaut)",
+                "<rb> - crée un team à partir des records de completion. (désactivé par défaut)",
+                "<skiplimits> - ignorer les niveaux avec condition d'équipe. (désactivé par défaut)",
+                "<skipzarea> - ignorer les niveaux Zone Z . (désactivé par défaut)"
+            ],
             "it": [],
             "ko": [],
             "pt": [],
