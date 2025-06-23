@@ -1,1535 +1,2919 @@
 {
-    "unloaded": {
-        "new": {
-            "en": [ "- create new account.", "new <gb/jp> <android/ios>" ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": ["- crée un nouveau compte.", "new <gb/jp> <android/ios>"],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<gb/jp> <ios/android>",
-            "example": "new gb android"
-        },
-        "reroll": {
-            "en": [ "- create multiple accounts.", "reroll <gb/jp> <android/ios> <count>" ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": ["- crée plusieurs comptes.", "reroll <gb/jp> <android/ios> <nombre>"],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<gb/jp> <ios/android> <count>",
-            "example": "reroll gb android 20"
-        },
-        "link": {
-            "en": [ "- add from facebook/google.", "link <fb/ggl> <gb/jp> <android/ios>" ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": ["- ajouter depuis facebook/google.", "link <fb/ggl> <gb/jp> <android/ios>"],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<fb/ggl> <gb/jp> <ios/android>",
-            "example": "link fb gb android"
-        },
-        "load": {
-            "en": [ "- loads from save.", "load <file> - load into account.", "load <file,file...> - load multiple accounts." ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": ["- charger depuis une sauvegarde.", "load <file> - charge le compte.", "load <file,file...> - charger plusieurs comptes." ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<save>",
-            "example": "load maincc"
-        },
-        "settings": {
-            "en": [ "- farmbot settings.", "settings <option>" ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [ "- paramètres.", "settings <option>" ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<option>",
-            "example": "settings lang en"
-        },
-        "exit": {
-            "en": [
-                "- exit Farmbot.\n%error%!! ios to android / android to ios will lose stones. !!"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- quitter farmbot.\n%error%!! passer de ios à android / android à ios entraînera la perte des pierres du dragon. !!"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "example": ""
-        }
+  "unloaded": {
+    "new": {
+      "en": [
+        "- create new account.",
+        "new <gb/jp> <android/ios>"
+      ],
+      "ro": [
+        "- Creați un cont nou."
+      ],
+      "de": [
+        "- Erstellt einen neuen Account."
+      ],
+      "es": [
+        "- Este comando crea una nueva cuenta."
+      ],
+      "fr": [
+        "- crée un nouveau compte.",
+        "new <gb/jp> <android/ios>"
+      ],
+      "it": [
+        "- crea un nuovo account."
+      ],
+      "ko": [
+        "- 새 계정을 만듭니다."
+      ],
+      "pt": [
+        "- cria uma nova conta."
+      ],
+      "ua": [
+        "- створити новий рахунок."
+      ],
+      "ru": [
+        "- создать новую учетную запись."
+      ],
+      "zh": [],
+      "syntax": "<gb/jp> <ios/android>",
+      "example": "new gb android"
     },
-    "loaded": {
-        "1": {
-            "en": [
-                "- Account"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Compte"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "2": {
-            "en": [
-                "- Farming"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Farming"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "3": {
-            "en": [
-                "- Manage units"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Gérer les unités"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "4": {
-            "en": [
-                "- Toggles"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Activer"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "5": {
-            "en": [
-                "- Custom commands"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Commandes personalisées"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "help": {
-            "en": [
-                "- Navigate help pages"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Parcourir les pages d'aides"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "ctrl+c": {
-            "en": [
-                "- Stop a task"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Arrêter une tâche"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "exit": {
-            "en": [
-                "- Main menu"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Menu principal"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        }
+    "reroll": {
+      "en": [
+        "- create multiple accounts.",
+        "reroll <gb/jp> <android/ios> <count>"
+      ],
+      "ro": [
+        "- Creați cont(uri) și farmează automat Dragon Stones."
+      ],
+      "de": [
+        "- Erstellt einen oder mehrere Accounts und farmt automatisch Dragon Stones."
+      ],
+      "es": [
+        "- Este comando crea cuenta(s) y las farmea."
+      ],
+      "fr": [
+        "- crée plusieurs comptes.",
+        "reroll <gb/jp> <android/ios> <nombre>"
+      ],
+      "it": [
+        "- crea uno o più account e farma stone in automatico."
+      ],
+      "ko": [
+        "- 계정을 만들고 용석을 자동 파밍합니다."
+      ],
+      "pt": [
+        "- cria nova conta(s) & busca por dragon stones."
+      ],
+      "ua": [
+        "- створити рахунок(ii) і зделаeт авто фарм камні."
+      ],
+      "ru": [
+        "- создать аккаунт(ы) и автофармить камни."
+      ],
+      "zh": [],
+      "syntax": "<gb/jp> <ios/android> <count>",
+      "example": "reroll gb android 20"
+    },
+    "link": {
+      "en": [
+        "- add from facebook/google.",
+        "link <fb/ggl> <gb/jp> <android/ios>"
+      ],
+      "ro": [
+        "- Adaugă de pe Facebook/Google."
+      ],
+      "de": [
+        "- Account hinzu, der mit Facebook/google verlinkt ist."
+      ],
+      "es": [
+        "- Añade cuentas por link de Facebook/google."
+      ],
+      "fr": [
+        "- ajouter depuis facebook/google.",
+        "link <fb/ggl> <gb/jp> <android/ios>"
+      ],
+      "it": [
+        "- Aggiungi da facebook/google."
+      ],
+      "ko": [
+        "- Facebook/google에서 추가합니다."
+      ],
+      "pt": [
+        "- Adiciona conta do Facebook/google."
+      ],
+      "ua": [
+        "- підключити Facebook/google."
+      ],
+      "ru": [
+        "- Добавить из Facebook/Google."
+      ],
+      "zh": [],
+      "syntax": "<fb/ggl> <gb/jp> <ios/android>",
+      "example": "link fb gb android"
+    },
+    "load": {
+      "en": [
+        "- loads from save.",
+        "load <file> - load into account.",
+        "load <file,file...> - load multiple accounts."
+      ],
+      "ro": [
+        ""
+      ],
+      "de": [
+        "- Lade einen Save."
+      ],
+      "es": [
+        "- Carga cuentas desde un archivo de guardado."
+      ],
+      "fr": [
+        "- charger depuis une sauvegarde.",
+        "load <file> - charge le compte.",
+        "load <file,file...> - charger plusieurs comptes."
+      ],
+      "it": [
+        "- carica un salvataggio."
+      ],
+      "ko": [
+        "- 저장 파일에서 불러옵니다."
+      ],
+      "pt": [
+        "- carrega uma conta."
+      ],
+      "ua": [
+        "- загрузит от save."
+      ],
+      "ru": [
+        "- загружается из сохранения."
+      ],
+      "zh": [],
+      "syntax": "<save>",
+      "example": "load maincc"
     },
     "settings": {
-        "color": {
-            "en": [
-
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "lang": {
-            "en": [
-
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "rerolls": {
-            "en": [
-
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "autoname": {
-            "en": [
-
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "dailyevents": {
-            "en": [
-
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "dailies": {
-            "en": [
-
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "logdrops": {
-            "en": [
-
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "gui": {
-            "en": [
-
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "safemode": {
-            "en": [
-
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        }
+      "en": [
+        "- farmbot settings.",
+        "settings <option>"
+      ],
+      "ro": [
+        "- Setări ale botului"
+      ],
+      "de": [
+        "- Farmbot Einstellungen"
+      ],
+      "es": [
+        "- Ajustes del bot."
+      ],
+      "fr": [
+        "- paramètres.",
+        "settings <option>"
+      ],
+      "it": [
+        "- Impostazioni del farmbot."
+      ],
+      "ko": [
+        "- 팜봇 설정입니다."
+      ],
+      "pt": [
+        "- farmbot configuracoes."
+      ],
+      "ua": [
+        "- настройки фармбота."
+      ],
+      "ru": [
+        "- настройки фармбота."
+      ],
+      "zh": [],
+      "syntax": "<option>",
+      "example": "settings lang en"
     },
-    "account": {
-        "info": {
-            "en": [
-                "- Account information."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Information du compte."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 0,
-            "max_args": 0,
-            "example": ""
-        },
-        "gift": {
-            "en": [
-                "- Accept gifts & missions."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Accepter les cadeaux et missions."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 0,
-            "max_args": 1,
-            "example": ""
-        },
-        "stamina": {
-            "en": [
-                "- Restore stamina. (-1 stone)",
-                "optional: stamina <meat ID> - restore stamina with meat."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Restaurer l'endurance. (-1 stone)",
-                "optionnel: stamina <meat ID> - restaure l'endurance avec de la viande."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 0,
-            "max_args": 1,
-            "example": ""
-        },
-        "items": {
-            "en": [
-                "- List of items."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Liste des items."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 0,
-            "max_args": 0,
-            "example": ""
-        },
-        "medals": {
-            "en": [
-                "- List of medals."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Liste des médailles."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 0,
-            "max_args": 0,
-            "example": ""
-        },
-        "refresh": {
-            "en": [
-                "- Refresh login session."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Rafraîchir la session."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 0,
-            "max_args": 0,
-            "example": ""
-        },
-        "name": {
-            "en": [
-                "- Rename account.",
-                "name <name> - the new name."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Renomer le compte.",
-                "name <name> - nouveau nom du compte."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 1,
-            "max_args": 1,
-            "example": ""
-        },
-        "friends": {
-            "en": [
-                "- Friends.",
-                "friends list - list of friends & pending requests.",
-                "friends search <ID> - search user by ID.",
-                "friends request <ID> - send friend request.",
-                "friends accept <ID> - accept friend request."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Amis.",
-                "friends list - liste des amis et des demandes en attente .",
-                "friends search <ID> - rechercher un utilisateur par ID.",
-                "friends request <ID> - envoyer une demande d'ami.",
-                "friends accept <ID> - accepter une demande d'ami."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 2,
-            "max_args": 2,
-            "example": ""
-        },
-        "link": {
-            "en": [
-                "- Linking.",
-                "link list - list of link methods.",
-                "link unlink <fb/ggl> - unlink a method.",
-                "link fb - link account to facebook.",
-                "link ggl - link account to google."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Connexion.",
-                "link list - liste des méthodes de lien.",
-                "link unlink <fb/ggl> - dissocier une méthode de lien.",
-                "link fb - lier le compte à facebook.",
-                "link ggl - lier le compte à google."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 1,
-            "max_args": 1,
-            "example": ""
-        },
-        "wallpaper": {
-            "en": [
-                "- Wallpapers.",
-                "wallpaper list - list of wallpapers.",
-                "wallpaper set <ID> - set wallpaper."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Fond d'écran.",
-                "wallpaper list - liste des fond d'écrans.",
-                "wallpaper set <ID> - appliquer un fond d'écran."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 2,
-            "max_args": 2,
-            "example": ""
-        },
-        "records": {
-            "en": [
-                "- Clear records.",
-                "records stage <stage ID> <difficulty> - view stage records.",
-                "records eza <EZA ID> - view EZA records."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Record de completion.",
-                "records stage <stage ID> <difficulty> - afficher les records du niveau.",
-                "records eza <EZA ID> - afficher les records des Z Battles."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "",
-            "min_args": 3,
-            "max_args": 3,
-            "example": ""
-        },
-        "list": {
-            "en": [
-                "- List of IDs.",
-                "list banners - list of banner IDs.",
-                "list types - list of card types.",
-                "list rarity - list of rarities.",
-                "list category - list of categories.",
-                "list awakens <card ID> - list of a card's awakenings.",
-                "list links / list links <card ID> - list of link skills.",
-                "list transforms <card ID> - list of a card's transformations.",
-                "list raisepercent <card ID> <card ID> - SA raise percentage calculator."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Liste des ID.",
-                "list banners - liste des ID des bannières .",
-                "list types - liste des types de cartes.",
-                "list rarity - liste des raretés.",
-                "list category - liste des catégories.",
-                "list awakens <card ID> - liste des éveils d'une carte.",
-                "list links / list links <card ID> - liste des compétences de lien.",
-                "list transforms <card ID> - liste des transformation d'une carte.",
-                "list raisepercent <card ID> <card ID> - calculateur de pourcentage d'augmentation de Super Attaque."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 1,
-            "example": ""
-        }
-    },
-    "farming": {
-        "event": {
-            "en": [
-                "- Stages.",
-                "list - list of active events.",
-                "quests - list of dokkan quests.",
-                "stories - list of DB stories.",
-                "stage <stage ID> <difficulty> - clear stage.",
-                "area <area ID> - clear every stage in area."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Niveaux.",
-                "list - liste des évènement actifs.",
-                "quests - liste des quêtes dokkan.",
-                "stories - liste des histoires de dragon ball.",
-                "stage <stage ID> <difficulty> - termine un niveau.",
-                "area <area ID> - termine tout les niveaux d'une zone ."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "event <args>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": "event stage 111001 2 <run count>"
-        },
-        "eza": {
-            "en": [
-                "- Extreme Z battles.",
-                "list - list of active EZAs.",
-                "clear <EZA ID> - clear EZA.",
-                "lvl <EZA ID> <level> - clear specific level of EZA.",
-                "exact <EZA ID> <level 1> <level 2> - clear level A to level Z."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Extreme Z battle.",
-                "list - liste des Z Battle.",
-                "clear <EZA ID> - termine un Z Battle.",
-                "lvl <EZA ID> <level> - termine un niveau spécifique du Z Battle.",
-                "exact <EZA ID> <level 1> <level 2> - termine les niveaux de A à Z."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "clash": {
-            "en": [
-                "- Clear clash.",
-                "optional: clash retire - retire from clash."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Terminer le Virtual Dokkan.",
-                "optionnel: clash retire - abandonner le Virtual Dokkan ."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "pettan": {
-            "en": [
-                "- Pettan battle."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Pettan battle."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 1,
-            "example": ""
-        },
-        "clear": {
-            "en": [
-                "- Clear specific type of content.",
-                "quests - finish uncleared quests.",
-                "events - finish uncleared events.",
-                "ezas - finish uncleared EZAs.",
-                "clash - clear clash.",
-                "stories - finish all uncleared DB stories."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Clear specific type of content.",
-                "quests - finir les quêtes non terminées.",
-                "events - finir les événements non terminés.",
-                "ezas - finir les Z Battle non terminés.",
-                "clash - faire le mode clash",
-                "stories - finir toutes les histoires de Dragon Ball non terminées."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "run": {
-            "en": [
-                "- Clear specific set of events.",
-                "daily - clear daily stages.",
-                "weekly - clear weekly stages.",
-                "hp - clear hercule punch.",
-                "orbs - clear hidden potential stages.",
-                "limits - clear stages with team limits.",
-                "zarea - clear active Z-Areas."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Terminer un ensemble spécifique d'évènement.",
-                "daily - termine les niveaux quotidiens.",
-                "weekly - termine les niveaux hebdomadaires.",
-                "hp - termine la punch machine.",
-                "orbs - termine les niveaux pour les orbes de potentiel.",
-                "limits - termine les niveaux avec restriction d'équipe.",
-                "zarea - termine les zones Z actives."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "dbs": {
-            "en": [
-                "- Dragonballs.",
-                "dbs list - dragonball locations.",
-                "dbs seek - seek dragonballs.",
-                "dbs wish - list of wishes.",
-                "dbs wish <wish ID> - wish with dragonballs.",
-                "dbs auto - automatically seek & wish."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Dragonballs.",
-                "dbs list - localiser les dragonballs.",
-                "dbs seek - rechercher les dragonballs.",
-                "dbs wish - liste des voeux.",
-                "dbs wish <wish ID> - faire un voeux avec les dragonballs.",
-                "dbs auto - rechercher et faire un voeu automatiquement."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "farm": {
-            "en": [
-                "- Farm for materials.",
-                "farm medal <ID> <count> - farm medals.",
-                "farm dupe <card ID> <count> - farm cards.",
-                "farm zeni <count> - farm zeni.",
-                "farm rank <count> - farm rank.",
-                "farm gem <count> - farm incredible gems.",
-                "farm fp <count> - farm friend points.",
-                "farm links - farm link levels.",
-                "farm equip <ID> <count> - farm equipment.",
-                "farm orbs <ID> <count> - farm potential orbs.",
-                "farm film <ID> <count> - farm film.",
-                "farm support <ID> <count> - farm support items.",
-                "farm memory <ID> <count> - farm support memory.",
-                "farm location <ID> <count> - farm train locations.",
-                "farm train <ID> <count> - farm train items.",
-                "farm treasure <ID> <count> - farm treasure.",
-                "farm zmedal <medal ID> <count> - farm EZA medals.",
-                "farm bgem <count> - farm blue gems.",
-                "farm fpkais - farm kais from FP banner.",
-                "farm linkorb <ID> <count> - farm link orbs."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Farm des matériaux.",
-                "farm medal <ID> <count> - farmer des médailles.",
-                "farm dupe <card ID> <count> - farm des doublons.",
-                "farm zeni <count> - farmer des zeni.",
-                "farm rank <count> - farmer le rang.",
-                "farm gem <count> - farmer des gemmes incroyables.",
-                "farm fp <count> - farmer des points amis.",
-                "farm links - farmer les niveaux de liens.",
-                "farm equip <ID> <count> - farmer des equipments.",
-                "farm orbs <ID> <count> - farmer des orbes de potentiel.",
-                "farm film <ID> <count> - farerm des film.",
-                "farm support <ID> <count> - farmer des items de soutiens.",
-                "farm memory <ID> <count> - farmer des mémoires de soutiens.",
-                "farm location <ID> <count> - farmer des lieux d'entrainement.",
-                "farm train <ID> <count> - farmer des items d'entrainement.",
-                "farm treasure <ID> <count> - farmer des trésors.",
-                "farm zmedal <medal ID> <count> - farmer des médailles ztur.",
-                "farm bgem <count> - farmer des  gemmes blueues.",
-                "farm fpkais - farmer des kais sur le portail ami.",
-                "farm linkorb <ID> <count> - farmer des orbes de lien."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "missions": {
-            "en": [
-                "- Clear missions.",
-                "missions 0 - farm LR STR vegito dupes & medals.",
-                "missions 1 - nimbus.",
-                "missions 2 - LGE.",
-                "missions 3 - LVE.",
-                "missions 4 - GT LGE.",
-                "missions 5 - \"greatest warrior\" boards.",
-                "missions 6 - redzone.",
-                "missions 7 - cooler WWC.",
-                "missions 8 - cell max.",
-                "missions 9 - DB History.",
-                "missions 10 - epic battles.",
-                "missions 11 - 8th anni.",
-                "missions 12 - trunks WWC.",
-                "missions 13 - magnificent battles.",
-                "missions 14 - memorable battles.",
-                "missions 15 - shadow dragons.",
-                "missions 16 - broly WWC.",
-                "missions 17 - LFE.",
-                "missions 18 - SBR.",
-                "missions 19 - ESBR."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Terminer les missions.",
-                "missions 0 - farmer les doublons et médailles du Vegetto LR PUI.",
-                "missions 1 - medailles nuage magique",
-                "missions 2 - Goku Rush.",
-                "missions 3 - Vegeta Rush.",
-                "missions 4 - GT Rush.",
-                "missions 5 - \"plus grand guerrier\" panneau.",
-                "missions 6 - redzone.",
-                "missions 7 - cooler MDL.",
-                "missions 8 - cell max.",
-                "missions 9 - Histoire de DB.",
-                "missions 10 - batailles épique.",
-                "missions 11 - 8eme anniversaire.",
-                "missions 12 - trunks MDL.",
-                "missions 13 - blue zone.",
-                "missions 14 - combats mémorables.",
-                "missions 15 - dragons maléfique.",
-                "missions 16 - broly MDL.",
-                "missions 17 - Freezer Rush.",
-                "missions 18 - SBR.",
-                "missions 19 - ESBR."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "omega": {
-            "en": [
-                "- Finish all uncleared content."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Finir le contenu non terminer."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        }
-    },
-    "units": {
-        "box": {
-            "en": [
-                "- View box.",
-                "Optional: box items - View item cards. (Kais, hercules)"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Voir la box.",
-                "Optionnel: box items - Afficher les cartes objets. (Kais, hercules)"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 0,
-            "max_args": 2,
-            "example": ""
-        },
-        "capacity": {
-            "en": [
-                "- Increase box capacity.",
-                "capacity <count> - how many times to increase by 5+ (-1 stone)"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Augementer la capacité de la box.",
-                "capacity <count> - nombre de fois où augmenter la capacité de 5+ (-1 pierre)"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 1,
-            "example": ""
-        },
-        "favorite": {
-            "en": [
-                "- Lock card.",
-                "favorite <card UID> - favorite/lock card."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Verouiller une carte.",
-                "favorite <card UID> - favori/verrouiller une carte."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 1,
-            "example": ""
-        },
-        "sell": {
-            "en": [
-                "- Selling.",
-                "sell junk - sell N & statues for zeni."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Vente.",
-                "sell junk - vendre les cartes N & statues contre des zeni."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "baba": {
-            "en": [
-                "- Baba shop.",
-                "baba junk - exchange R/SR for points."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Baba shop.",
-                "baba junk - échanger les R/SR contre des points baba."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        },
-        "summon": {
-            "en": [
-                "- Summoning.",
-                "summon <banner ID> <S / M> - the banner to summon.",
-                "optional: summon history - view summon history."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Invocation.",
-                "summon <banner ID> <S / M> - invoquer sur la bannière choisie.",
-                "optionnel: summon history - voir l'historique des invocations."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 2,
-            "max_args": 3,
-            "example": "summon 454 m"
-        },
-        "team": {
-            "en": [
-                "- Teams.",
-                "team set <deck number> - set current deck.",
-                "team build <card UID,card UID...> - build team with specific cards.",
-                "optional: build mono <type> - build mono type team.",
-                "optional: build rain - build rainbow type team.",
-                "optional: build class <class> - build team with specific class.",
-                "optional: build cat <category ID> - build team with specific category."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Équipes.",
-                "team set <deck number> - définir le deck actuel.",
-                "team build <card UID,card UID...> - crée une équipe avec des cartes spécifiques.",
-                "optionnel: build mono <type> - crée une équipe mono-type.",
-                "optionnel: build rain - crée une équipe avec tout les types.",
-                "optionnel: build class <class> - crée une équipe avec une classe spécifique.",
-                "optionnel: build cat <category ID> - crée une équipe avec une catégorie spécifique."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 2,
-            "max_args": 2,
-            "example": "team build mono str cat 1"
-        },
-        "train": {
-            "en": [
-                "- Training.",
-                "train <card UID> - the card to train.",
-                "optional: <dupe UID/kai ID> / <UID,UID...> - train a dupe or kai into a card.",
-                "optional: <location ID> - train with a location.",
-                "optional: <item IDxQuantity> / <IDxQuantity,IDxQuantity...> - train with items."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Entraînement.",
-                "train <card UID> - faire s'entraîner une carte.",
-                "optionnel: <dupe UID/kai ID> / <UID,UID...> - entraîner un doublon ou un kai sur une carte.",
-                "optionnel: <location ID> - s'entrainer avec un lieu d'entraînement.",
-                "optionnel: <item IDxQuantity> / <IDxQuantity,IDxQuantity...> - s'entraîner avec des items."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": "train 7777777 55555 1 3x1,4x1,5x1"
-        },
-        "awaken": {
-            "en": [
-                "- Awakening.",
-                "awaken <card UID> - the card to awaken."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Eveil.",
-                "awaken <card UID> - faire éveiller une carte."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 1,
-            "example": "awaken 7777777"
-        },
-        "reverse": {
-            "en": [
-                "- Reverse awaken.",
-                "reverse <card UID> - the card to reverse.",
-                "optional: reverse awaken <card UID> - revert reversal."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Eveille inversée.",
-                "reverse <card UID> - faire l'éveille inversée d'une carte.",
-                "optionnel: reverse awaken <card UID> - annuler l'inversion."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": "reverse 7777777"
-        },
-        "potential": {
-            "en": [
-                "- Hidden potential.",
-                "potential dupes <card UID> - unlock routes for card with dupes.",
-                "potential orbs <card UID> - unlock potential with orbs."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Potentiel caché.",
-                "potential dupes <card UID> - débloquer le potentiel d'une carte en utilisant des doublons.",
-                "potential orbs <card UID> - débloquer le potentiel en utilisant des orbes."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 2,
-            "max_args": 2,
-            "example": "potential dupes 7777777"
-        },
-        "equip": {
-            "en": [
-                "- Equipment.",
-                "equip <card UID> - the card to equip to."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Equipment.",
-                "equip <card UID> - donner des sphères d'aptitude à une carte."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 2,
-            "max_args": 2,
-            "example": ""
-        },
-        "lvlink": {
-            "en": [
-                "- Level link by orbs.",
-                "lvlink <card UID> - the card to level."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Augmenter les lien via les orbes.",
-                "lvlink <card UID> - la carte à faire level-up ses liens."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 2,
-            "max_args": 2,
-            "example": ""
-        },
-        "f2p": {
-            "en": [
-                "- Farm F2P card & max it.",
-                "f2p <card ID> - the card to farm for."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Farmer un carte F2P et la maxer.",
-                "f2p <card ID> - la carte à farmer et maxer."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 2,
-            "max_args": 2,
-            "example": "f2p 55555"
-        },
-        "upgrade": {
-            "en": [
-                "- Upgrade card till maxed.",
-                "upgrade <card UID> - the card to upgrade."
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Améliorer une carte jusqu'à son max.",
-                "upgrade <card UID> - la carte à améliorer."
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<arg>",
-            "min_args": 1,
-            "max_args": 1,
-            "example": "upgrade 7777777"
-        }
-    },
-    "toggles": {
-        "toggle": {
-            "en": [
-                "- Toggle preferences.",
-                "<stone> - use stones to refill stamina. (ON by default)",
-                "<tb> - build team based on stage conditions. (OFF by default)",
-                "<capacity> - increase box size with stones. (ON by default)",
-                "<meat> - use meat to refill stamina. (OFF by default)",
-                "<keys> - use keys on inactive stages. (OFF by default)",
-                "<boost> - use drops boost if available. (OFF by default)",
-                "<baba> - baba R & SR. (exclude gifts) (OFF by defualt)",
-                "<autosell> - sell N & statues. (ON by default)",
-                "<sellpulls> - autosell after summon. (OFF by default)",
-                "<autonode> - unlock path if dupe summoned. (OFF by default)",
-                "<summongift> - accept gifts after summon. (OFF by default)",
-                "<dbseek> - complete shenron wishes in omega. (OFF by default)",
-                "<items> - set support item(s) to run stage with.",
-                "<memory> - set support memory to run stage with.",
-                "<befriend> - send friend requests to supports. (OFF by default)",
-                "<zenieza> - set EZA for \"farm zeni\".",
-                "<lockpulls> - lock all SSR+ units in summons. (OFF by default)",
-                "<linkstage> - set link lvl farm stage.",
-                "<keyprompt> - ask to use keys on inactive stages. (OFF by default)",
-                "<babassr> - baba SSRs that cannot UR/LR. (OFF by default)",
-                "<zeniendlv> - set EZA end level for \"farm zeni\".",
-                "<autosupport> - select support based on stage conditions. (OFF by default)",
-                "<fpssr> - baba only SSRs on FP banner. (OFF by default)",
-                "<autosupport> - pick required support leader. (OFF by default)",
-                "<turns> - set how many turns in boss fight.",
-                "<cleartime> - set stage/eza clear time.",
-                "<supers> - use supers & skills in fight. (OFF by default)",
-                "<swapmax> - link level each UR/LR in box during \"farm links\" (OFF by default)",
-                "<rb> - build team from clear records. (OFF by default)",
-                "<skiplimits> - skip stages with team conditions. (OFF by default)",
-                "<skipzarea> - skip Z-Area stages. (OFF by default)"
-            ],
-            "ro": [],
-            "de": [],
-            "es": [],
-            "fr": [
-                "- Activer les préférences.",
-                "<stone> - utiliser des pierres pour restaurer l'endurance. (activé par défaut)",
-                "<tb> - crée l'équipe selon les condition du niveau. (désactivé par défaut)",
-                "<capacity> - augmenter la taille de la box avec des pierres. (activé par défaut)",
-                "<meat> - utiliser de la viande pour restaurer l'endurance. (désactivé par défaut)",
-                "<keys> - utiliser des clés sur les niveaux inactifs. (désactivé par défaut)",
-                "<boost> - utiliser le boost de drop si disponible. (désactivé par défaut)",
-                "<baba> - baba R & SR. (hors cadeaux) (désactivé par défaut)",
-                "<autosell> - vendre les N & statues. (activé par défaut)",
-                "<sellpulls> - vendre automatiquement après invocation. (désactivé par défaut)",
-                "<autonode> - débloquer la route si un doublon est invoqué. (désactivé par défaut)",
-                "<summongift> - accepter les cadeaux après invocation. (désactivé par défaut)",
-                "<dbseek> - compléter les voeux de shenron en omega. (désactivé par défaut)",
-                "<items> - définir les objects de soutien pour jouer un niveau.",
-                "<memory> - définir la mémoir de soutiens pour jouer un niveau.",
-                "<befriend> - envoyer des demandes d'amis aux supports. (désactivé par défaut)",
-                "<zenieza> - definir le Z Battler pour \"farm zeni\".",
-                "<lockpulls> - verrouiller toutes les unités SSR lors des invocations. (désactivé par défaut)",
-                "<linkstage> - définir le niveau pour farm les liens.",
-                "<keyprompt> - demander avant d'utiliser des clés sur les niveaux inactifs. (OFF by default)",
-                "<babassr> - baba les SSR qui ne peuvent pas devenir UR/LR. (désactivé par défaut)",
-                "<zeniendlv> - définir le niveau final du Z Battle pour \"farm zeni\".",
-                "<autosupport> - choisir le support selon les conditions du niveau. (désactivé par défaut)",
-                "<fpssr> - baba uniquement les SSR de la bannière ami. (désactivé par défaut)",
-                "<autosupport> - choisir le leader support requis. (désactivé par défaut)",
-                "<turns> - définir le nombre de tours pour le combat de boss.",
-                "<cleartime> - définir le temps de complétion d'un niveau/zbattle.",
-                "<supers> - utiliser les super et les compétences en combat. (désactivé par défaut)",
-                "<swapmax> - augmenter le niveau des lien de chaque UR/LR dans la box durant \"farm links\" (désactivé par défaut)",
-                "<rb> - crée un team à partir des records de completion. (désactivé par défaut)",
-                "<skiplimits> - ignorer les niveaux avec condition d'équipe. (désactivé par défaut)",
-                "<skipzarea> - ignorer les niveaux Zone Z . (désactivé par défaut)"
-            ],
-            "it": [],
-            "ko": [],
-            "pt": [],
-            "ua": [],
-            "ru": [],
-            "zh": [],
-            "syntax": "<toggle name>",
-            "min_args": 1,
-            "max_args": 2,
-            "example": ""
-        }
+    "exit": {
+      "en": [
+        "- exit Farmbot.\n%error%!! ios to android / android to ios will lose stones. !!"
+      ],
+      "ro": [
+        "- Ieșire din bot.\n%%error%%!! (transferul între sisteme de operare va elimina pietrele) !!"
+      ],
+      "de": [
+        "- Stoppt den Bot\n%%error%%!! (Transfers zwischen Betriebssystemen loescht deine Dragon Stones) !!"
+      ],
+      "es": [
+        "- Salir del bot / terminal.\n%%error%%!! (CUIDADO! Si transfieres entre dispositivos, ej. Android a iOS, perderas TODAS tus DRAGON STONES) !!"
+      ],
+      "fr": [
+        "- quitter farmbot.\n%error%!! passer de ios à android / android à ios entraînera la perte des pierres du dragon. !!"
+      ],
+      "it": [
+        "- esci dal terminale/farmbot 16.\n%%error%%!! (il trasferimento tra piattaforme diverse rimuoverà tutte le tue stone) !!"
+      ],
+      "ko": [
+        "- 16 터미널/팜봇을 끝냅니다.\n%%error%%!! (OS 간에 이전하면 용석이 제거됩니다) !!"
+      ],
+      "pt": [
+        "- sai do 16 terminal/farmbot.\n%%error%%!! (transferir entre sistemas (android/ios) vai remover suas Dragon Stones !!"
+      ],
+      "ua": [
+        "- закрити термінал/фармбота.\n%%error%%!! (еслі ви зміните ОС, ви втратите своєї камні) !!"
+      ],
+      "ru": [
+        "- выйти из Farmbot.\n%%error%%!! (перенос между ОС удалит ваши камни) !!"
+      ],
+      "zh": [],
+      "syntax": "",
+      "example": ""
     }
+  },
+  "loaded": {
+    "1": {
+      "en": [
+        "- Account"
+      ],
+      "ro": [
+        "- Cont"
+      ],
+      "de": [
+        "- Account Managing"
+      ],
+      "es": [
+        "- Cuenta"
+      ],
+      "fr": [
+        "- Compte"
+      ],
+      "it": [
+        "- Account"
+      ],
+      "ko": [
+        "- 계정"
+      ],
+      "pt": [
+        "- Conta"
+      ],
+      "ua": [
+        "- аккаунт"
+      ],
+      "ru": [
+        "- аккаунт"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "2": {
+      "en": [
+        "- Farming"
+      ],
+      "ro": [
+        "- Farming"
+      ],
+      "de": [
+        "- Farming Befehle"
+      ],
+      "es": [
+        "- Farmeo"
+      ],
+      "fr": [
+        "- Farming"
+      ],
+      "it": [
+        "- Farming"
+      ],
+      "ko": [
+        "- 파밍"
+      ],
+      "pt": [
+        "- Farm"
+      ],
+      "ua": [
+        "- землеробство"
+      ],
+      "ru": [
+        "- фарм"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "3": {
+      "en": [
+        "- Manage units"
+      ],
+      "ro": [
+        "- Gestionează caracterele"
+      ],
+      "de": [
+        "- Units verwalten"
+      ],
+      "es": [
+        "- Administra Cartas"
+      ],
+      "fr": [
+        "- Gérer les unités"
+      ],
+      "it": [
+        "- Gestisci unità"
+      ],
+      "ko": [
+        "- 유닛 관리"
+      ],
+      "pt": [
+        "- Manuseia Cartas"
+      ],
+      "ua": [
+        "- керувати підрозділами"
+      ],
+      "ru": [
+        "- Управление объектами"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "4": {
+      "en": [
+        "- Toggles"
+      ],
+      "ro": [
+        "- Unelte și liste"
+      ],
+      "de": [
+        "- Tools & Lists"
+      ],
+      "es": [
+        "- Herramientas y Listas"
+      ],
+      "fr": [
+        "- Activer"
+      ],
+      "it": [
+        "- Utility & Liste"
+      ],
+      "ko": [
+        "- 도구 및 목록"
+      ],
+      "pt": [
+        "- Ferramentas & Listas"
+      ],
+      "ua": [
+        "- інструменти та списки"
+      ],
+      "ru": [
+        "- Инструменты и списки"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "5": {
+      "en": [
+        "- Custom commands"
+      ],
+      "ro": [
+        "- Magazine și Summonuri"
+      ],
+      "de": [
+        "- Shops & Beschwoerungen"
+      ],
+      "es": [
+        "- Tienda y Summons"
+      ],
+      "fr": [
+        "- Commandes personalisées"
+      ],
+      "it": [
+        "- Shop & Summon"
+      ],
+      "ko": [
+        "- 상점 및 뽑기"
+      ],
+      "pt": [
+        "- Lojas & Summons"
+      ],
+      "ua": [
+        "- магазини і повістки"
+      ],
+      "ru": [
+        "- Магазины и призывы"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "help": {
+      "en": [
+        "- Navigate help pages"
+      ],
+      "ro": [
+        "Folosește \"help<page>\" pentru a naviga.\nctrl+c pentru a opri botul"
+      ],
+      "de": [
+        "use \"help <page>\" to navigate.\nstrg + c Stoppt den Bot"
+      ],
+      "es": [
+        "use \"help <page>\" to navigate.\nPresiona ctrl+c para detener el bot.."
+      ],
+      "fr": [
+        "- Parcourir les pages d'aides"
+      ],
+      "it": [
+        "use \"help <page>\" to navigate.\nctrl+c per arrestare il bot."
+      ],
+      "ko": [
+        "use \"help <page>\" to navigate.\n봇을 정지하려면 Ctrl+C를 누르세요."
+      ],
+      "pt": [
+        "use \"help <page>\" to navigate.\nctrl+c para parar o bot."
+      ],
+      "ua": [
+        "use \"help <page>\" to navigate.\nctrl + c, щоб зупинити бота."
+      ],
+      "ru": [
+        "use \"help <page>\" to navigate.\nctrl + c, используете чтобы остановить бота."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "ctrl+c": {
+      "en": [
+        "- Stop a task"
+      ],
+      "ro": [],
+      "de": [],
+      "es": [],
+      "fr": [
+        "- Arrêter une tâche"
+      ],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "exit": {
+      "en": [
+        "- Main menu"
+      ],
+      "ro": [
+        "- Meniul Principal"
+      ],
+      "de": [
+        "- Verlaesst den aktuellen Save und bringt dich zurueck in das Bot Haupt Menu"
+      ],
+      "es": [
+        "- Menu principal."
+      ],
+      "fr": [
+        "- Menu principal"
+      ],
+      "it": [
+        "- Menù principale."
+      ],
+      "ko": [
+        "- 메인 메뉴입니다."
+      ],
+      "pt": [
+        "- Menu principal."
+      ],
+      "ua": [
+        "- головне меню."
+      ],
+      "ru": [
+        "- Главное меню"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    }
+  },
+  "settings": {
+    "color": {
+      "en": [],
+      "ro": [
+        "- Setează culoarea textului botului.\n== Tipuri ==\ncommands - comanda din ajutor.\ndescriptions - detalii comandă în ajutor.\nerror - text de eroare.\nsuccess - text de succes.\nmessage - culoarea mesajelor.\ndrops - culoarea recompenselor/cadourilor.\n== Culori ==\nred (roșu), green (verde), cyan, blue (albastru), yellow (galben), white (alb), purple (mov)."
+      ],
+      "de": [
+        "- Set bot text color.\n== Types ==\ncommands - command in help.\ndescriptions - Befehl Details unter help\nerror - Fehler Text\nsuccess - Erfolgreich Text\nmessage - Nachrichten Text\ndrops - Belohnung/Drops Text\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+      ],
+      "es": [
+        "- Set bot text color.\n== Types ==\ncommands - Nombre de los comandos en el comando 'help'.\ndescriptions - Descripcion de los comandos en el comando 'help'.\nerror - Texto de error.\nsuccess - Texto de exito (al completar alguna accion).\nmessage - Color de los mensajes.\ndrops - Color de las recompensas.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+      ],
+      "fr": [],
+      "it": [
+        "- Set bot text color.\n== Types ==\ncommands - i comandi nell'help.\ndescriptions - i dettagli riguardo i comandi nell'help.\nerror - testi di errore.\nsuccess - testi di successo.\nmessage - messaggi.\ndrops - ricompense/drop.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+      ],
+      "ko": [
+        "- Set bot text color.\n== Types ==\ncommands - 도움말의 명령어입니다.\ndescriptions - 도움말의 명령어 세부 정보입니다.\nerror - 오류 텍스트입니다.\nsuccess - 성공 텍스트입니다.\nmessage - 메시지 색입니다.\ndrops - 보상/드롭 색입니다.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+      ],
+      "pt": [
+        "- Set bot text color.\n== Types ==\ncommands - commandos da ajuda.\ndescriptions - detalhes do comando na ajuda.\nerror - texto de erro.\nsuccess - texto de sucesso.\nmessage - cor de mensagens.\ndrops - cor de recompensas/drops.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+      ],
+      "ua": [
+        ""
+      ],
+      "ru": [
+        "Установить цвет текста бота.\n== Типы ==\ncommands - команда в справке.\ndescriptions - подробности команды в справке.\nerror - текст ошибки.\nsuccess - текст успеха.\nmessage - цвет сообщений.\ndrops - награды/ падает цвет.\n== Цвета ==\nкрасный, зеленый, голубой, синий, желтый, белый, фиолетовый"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "lang": {
+      "en": [],
+      "ro": [
+        "- Setează limba botului.\nen - engleză.\nfr - franceză.\nde - germană.\nko - coreeană.\nit - italiană.\npt - portugheză.\nes - spaniolă."
+      ],
+      "de": [
+        "- wechsel die Bot Sprache\nen - english.\nfr - french.\nde - german.\nko - korean.\nit - italian.\npt - portugues.\nes - spanish."
+      ],
+      "es": [
+        "- Selecciona un lenguaje para el bot.\nen - Ingles.\nfr - Frances.\nde - Aleman.\nko - Coreano.\nit - Italiano.\npt - portugues.\nes - Español (Activo)."
+      ],
+      "fr": [],
+      "it": [
+        "- imposta la lingua del bot.\nen - inglese.\nfr - francese.\nde - tedesco.\nko - coreano.\nes - spagnolo.\npt - portugues.\nit - italiano."
+      ],
+      "ko": [
+        "- 봇 언어를 설정합니다.\nen - 영어입니다.\nfr - 프랑스어입니다.\nde - 독일어입니다.\nko - 한국어입니다.\nes - 스페인어입니다.\nit - 이탈리아어입니다."
+      ],
+      "pt": [
+        "- seleciona idioma do bot.\nen - ingles.\nfr - frances.\nde - alemao.\nko - koreano.\nit - italiano.\npt - portugues.\nes - espanhol."
+      ],
+      "ua": [
+        "- встановити мову бота.\nen - англійська.\nfr - французька.\nde - німецька.\nko - корейська.\nit - італійська.\npt - португальська.\nes - іспанська.\nua - українська.\nru - русский."
+      ],
+      "ru": [
+        "- установить язык бота.\nen - английский.\nfr - французский.\nde - немецкий.\nko - корейский.\nit - итальянский.\npt - португальский.\nes - испанский.\nru - русский"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "rerolls": {
+      "en": [],
+      "ro": [
+        "- setează numărul maxim de rorolluri"
+      ],
+      "de": [
+        "- Stellt die maximale Reroll Anzahl ein"
+      ],
+      "es": [
+        "- Ajusta el limite maximo de \"rerolls\"."
+      ],
+      "fr": [],
+      "it": [
+        "- imposta la quantità massima di reroll."
+      ],
+      "ko": [
+        "- 최대 리세마라 수를 설정합니다."
+      ],
+      "pt": [
+        "- seleciona o max de vezes reroll."
+      ],
+      "ua": [
+        "- встановити максимальну кількість \"reroll\"."
+      ],
+      "ru": [
+        "- установить максимальное количество перебросов."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "autoname": {
+      "en": [],
+      "ro": [
+        "- Setează numele automat pentru fișierele de salvare la reroll."
+      ],
+      "de": [
+        "- Automatisches benennen deiner Rerolls"
+      ],
+      "es": [
+        "- Automaticamente nombra el archivo de guardado de una cuenta reroll (nueva)."
+      ],
+      "fr": [],
+      "it": [
+        "- scegli automaticamente il nome dei file di salvataggio dei reroll."
+      ],
+      "ko": [
+        "- 리세마라 저장 파일의 이름을 자동으로 지정합니다."
+      ],
+      "pt": [
+        "- renomeia automaticamente contas reroll."
+      ],
+      "ua": [
+        "- автоматично іменувати файли збереження, перезавантажувати."
+      ],
+      "ru": [
+        "- автоматически переименовывать файлы сохранения."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "dailyevents": {
+      "en": [],
+      "ro": [
+        "- Rulează evenimentele folosind comanda \"daily\"."
+      ],
+      "de": [
+        "- Schaltet waehrend der dailys, die Events um"
+      ],
+      "es": [
+        "- Hacer ademas los eventos cuando se active el comando \"daily\"."
+      ],
+      "fr": [],
+      "it": [
+        "- completa gli eventi nel comando \"daily\"."
+      ],
+      "ko": [
+        "- \"daily\" 명령어에서 이벤트 수행을 전환합니다."
+      ],
+      "pt": [
+        "- executa eventos do comando \"daily\"."
+      ],
+      "ua": [
+        "- запускати події в команді \"daily\"."
+      ],
+      "ru": [
+        "- запускать события командой \"daily\"."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "dailies": {
+      "en": [],
+      "ro": [
+        "- Setează evenimentele pentru comanda zilnică."
+      ],
+      "de": [
+        "- legt die Events fÃƒÆ’Ã‚Â¼r die tÃƒÆ’Ã‚Â¤glichen Aufgaben fest."
+      ],
+      "es": [
+        "- Configura eventos para el comando diarias."
+      ],
+      "fr": [],
+      "it": [
+        "- imposta gli eventi per il comando daily."
+      ],
+      "ko": [
+        "- daily 명령어의 이벤트를 설정합니다."
+      ],
+      "pt": [
+        "- Configura eventos para o comando de diários"
+      ],
+      "ua": [
+        "- встановити події для щоденної команди"
+      ],
+      "ru": [
+        "- установить события для ежедневной команды."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "logdrops": {
+      "en": [],
+      "ro": [
+        "- activează dacă vrei să vezi datele recompensei per stage . (ACTIVAT din fabrică)"
+      ],
+      "de": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [],
+      "it": [
+        ""
+      ],
+      "ko": [
+        "- 드롭 데이터 저장 여부를 전환합니다. (기본적으로 켜져 있습니다)"
+      ],
+      "pt": [
+        "- mude para gravar os dados de itens coletados. (LIGADO por padrão)"
+      ],
+      "ua": [
+        "- увімкнути чи зберігати дані випадання. (УВІМКНЕНО за замовчуванням)"
+      ],
+      "ru": [
+        "- переключить, сохранять ли данные о выпадении. (ВКЛ. по умолчанию)"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "gui": {
+      "en": [],
+      "ro": [
+        "- activează afișajul interfeței digirale. (ACTIVAT din fabrică)"
+      ],
+      "de": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [],
+      "it": [
+        ""
+      ],
+      "ko": [
+        "- GUI 표시를 전환합니다. (기본적으로 켜져 있습니다)"
+      ],
+      "pt": [
+        "- mude para exibir interface gráfica de usuário. (LIGADO por padrão)"
+      ],
+      "ua": [
+        "- перемикання відображення GUI. (УВІМКНЕНО за замовчуванням)"
+      ],
+      "ru": [
+        "- переключить отображение графического интерфейса. (ВКЛ. по умолчанию)"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "safemode": {
+      "en": [],
+      "ro": [
+        "- stage run-uri și date ale echipei mai realiste , dar mai puține recompense per stage. ( DEZACTIVAT din fabrică)"
+      ],
+      "de": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [],
+      "it": [
+        ""
+      ],
+      "ko": [
+        "- 스테이지 플레이 및 팀 데이터가 더욱 현실적이게 되지만 드롭은 적어집니다. (기본적으로 꺼져 있습니다)"
+      ],
+      "pt": [
+        "- finalização de fases mais reais $ dados de time mas menos itens. (DESLIGADO por padrão)"
+      ],
+      "ua": [
+        "- більш реалістичні етапи та дані про команди, але менше падінь. (ВИМКНЕНО за замовчуванням)"
+      ],
+      "ru": [
+        "- Более реалистичные этапы и данные команды, но меньше выпадений. (выключено по умолчанию)"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    }
+  },
+  "account": {
+    "info": {
+      "en": [
+        "- Account information."
+      ],
+      "ro": [
+        "- informații despre cont."
+      ],
+      "de": [
+        "- Account info"
+      ],
+      "es": [
+        "- InformaciÃƒÆ’Ã‚Â³n de la cuenta."
+      ],
+      "fr": [
+        "- Information du compte."
+      ],
+      "it": [
+        "- informazioni sull'account."
+      ],
+      "ko": [
+        "- 계정 정보입니다."
+      ],
+      "pt": [
+        "- informacoes da conta."
+      ],
+      "ua": [
+        "- інформація про обліковий запис."
+      ],
+      "ru": [
+        "- Информация об аккаунте."
+      ],
+      "zh": [],
+      "syntax": "",
+      "min_args": 0,
+      "max_args": 0,
+      "example": ""
+    },
+    "gift": {
+      "en": [
+        "- Accept gifts & missions."
+      ],
+      "ro": [],
+      "de": [],
+      "es": [],
+      "fr": [
+        "- Accepter les cadeaux et missions."
+      ],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
+      "zh": [],
+      "syntax": "",
+      "min_args": 0,
+      "max_args": 1,
+      "example": ""
+    },
+    "stamina": {
+      "en": [
+        "- Restore stamina. (-1 stone)",
+        "optional: stamina <meat ID> - restore stamina with meat."
+      ],
+      "ro": [],
+      "de": [],
+      "es": [],
+      "fr": [
+        "- Restaurer l'endurance. (-1 stone)",
+        "optionnel: stamina <meat ID> - restaure l'endurance avec de la viande."
+      ],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
+      "zh": [],
+      "syntax": "",
+      "min_args": 0,
+      "max_args": 1,
+      "example": ""
+    },
+    "items": {
+      "en": [
+        "- List of items."
+      ],
+      "ro": [
+        "- suport, antrenament, orbe, comoară, special."
+      ],
+      "de": [
+        "- support, training, orbs, treasure, spezial"
+      ],
+      "es": [
+        "- support, training, orbs, treasure, special."
+      ],
+      "fr": [
+        "- Liste des items."
+      ],
+      "it": [
+        "- supporto, allenamento, orb, treasure, speciali."
+      ],
+      "ko": [
+        "- 서포트, 수련, 구슬, 보물, 특수입니다."
+      ],
+      "pt": [
+        "- supporte, treinamento, orbs, tesouros, especial."
+      ],
+      "ua": [
+        "- підтримка, навчання, кулі, скарб, спеціальні."
+      ],
+      "ru": [
+        " поддержка, обучение, сферы, сокровища, спец."
+      ],
+      "zh": [],
+      "syntax": "",
+      "min_args": 0,
+      "max_args": 0,
+      "example": ""
+    },
+    "medals": {
+      "en": [
+        "- List of medals."
+      ],
+      "ro": [
+        "- listă a medalilor tale de awakening"
+      ],
+      "de": [
+        "- Liste deiner Awakening medals"
+      ],
+      "es": [
+        "- Lista de tus medallas awakening."
+      ],
+      "fr": [
+        "- Liste des médailles."
+      ],
+      "it": [
+        "- lista delle tue awakening medals."
+      ],
+      "ko": [
+        "- 각성 메달 목록입니다."
+      ],
+      "pt": [
+        "- listar suas medalhas de awakening."
+      ],
+      "ua": [
+        "- список медалей пробудження."
+      ],
+      "ru": [
+        "- список твоих медалей пробуждения."
+      ],
+      "zh": [],
+      "syntax": "",
+      "min_args": 0,
+      "max_args": 0,
+      "example": ""
+    },
+    "refresh": {
+      "en": [
+        "- Refresh login session."
+      ],
+      "ro": [],
+      "de": [],
+      "es": [],
+      "fr": [
+        "- Rafraîchir la session."
+      ],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
+      "zh": [],
+      "syntax": "",
+      "min_args": 0,
+      "max_args": 0,
+      "example": ""
+    },
+    "name": {
+      "en": [
+        "- Rename account.",
+        "name <name> - the new name."
+      ],
+      "ro": [
+        "- schimbă-ți numele.\n<name> - noul nume al contului tău."
+      ],
+      "de": [
+        "- Namensaenderung\n<name> - dein neuer Account name | Beispiel: name maniaccc"
+      ],
+      "es": [
+        "- Cambia el nombre de la cuenta.\n<name> - El nombre por el que quieras cambiar."
+      ],
+      "fr": [
+        "- Renomer le compte.",
+        "name <name> - nouveau nom du compte."
+      ],
+      "it": [
+        "- cambia il tuo nome.\n<name> - nuovo nome."
+      ],
+      "ko": [
+        "- 이름을 변경합니다.\n<name> - 새 계정 이름입니다."
+      ],
+      "pt": [
+        "- trocar seu nome.\n<name> - nome da sua nova conta."
+      ],
+      "ua": [
+        "- змінити ім'я.\n<name> - нове ім'я облікового запису."
+      ],
+      "ru": [
+        "- измените свое имя.\n<name> - имя вашей новой учетной записи."
+      ],
+      "zh": [],
+      "syntax": "",
+      "min_args": 1,
+      "max_args": 1,
+      "example": ""
+    },
+    "friends": {
+      "en": [
+        "- Friends.",
+        "friends list - list of friends & pending requests.",
+        "friends search <ID> - search user by ID.",
+        "friends request <ID> - send friend request.",
+        "friends accept <ID> - accept friend request."
+      ],
+      "ro": [
+        "- gestionați lista de prieteni.\n<list> - listă de prieteni și cereri în așteptare.\n<accept> - acceptați o cerere în așteptare.\n<search> - căutați un utilizator după ID (FC/ID).\n<request> - trimiteți o cerere în așteptare către un utilizator."
+      ],
+      "de": [
+        "- Verwalte deine Freundesliste\n<list> - Liste deiner Freunde & Freundschaftsanfragen\n<accept> - Akzeptiert Freundesanfragen\n<search> - Suche einen User anhand seiner ID\n<request> - Sende eine Freundschaftsanfrage an jemanden"
+      ],
+      "es": [
+        "- Administra tus amigos.\n<list> - Lista de amigos y tus solicitudes pendientes.\n<accept> - Acepta una solicitud de aminstad pendiente.\n<search> - Busca un usuario por ID. (FC/ID)\n<request> - Manda una solicitud de amistad a un usuario."
+      ],
+      "fr": [
+        "- Amis.",
+        "friends list - liste des amis et des demandes en attente .",
+        "friends search <ID> - rechercher un utilisateur par ID.",
+        "friends request <ID> - envoyer une demande d'ami.",
+        "friends accept <ID> - accepter une demande d'ami."
+      ],
+      "it": [
+        "- gestisci i tuoi amici.\n<list> - lista dei tuoi amici e delle richieste in sospeso.\n<accept> - accetta una richiesta in sospeso.\n<search> - ricerca un utente per ID. (FC/ID)\n<request> - invia una richiesta ad un amico."
+      ],
+      "ko": [
+        "- 친구를 관리합니다.\n<list> - 친구 및 보류 중인 신청 목록입니다.\n<accept> - 보류 중인 신청을 수락합니다.\n<search> - ID로 사용자를 검색합니다. (친구 코드/ID입니다)\n<request> - 사용자에게 보류 중인 신청을 전송합니다."
+      ],
+      "pt": [
+        "- manusear lista de amigos.\n<list> - lista os amigos e pedidos pendentes.\n<accept> - aceita um pedido pendente.\n<search> - procura pelo ID. (FC/ID)\n<request> - envia um pedido de amizade ao usuario."
+      ],
+      "ua": [
+        "- керуйте друзями.\n<list> - список друзів i запити в очікуванні.\n<accept> - прийняти запит.\n<search> - пошук користувача за ідентифікатором. (FC/ID)\n<request> - відправити запит користувачеві."
+      ],
+      "ru": [
+        "- управлять своими друзьями.\n<list> — список ваших друзей и ожидающих запросов.\n<accept> — принять ожидающий запрос.\n<search> — выполнить поиск пользователя по идентификатору. (FC/ID)\n<request> — отправить пользователю ожидающий запрос."
+      ],
+      "zh": [],
+      "syntax": "",
+      "min_args": 2,
+      "max_args": 2,
+      "example": ""
+    },
+    "link": {
+      "en": [
+        "- Linking.",
+        "link list - list of link methods.",
+        "link unlink <fb/ggl> - unlink a method.",
+        "link fb - link account to facebook.",
+        "link ggl - link account to google."
+      ],
+      "ro": [
+        "- Transfer/linking.\n<list> - listă de conturi terțe conectate.\n<fb> - conectează contul la Facebook.\n<ggl> - conectează contul la Google.\n<unlink> - elimină legătura cu Facebook/Google."
+      ],
+      "de": [
+        "- Transferieren/verbinden.\n<list> - Liste der verlinkten 3rd party accounts\n<fb> - Verlinke einen Account mit Facebook.\n<ggl> - Verbindet den Account mit Google.\n<unlink> - Verbindung mit Facebook/Google entfernen."
+      ],
+      "es": [
+        "- Transferir cuenta/Vincular red social a cuenta.\n<list> - Mira tus cuentas vinculadas.\n<fb> - Vincula esta cuenta a Facebook.\n<ggl> - Vincular cuenta a Google.\n<unlink> - Desvincular cuenta de google/facebook."
+      ],
+      "fr": [
+        "- Connexion.",
+        "link list - liste des méthodes de lien.",
+        "link unlink <fb/ggl> - dissocier une méthode de lien.",
+        "link fb - lier le compte à facebook.",
+        "link ggl - lier le compte à google."
+      ],
+      "it": [
+        "- Trasferimento/collegamento.\n<list> - lista degli account di terze parti collegati.\n<fb> - collega l'account a facebook.\n<ggl> - collega l'account a Google.\n<unlink> - rimuovi l'account Google/Facebook collegato."
+      ],
+      "ko": [
+        "- 이전/연결\n<list> - 연동된 제3자 계정 목록입니다.\n<fb> - Facebook과 계정을 연동합니다.\n<ggl> - Google과 계정 연동\n<unlink> - 연동된 Google/Facebook 제거"
+      ],
+      "pt": [
+        "- Transferência / linkar.\n<list> - lista de contas de uso com terceiros.\n<fb> - linkar a conta ao facebook.\n<ggl> - linkar conta ao google.\n<unlink> - remover link do facebook/google."
+      ],
+      "ua": [
+        "- передача/зв'язування.\n<list> - список підключених сторонніх облікових записів.\n<fb> - прив'язати обліковий запис до facebook.\n<ggl> - прив'язати обліковий запис до Google.\n<unlink> - видалити пов’язаний facebook i google."
+      ],
+      "ru": [
+        "- Перенос/связывание.\n<list> – список связанных учетных записей третьих лиц.\n<fb> – привязка учетной записи к Facebook.\n<ggl> – привязка учетной записи к Google.\n<unlink> – удаление связанной учетной записи Facebook/Google."
+      ],
+      "zh": [],
+      "syntax": "",
+      "min_args": 1,
+      "max_args": 1,
+      "example": ""
+    },
+    "wallpaper": {
+      "en": [
+        "- Wallpapers.",
+        "wallpaper list - list of wallpapers.",
+        "wallpaper set <ID> - set wallpaper."
+      ],
+      "ro": [
+        "- gestionare tapet.\n<list> - listă de tapete din contul tău.\n<set> - setează-ți tapetul prin ID. (trebuie să deții tapetul)"
+      ],
+      "de": [
+        "- Wallpaper Management\n<list> - Liste deiner vorhandenen Wallpaper\n<set> - Setze einen Wallpaper anhand der ID. (Du musst den Wallpaper besitzen)"
+      ],
+      "es": [
+        "- Administra tus fondos.\n<list> - Lista de fondos en tu cuenta.\n<set> - Selecciona un fondo para tu cuenta por ID (Debes tener el fondo"
+      ],
+      "fr": [
+        "- Fond d'écran.",
+        "wallpaper list - liste des fond d'écrans.",
+        "wallpaper set <ID> - appliquer un fond d'écran."
+      ],
+      "it": [
+        "- gestione sfondo.\n<list> - lista degli sfondi sul tuo account.\n<set> - imposta il tuo sfondo attraverso il suo ID. (devi possedere lo sfondo)"
+      ],
+      "ko": [
+        "- 배경 관리입니다.\n<list> - 계정의 배경 목록입니다.\n<set> - ID로 배경을 설정합니다. (해당 배경을 소유해야 합니다)"
+      ],
+      "pt": [
+        "- trocar papel de parede.\n<list> - lista de papeis de parede da sua conta.\n<set> - selecionar seu papel de parede pelo ID. (voce precisa ter o papel de parede)"
+      ],
+      "ua": [
+        "- керування шпалерами.\n<list> - список шпалер на акаунті.\n<set> - встановити шпалери за id. (Ви повинні мати шпалери)"
+      ],
+      "ru": [
+        "- управление обоями.\n<list> - список обоев в вашей учетной записи.\n<set> - установка обоев по идентификатору. (обои должны быть у вас)"
+      ],
+      "zh": [],
+      "syntax": "",
+      "min_args": 2,
+      "max_args": 2,
+      "example": ""
+    },
+    "records": {
+      "en": [
+        "- Clear records.",
+        "records stage <stage ID> <difficulty> - view stage records.",
+        "records eza <EZA ID> - view EZA records."
+      ],
+      "ro": [
+        ""
+      ],
+      "de": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        "- Record de completion.",
+        "records stage <stage ID> <difficulty> - afficher les records du niveau.",
+        "records eza <EZA ID> - afficher les records des Z Battles."
+      ],
+      "it": [
+        ""
+      ],
+      "ko": [
+        ""
+      ],
+      "pt": [
+        ""
+      ],
+      "ua": [
+        ""
+      ],
+      "ru": [
+        ""
+      ],
+      "zh": [],
+      "syntax": "",
+      "min_args": 3,
+      "max_args": 3,
+      "example": ""
+    },
+    "list": {
+      "en": [
+        "- List of IDs.",
+        "list banners - list of banner IDs.",
+        "list types - list of card types.",
+        "list rarity - list of rarities.",
+        "list category - list of categories.",
+        "list awakens <card ID> - list of a card's awakenings.",
+        "list links / list links <card ID> - list of link skills.",
+        "list transforms <card ID> - list of a card's transformations.",
+        "list raisepercent <card ID> <card ID> - SA raise percentage calculator."
+      ],
+      "ro": [],
+      "de": [],
+      "es": [],
+      "fr": [
+        "- Liste des ID.",
+        "list banners - liste des ID des bannières .",
+        "list types - liste des types de cartes.",
+        "list rarity - liste des raretés.",
+        "list category - liste des catégories.",
+        "list awakens <card ID> - liste des éveils d'une carte.",
+        "list links / list links <card ID> - liste des compétences de lien.",
+        "list transforms <card ID> - liste des transformation d'une carte.",
+        "list raisepercent <card ID> <card ID> - calculateur de pourcentage d'augmentation de Super Attaque."
+      ],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 1,
+      "example": ""
+    }
+  },
+  "farming": {
+    "event": {
+      "en": [
+        "- Stages.",
+        "list - list of active events.",
+        "quests - list of dokkan quests.",
+        "stories - list of DB stories.",
+        "stage <stage ID> <difficulty> - clear stage.",
+        "area <area ID> - clear every stage in area."
+      ],
+      "ro": [
+        "- gestionare evenimente.\n<list> - listă activă care include ID-ul etapei și dificultatea pe etapă.\n<area> - completează întregul eveniment / zonă de quest-uri.\n<stage> - completează o etapă specifică după ID.\n<keys> - listă de evenimente la care poți folosi chei.\n<stories> - listă de povești DB disponibile."
+      ],
+      "de": [
+        "- Event Management\n<list> - Zeigt alle aktiven Events an inklusive der Stage ID und deren Schwierigkeitsstufe\n<area> - Erledigt alle Stages innerhalb eines Events\n<stage> - Erledigt eine bestimmte Stage | Beispiel: event stage 570001 4 11\n<keys> - Zeigt alle inaktiven Events an inklusive der Stage ID und deren Schwierigkeitsstufe"
+      ],
+      "es": [
+        "- Ver y administrar eventos.\n<list> - Lista de todos los eventos activos con ID.\n<area> - Completa toda la area o evento.\n<stage> - Completa un escenario por ID.\n<keys> - Lista de eventos en las cuales puedes usar tus llaves.\n<stories> - Enlista todas las historias disponibles."
+      ],
+      "fr": [
+        "- Niveaux.",
+        "list - liste des évènement actifs.",
+        "quests - liste des quêtes dokkan.",
+        "stories - liste des histoires de dragon ball.",
+        "stage <stage ID> <difficulty> - termine un niveau.",
+        "area <area ID> - termine tout les niveaux d'une zone ."
+      ],
+      "it": [
+        "- gestione degli eventi.\n<list> - lista degli eventi attivi con ID e difficoltÃ  di ciascun livello.\n<area> - completa un intero evento / area di una quest.\n<stage> - completa uno specifico livello per ID.\n<keys> - lista degli eventi per cui puoi usare le tue chiavi."
+      ],
+      "ko": [
+        "- 이벤트 관리입니다.\n<list> - 스테이지 ID 및 스테이지당 난이도를 포함하는 진행 중인 목록입니다.\n<area> - 전체 이벤트 / 퀘스트 구역을 완료합니다.\n<stage> - ID로 특정 스테이지를 완료합니다.\n<keys> - 열쇠를 사용할 수 있는 이벤트 목록입니다.\n<stories> - 사용 가능한 DB 스토리 목록입니다."
+      ],
+      "pt": [
+        "- manusear eventos.\n<list> - lista de eventos ativos com ID e dificuldade por fase.\n<area> - completa um evento inteiro / quest area.\n<stage> - completa uma fase especifica pelo ID.\n<keys> - lista os eventos que usam chaves.\n<stories> - Lista de todos DB Stories disponíveis."
+      ],
+      "ua": [
+        "- керування подіями.\n<list>- активний список, включаючи ідентифікатор етапу та рівень складності для кожного етапу. \n<area> - завершити всю подію/зону квесту.\n<stage> - виконати певний етап за ідентифікатором.\n<keys> - список подій, для яких можна використовувати ключі.\n<stories> - список доступних історій DB."
+      ],
+      "ru": [
+        "- управление событиями.\n<list> - активный список, включающий идентификатор этапа и сложность каждого этапа.\n<area> - завершить всю область события/квеста.\n<stage> - завершить определенный этап по идентификатору.\n<keys> - список событий, для которых можно использовать ключи.\n<stories> - список доступных историй DB."
+      ],
+      "zh": [],
+      "syntax": "event <args>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": "event stage 111001 2 <run count>"
+    },
+    "eza": {
+      "en": [
+        "- Extreme Z battles.",
+        "list - list of active EZAs.",
+        "clear <EZA ID> - clear EZA.",
+        "lvl <EZA ID> <level> - clear specific level of EZA.",
+        "exact <EZA ID> <level 1> <level 2> - clear level A to level Z."
+      ],
+      "ro": [
+        "- gestionare EZA.\n<list> - listă de EZA-uri active.\n<clear> - completează un EZA până la nivelul maxim folosind ID-ul.\n<level> - completează un nivel specific de EZA.\n<exact> - curăță nivelurile EZA de la A la Z folosind ID-ul și punctele de start și de sfârșit."
+      ],
+      "de": [
+        "- EZA management\n<list> - Liste der aktiven EZA\n<clear> - Erledigt ein komplettes EZA, abhaengig der ID | Beispiel: eza clear 54\n<level> - Erledigt ein bestimmtes Level innerhalb eines EZA\n<exact> - Erledigt ein EZA, abhaengig der ID und der Start- und Endpunkte | Beispiel: eza exact 54 1 30"
+      ],
+      "es": [
+        "- Administracion de EZAs.\n<list> - Lista de EZAs activos.\n<clear> - Completa un EZA por ID.\n<level> - Completa un EZA especifico.\n<exact> - Completa EZAs de la A a la Z."
+      ],
+      "fr": [
+        "- Extreme Z battle.",
+        "list - liste des Z Battle.",
+        "clear <EZA ID> - termine un Z Battle.",
+        "lvl <EZA ID> <level> - termine un niveau spécifique du Z Battle.",
+        "exact <EZA ID> <level 1> <level 2> - termine les niveaux de A à Z."
+      ],
+      "it": [
+        "- gestione degli EZA.\n<list> - lista degli EZA attivi.\n<clear> - completa un EZA per ID fino al livello massimo.\n<level> - completa uno specifico livello di un EZA.\n<exact> - completa i livelli di un EZA dalla A alla Z."
+      ],
+      "ko": [
+        "- 극한 Z 각성 관리입니다.\n<list> - 진행 중인 극한 Z 각성 목록입니다.\n<clear> - ID로 극한 Z 각성을 최대 레벨까지 완료합니다.\n<level> - 특정 극한 Z 각성 레벨을 완료합니다.\n<exact> - A에서 Z까지 극한 Z 각성 레벨을 클리어합니다."
+      ],
+      "pt": [
+        "- manuseio de EZA.\n<list> - lista os EZAs ativos.\n<clear> - completa o EZA pelo ID ate o level max.\n<level> - completa o level especifico do EZA.\n<exact> - completa a fase EZA de A a Z."
+      ],
+      "ua": [
+        "- Керування EZA.\n<list> - список активних EZA.\n<clear> - завершити EZA за ідентифікатором до максимального рівня.\n<level> - завершити певний рівень EZA.\n<exact> - очистити EZA рівні від А до Z."
+      ],
+      "ru": [
+        "- Управление EZA.\n<list> — список активных EZA.\n<clear> — завершить EZA по идентификатору до максимального уровня.\n<level> — завершить определенный уровень EZA.\n<exact> — очистить уровни EZA от От А до Z."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "clash": {
+      "en": [
+        "- Clear clash.",
+        "optional: clash retire - retire from clash."
+      ],
+      "ro": [
+        "- încercare de a curăța câmpul de luptă."
+      ],
+      "de": [
+        "- Erledigt Clash/Battlefield"
+      ],
+      "es": [
+        "- El bot intentará completar el evento battlefield."
+      ],
+      "fr": [
+        "- Terminer le Virtual Dokkan.",
+        "optionnel: clash retire - abandonner le Virtual Dokkan ."
+      ],
+      "it": [
+        "- prova a completare il battlefield."
+      ],
+      "ko": [
+        "- 격전 클리어를 시도합니다."
+      ],
+      "pt": [
+        "- tenta finalizar o clash."
+      ],
+      "ua": [
+        "- спроба завершити  battlefield."
+      ],
+      "ru": [
+        "- попытаться очистить battlefield."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "pettan": {
+      "en": [
+        "- Pettan battle."
+      ],
+      "ro": [],
+      "de": [],
+      "es": [],
+      "fr": [
+        "- Pettan battle."
+      ],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 1,
+      "example": ""
+    },
+    "clear": {
+      "en": [
+        "- Clear specific type of content.",
+        "quests - finish uncleared quests.",
+        "events - finish uncleared events.",
+        "ezas - finish uncleared EZAs.",
+        "clash - clear clash.",
+        "stories - finish all uncleared DB stories."
+      ],
+      "ro": [
+        "- completează toate cele neclarificate.\n<quests> - simplifică misiunile de la ultima clarificare.\n<events> - simplifică evenimentele active de la ultima clarificare.\n<eza> - simplifică EZA-urile active. (până la nivel maxim)\n<stories> - simplifică toate poveștile DB."
+      ],
+      "de": [
+        "- Vervollstaendigt alle unvollstaendigen quests.\n<quests> - Erledigt alle aktiven Quests\n<events> - Erledigt alle aktiven Events\n<eza> - Erledigt alle aktiven Eza (lvl 1-30)"
+      ],
+      "es": [
+        "- Completa todos los escenarios-\n<quests> - Completa toda la histora desde donde la dejaste\n<events> - Completa todos los eventos desde donde los dejaste.\n<eza> - Completa EZAs a nivel maximo. (Al maximo nivel, cada uno)\n<stories> - Completa todas las historias de DB."
+      ],
+      "fr": [
+        "- Clear specific type of content.",
+        "quests - finir les quêtes non terminées.",
+        "events - finir les événements non terminés.",
+        "ezas - finir les Z Battle non terminés.",
+        "clash - faire le mode clash",
+        "stories - finir toutes les histoires de Dragon Ball non terminées."
+      ],
+      "it": [
+        "- completa tutti quelli non completati.\n<quests> - completa automaticamente le quest dall'ultima completata.\n<events> - completa automaticamente gli eventi attivi dall'ultimo completato.\n<eza> - completa gli EZA attivi. (fino al livello massimo)"
+      ],
+      "ko": [
+        "- 클리어하지 않은 모든 격전을 완료합니다.\n<quests> - 마지막으로 클리어한 격전에서 퀘스트를 간소화합니다.\n<events> - 마지막으로 클리어한 격전에서 진행 중인 이벤트를 간소화합니다.\n<eza> - 진행 중인 극한 Z 각성을 간소화합니다. (최대 레벨까지입니다)\n<stories> - 모든 DB 스토리를 간소화합니다."
+      ],
+      "pt": [
+        "- executa todas nao finalizadas.\n<quests> - executar quests desde ultima concluida.\n<events> - executar events desde ultimo concluido.\n<eza> - executa todos EZAs ativos. (ao level maximo)\n<stories> - exibe todos os DB Stories."
+      ],
+      "ua": [
+        "- виконати всі неочищені.\n<quests> - оптимізувати квести з останнього очищення.\n<events> - оптимізувати активні події з останнього видалення.\n<eza> - оптимізувати діючі EZA. (до максимального рівня).\n<stories> - оптимізувати історії DB."
+      ],
+      "ru": [
+        "- завершить все непройденные.\n<quests> — оптимизировать квесты с момента последнего пройденного.\n<events> — оптимизировать активные события с момента последнего пройденного.\n<eza> — оптимизировать активные EZA. (до максимального уровня)\n<stories> - оптимизировать все истории DB."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "run": {
+      "en": [
+        "- Clear specific set of events.",
+        "daily - clear daily stages.",
+        "weekly - clear weekly stages.",
+        "hp - clear hercule punch.",
+        "orbs - clear hidden potential stages.",
+        "limits - clear stages with team limits.",
+        "zarea - clear active Z-Areas."
+      ],
+      "ro": [
+        "Grup specific de etape.\n<1> - Evenimente / misiuni zilnice.\n<2> - Etapele neclarificate Boss Rush.\n<3> - Hercule Punch.\n<4> - SBR / Super Battle Road.\n<5> - Efectuați evenimentele active de potențial.\n<6> - Evenimente / misiuni săptămânale.\n<7> - ESBR / Extreme SBR.\n<8> - specific team events.\n<9> - Z-Areas."
+      ],
+      "de": [
+        "- spezifische Befehle\n<1> - Daily Missionen werden erfÃƒÂ¯Ã‚Â¿Ã‚Â½llt | Beispiel: run 1\n<2> - Erledigt alle Bossrush Stages | Beispiel: run 2\n<3> - Erledigt Hercule Punching Bag Event (alle Missionen) | Beispiel: run 3\n<4> - Erledigt Super Battle Road\n<5> - Erledigt alle aktiven Potential Events\n<6> - weekly events / missions.\n<8> - specific team events.\n<9> - Z-Areas."
+      ],
+      "es": [
+        "- completa ciertos tipos de eventos.\n<1> - Eventos diarios y misiones.\n<2> - Escenarios de buss rush sin completar.\n<3> - Evento Hercule.\n<4> - SBR / super battle road.\n<5> - Eventos de orbe\n<6> - weekly events / missions.\n<8> - specific team events.\n<9> - Z-Areas."
+      ],
+      "fr": [
+        "- Terminer un ensemble spécifique d'évènement.",
+        "daily - termine les niveaux quotidiens.",
+        "weekly - termine les niveaux hebdomadaires.",
+        "hp - termine la punch machine.",
+        "orbs - termine les niveaux pour les orbes de potentiel.",
+        "limits - termine les niveaux avec restriction d'équipe.",
+        "zarea - termine les zones Z actives."
+      ],
+      "it": [
+        "- specifico gruppo di eventi.\n<1> - eventi giornalieri / missioni.\n<2> - boss rush non completate.\n<3> - Punching Machine.\n<4> - SBR / Super Battle Road.\n<5> - completa gli eventi per le orb attivi.\n<6> - weekly events / missions.\n<8> - specific team events.\n<9> - Z-Areas."
+      ],
+      "ko": [
+        "- 스테이지의 특정 그룹입니다.\n<1> - 일일 이벤트 / 미션입니다.\n<2> - 클리어하지 않은 BOSS 대격돌 스테이지입니다.\n<3> - 사탄 펀치입니다.\n<4> - SBR / 슈퍼 배틀 로드입니다.\n<5> - 진행 중인 잠재 능력 이벤트를 클리어합니다.\n<6> - weekly events / missions.\n<8> - specific team events.\n<9> - Z-Areas."
+      ],
+      "pt": [
+        "- grupo de fases especificas.\n<1> - eventos diarios / missioes.\n<2> - stages bossrush nao finalizados.\n<3> - hercule punch.\n<4> - SBR / super battle road.\n<5> - finaliza eventos potential ativos.\n<6> - weekly events / missions."
+      ],
+      "ua": [
+        "- певна група етапів.\n<1> - щоденні події / місії.\n<2> - неочищені етапи боссуру.\n<3> - Геркулесовий удар.\n<4> - SBR / дорога супербою.\n<5> - очистити активні потенційні події.\n<6> - щотижневі події / місії.\n<7> - ESBR / екстремальний SBR.\n<8> - specific team events.\n<9> - Z-Areas."
+      ],
+      "ru": [
+        "- конкретная группа этапов.\n<1> - ежедневные события/миссии.\n<2> - непройденные этапы боссраша.\n<3> - удар Геркулеса.\n<4> - SBR / супербоевая дорога.\n<5> - четкие активные потенциальные события.\n<6> - еженедельные события/миссии.\n<7> - ESBR/экстремальный SBR.\n<8> - specific team events.\n<9> - Z-Areas."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "dbs": {
+      "en": [
+        "- Dragonballs.",
+        "dbs list - dragonball locations.",
+        "dbs seek - seek dragonballs.",
+        "dbs wish - list of wishes.",
+        "dbs wish <wish ID> - wish with dragonballs.",
+        "dbs auto - automatically seek & wish."
+      ],
+      "ro": [
+        "- gestionare dragonballs.\n<list> - listă de dragonballs colectate.\n<seek> - colectează automat dragonballs din quest-uri.\n<wish> - fă o dorință folosind dragonballs din quest-uri.\n<auto> - caută și dă dorințe automat."
+      ],
+      "de": [
+        "- Verwaltet deine Dragonballs\n<list> - Liste deiner gesammelten Dragonballs\n<seek> - Farmt automatisch Dragonballs\n<wish> - Erfuellt einen Wunsch\n<auto> - Automatisches suchen der Dragonballs und wuenschen"
+      ],
+      "es": [
+        "- Administra tus esferas del dragon.\n<list> - Lista de tus esferas del dragon.\n<seek> - Automaticamente recoge las esferas del dragon de la historia.\n<wish> - Hace un deseo con las esferas (Necesitas las 7).\n<auto> - Automaticamente busca las esferas y pide deseos."
+      ],
+      "fr": [
+        "- Dragonballs.",
+        "dbs list - localiser les dragonballs.",
+        "dbs seek - rechercher les dragonballs.",
+        "dbs wish - liste des voeux.",
+        "dbs wish <wish ID> - faire un voeux avec les dragonballs.",
+        "dbs auto - rechercher et faire un voeu automatiquement."
+      ],
+      "it": [
+        "- gestisci le tue sfere del drago.\n<list> - lista delle sfere del drago raccolte.\n<seek> - raccogli automaticamente le sfere del drago dalle quest.\n<wish> - esprimi un desiderio usando le sfere del drago delle quest.\n<auto> - cerca ed esprimi desideri automaticamente."
+      ],
+      "ko": [
+        "- 드래곤볼을 관리합니다.\n<list> - 모은 드래곤볼 목록입니다.\n<seek> - 퀘스트 드래곤볼을 자동으로 모읍니다.\n<wish> - 퀘스트 드래곤볼을 사용하여 소원을 빕니다.\n<auto> - 자동으로 찾고 소원을 빕니다."
+      ],
+      "pt": [
+        "- manusear dragonballs.\n<list> - lista de dragonballs coletadas.\n<seek> - buscar dragonballs automatico.\n<wish> - faser um desejo com as dragonballs.\n<auto> - buscar e desejar automatico."
+      ],
+      "ua": [
+        "- керуйте своїми драконячими кулями.\n<list> - список зібраних драконівських куль.\n<seek> - автоматично збирайте драконівські кулі квесту.\n<wish> -загадайте бажання, використовуючи драконівські кульки.\n<auto> - автоматично шукайте та бажайте."
+      ],
+      "ru": [
+        "- управляйте своими драконьими шарами.\n<list> - список собранных драконьих шаров.\n<seek> - автоматически собирать квестовые драконьи шары.\n<wish> - загадывать желание, используя квестовые драконьи шары.\n<auto> - автоматически искать и желать."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "farm": {
+      "en": [
+        "- Farm for materials.",
+        "farm medal <ID> <count> - farm medals.",
+        "farm dupe <card ID> <count> - farm cards.",
+        "farm zeni <count> - farm zeni.",
+        "farm rank <count> - farm rank.",
+        "farm gem <count> - farm incredible gems.",
+        "farm fp <count> - farm friend points.",
+        "farm links - farm link levels.",
+        "farm equip <ID> <count> - farm equipment.",
+        "farm orbs <ID> <count> - farm potential orbs.",
+        "farm film <ID> <count> - farm film.",
+        "farm support <ID> <count> - farm support items.",
+        "farm memory <ID> <count> - farm support memory.",
+        "farm location <ID> <count> - farm train locations.",
+        "farm train <ID> <count> - farm train items.",
+        "farm treasure <ID> <count> - farm treasure.",
+        "farm zmedal <medal ID> <count> - farm EZA medals.",
+        "farm bgem <count> - farm blue gems.",
+        "farm fpkais - farm kais from FP banner.",
+        "farm linkorb <ID> <count> - farm link orbs."
+      ],
+      "ro": [
+        "- farm materials până la o cantitate specifică.",
+        "<medal> - o cantitate specifică de medalii în funcție de ID-ul etapei.",
+        "<dupe> - o cantitate specifică de duplicat în funcție de ID-ul etapei.",
+        "<zeni> - completează un EZA până când se atinge o cantitate specifică de zeni.",
+        "<rank> - completează o etapă de quest până la nivelurile specificate.",
+        "<gem> - completează etape cu pietre verzi până la o cantitate specifică.",
+        "<fp> - completează LGE pentru puncte de prietenie până la o cantitate specifică.",
+        "<links> - completează etapele profitabile de experiență link până la linkul maxim.",
+        "<equip> - completează pentru echipamente până la cantitatea dorită.",
+        "<orbs> - completează pentru orbe până la cantitatea dorită.",
+        "<film> - completează pentru filme până la cantitatea dorită.",
+        "<support> - completează pentru obiecte de suport până la cantitatea dorită.",
+        "<memory> - completează pentru memorie până la cantitatea dorită.",
+        "<field> - completează pentru câmpuri de antrenament până la cantitatea dorită.",
+        "<train> - completează pentru obiecte de antrenament până la cantitatea dorită.",
+        "<treasure> - completează pentru comori până la cantitatea dorită.",
+        "<zmedal> - o cantitate specifică de medalii EZA în funcție de ID-ul EZA și nivel.",
+        "<bgem> - completează pentru pietre albastre până la cantitatea dorită."
+      ],
+      "de": [
+        "- Farmt die angegebene Menge (Medals,Dupes,Zeni)",
+        "<medal> - Spezifische Anzahl an Medals",
+        "<dupe> - Spezifische Anzahl an Dupes",
+        "<zeni> - Spezifische Anzahl an Zeni (Farmt EZA Stages, Hercule Statuen)",
+        "<rank> - Farmt Stage 27 der Story bis die spezifische Anzahl an Ranks erreicht wurde",
+        "<gem> - Farmt Stage 23 der Story bis die spezifische Anzahl an Gems erreicht wurde",
+        "<fp> - Farmt Legend Goku Event bis die spezifische Anzahl an FP Punkten erreicht wurde",
+        "<links> - Farmt Stage 23 der Story bis die spezifische Anzahl an Links erreicht wurde",
+        "<equip> - Farmt AusrÃƒÆ’Ã‚Â¼stung bis zu einer gewÃƒÆ’Ã‚Â¼nschten Menge.",
+        "<orbs> - Farmt FÃƒÆ’Ã‚Â¤higkeitskugeln bis zu einer gewÃƒÆ’Ã‚Â¼nschten Menge.",
+        "<film> - Farmt Filme bis zu einer gewÃƒÆ’Ã‚Â¼nschten Menge.",
+        "<support> - Farmt Hilfs-Items bis zu einer gewÃƒÆ’Ã‚Â¼nschten Menge.",
+        "<memory> - Farmt Erinnerungen bis zu einer gewÃƒÆ’Ã‚Â¼nschten Menge.",
+        "<field> - Farmt Trainingsorte bis zu einer gewÃƒÆ’Ã‚Â¼nschten Menge.",
+        "<train> - Farmt Trainings-Items bis zu einer gewÃƒÆ’Ã‚Â¼nschten Menge.",
+        "<treasure> - Farmt SchÃƒÆ’Ã‚Â¤tze bis zu einer bestimmten Menge.",
+        "<zmedal> - Farmt bestimmte Menge an EZA-Medaillen nach ID & Level",
+        "<bgem> - Farmt Bluegems bis zu einer gewünschten Menge."
+      ],
+      "es": [
+        "- Farmea hasta cantidad especifica.",
+        "<medal> - Cantidad especifica de medallas por ID.",
+        "<dupe> - Cantidad especifica de duplicados por ID.",
+        "<zeni> - Completa un EZA hasta llegar a una cantidad de Zeni especifica.",
+        "<rank> - Completa un escenario de historia hasta que se consiga dicho rango deseado.",
+        "<gem> - Completa un escenario de historia hasta que se consiga cierta cantidad de gemas.",
+        "<fp> - Completa LGR para obtener puntos de amistad (friend points) hasta un numero especifico.",
+        "<links> - El bot completa escenarios hasta conseguir el limite maximo de 'Link' en algun equipo.",
+        "<equip> - completa escenarios para obtener equipamiento hasta el numero deseado.",
+        "<orbs> - completa escenarios para obtener orbes hasta el numero deseado.",
+        "<film> - completa escenarios para obtener cintas de soporte hasta el numero deseado.",
+        "<support> - completa escenarios para obtener items de ayuda hasta el numero deseado.",
+        "<memory> - completa escenarios para obtener memorias del recuerdo hasta el numero deseado.",
+        "<field> - completa escenarios para obtener escenarios de entrenamiento hasta el numero deseado.",
+        "<train> - completa escenarios para obtener items de entrenamiento hasta el numero deseado.",
+        "<treasure> - completa escenarios para obtener tesoros hasta el numero deseado.",
+        "<zmedal> - Farmea cierto numero de medallas EZA por EZA ID & nivel.",
+        "<bgem> - Completa escenarios para conseguir gemas azules hasta derivada cantidad."
+      ],
+      "fr": [
+        "- Farm des matériaux.",
+        "farm medal <ID> <count> - farmer des médailles.",
+        "farm dupe <card ID> <count> - farm des doublons.",
+        "farm zeni <count> - farmer des zeni.",
+        "farm rank <count> - farmer le rang.",
+        "farm gem <count> - farmer des gemmes incroyables.",
+        "farm fp <count> - farmer des points amis.",
+        "farm links - farmer les niveaux de liens.",
+        "farm equip <ID> <count> - farmer des equipments.",
+        "farm orbs <ID> <count> - farmer des orbes de potentiel.",
+        "farm film <ID> <count> - farerm des film.",
+        "farm support <ID> <count> - farmer des items de soutiens.",
+        "farm memory <ID> <count> - farmer des mémoires de soutiens.",
+        "farm location <ID> <count> - farmer des lieux d'entrainement.",
+        "farm train <ID> <count> - farmer des items d'entrainement.",
+        "farm treasure <ID> <count> - farmer des trésors.",
+        "farm zmedal <medal ID> <count> - farmer des médailles ztur.",
+        "farm bgem <count> - farmer des  gemmes blueues.",
+        "farm fpkais - farmer des kais sur le portail ami.",
+        "farm linkorb <ID> <count> - farmer des orbes de lien."
+      ],
+      "it": [
+        "- farma finchÃ© non si arriva alla quantitÃ  desiderata.",
+        "<medal> - quantitÃ  specifica di medaglie per ID del livello.",
+        "<dupe> - quantitÃ  specifica di copie per ID del livello.",
+        "<zeni> - completa un EZA finchÃ© non si raggiunge la quantitÃ  di zeni specificata.",
+        "<rank> - completa il livello di una quest fino al raggiungimento del livello specificato.",
+        "<gem> - completa i livelli che danno gemme che possono essere scambiate fino alla quantitÃ  specificata.",
+        "<fp> - completa gli LGE per ottenere punti amico fino alla quantitÃ  specifica.",
+        "<links> - completa i livelli che danno esperienza link fino al link massimo.",
+        "<equip> - clear for equipment till desired amount.",
+        "<orbs> - clear for orbs till desired amount.",
+        "<film> - clear for film till desired amount.",
+        "<support> - clear for support items till desired amount.",
+        "<memory> - clear for memory till desired amount.",
+        "<field> - clear for train fields till desired amount.",
+        "<train> - clear for train items till desired amount.",
+        "<treasure> - clear for treasure till desired amount."
+      ],
+      "ko": [
+        "- 특정 양까지 재료를 파밍합니다.",
+        "<medal> - 스테이지 ID별 특정 메달 양입니다.",
+        "<dupe> - 스테이지 ID별 특정 중복 양입니다.",
+        "<zeni> - 특정 양의 제니에 도달할 때까지 극한 Z 각성을 클리어합니다.",
+        "<rank> - 지정한 레벨까지 퀘스트 스테이지를 클리어합니다.",
+        "<gem> - 특정 양까지, 수익성 있는 보석 스테이지를 클리어합니다.",
+        "<fp> - 특정 양까지 우정 pt를 획득하기 위해 열투오공전을 클리어합니다.",
+        "<links> - 최대 링크까지, 수익성 있는 링크 경험치 스테이지를 클리어합니다.",
+        "<equip> - 원하는 값까지 장비를 획득하기 위해 클리어합니다.",
+        "<orbs> - 원하는 값까지 구슬을 획득하기 위해 클리어합니다.",
+        "<film> - 원하는 값까지 필름을 획득하기 위해 클리어합니다.",
+        "<support> - 원하는 값까지 서포트 아이템을 획득하기 위해 클리어합니다.",
+        "<memory> - 원하는 값까지 메모리를 획득하기 위해 클리어합니다.",
+        "<field> - 원하는 값까지 수련 장소를 획득하기 위해 클리어합니다.",
+        "<train> - 원하는 값까지 수련 아이템을 획득하기 위해 클리어합니다.",
+        "<treasure> - 원하는 값까지 보물을 획득하기 위해 클리어합니다.",
+        "<zmedal> - 극한 Z 각성 ID 및 레벨에 따른 극한 Z 각성 메달의 특정 양입니다.",
+        "<bgem> - 원하는 값까지 파란 보석을 얻기 위해 클리어합니다."
+      ],
+      "pt": [
+        "- farma materiais ate uma quantidade.",
+        "<medal> - especifica quantidade de medalhas pelo ID da fase.",
+        "<dupe> - especifica quantidade de dupes pelo ID da fase.",
+        "<zeni> - executa o EZA ate pegar qtd zeni desejado.",
+        "<rank> - finaliza uma quest ate pegar rank level desejado.",
+        "<gem> - finaliza fase com gemas ate a qtd desejado.",
+        "<fp> - finaliza LGE ate qtd de friend points desejado.",
+        "<links> - finaliza fases melhor fase com exp ate os links lv maximo.",
+        "<equip> - finaliza eventos para buscar a quantidade de equipamentos desejado.",
+        "<orbs> - finaliza eventos para buscar a quantidade de orbs desejada.",
+        "<film> - finaliza eventos para buscar a quantidade de filmes desejada.",
+        "<support> - finaliza eventos para buscar a quantidade de itens de suporte desejada.",
+        "<memory> - finaliza eventos para buscar a quantidade de memorias desejada.",
+        "<field> - finaliza eventos para buscar a quantidade de campos de treino desejado.",
+        "<train> - finaliza eventos para buscar a quantidade de itens de treino desejado.",
+        "<treasuse> - finaliza eventos para buscar a quantidade de tesouros desejado.",
+        "<zmedal> - farma uma quantidade específica de medalhas de um EZA & Level."
+      ],
+      "ua": [
+        "-сільгоспматеріали до визначеної кількості,",
+        "<medal> - певна кількість медалей за ID етапу.",
+        "<dupe> - конкретна кількість дублів за ідентифікатором етапу.",
+        "<zeni> - очистити EZA до досягнення певної кількості zeni.",
+        "<ранг> - очистити етап квесту до наданих рівнів.",
+        "<gem> - очистити етапи зеленого самоцвіту до певної кількості.",
+        "<fp> - очистити LGE для очок друзів до певної суми.",
+        "<links> - очистити етапи прибуткового посилання до максимального посилання.",
+        "<equip> - очистити обладнання до бажаної кількості.",
+        "<orbs> - очистити кулі до потрібної кількості.",
+        "<film> - очистити плівку до бажаної кількості.",
+        "<support> - очистити елементи підтримки до потрібної суми.",
+        "<memory> - очистити пам'ять до потрібного обсягу.",
+        "<field> - очистити для поїзда поля до потрібної суми.",
+        "<train> - очистити елементи поїзда до потрібної кількості.",
+        "<treasure> - отримати скарб до потрібної суми.",
+        "<zmedal> - конкретна кількість медалей EZA за ID і рівнем EZA.",
+        "<bgem> - очищення синіх дорогоцінних каменів до бажаної кількості."
+      ],
+      "ru": [],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "missions": {
+      "en": [
+        "- Clear missions.",
+        "missions 0 - farm LR STR vegito dupes & medals.",
+        "missions 1 - nimbus.",
+        "missions 2 - LGE.",
+        "missions 3 - LVE.",
+        "missions 4 - GT LGE.",
+        "missions 5 - \"greatest warrior\" boards.",
+        "missions 6 - redzone.",
+        "missions 7 - cooler WWC.",
+        "missions 8 - cell max.",
+        "missions 9 - DB History.",
+        "missions 10 - epic battles.",
+        "missions 11 - 8th anni.",
+        "missions 12 - trunks WWC.",
+        "missions 13 - magnificent battles.",
+        "missions 14 - memorable battles.",
+        "missions 15 - shadow dragons.",
+        "missions 16 - broly WWC.",
+        "missions 17 - LFE.",
+        "missions 18 - SBR.",
+        "missions 19 - ESBR."
+      ],
+      "ro": [
+        "Seturi specifice de misiuni.",
+        "<1> - Medalii Nimbus.",
+        "<2> - Misiuni LGE (Legend's Goku Event).",
+        "<3> - Misiuni LVE (Legend's Vegeta Event).",
+        "<4> - Misiuni GT LGE.",
+        "<5> - Misiuni Redzone.",
+        "<6> - Goku & Cooler WWC (Worldwide Celebration).",
+        "<7> - Misiuni Maxime ale lui Cell.",
+        "<8> - Misiuni Istoria Dragon Ball.",
+        "<12> - Misiuni Bătălii Epice."
+      ],
+      "de": [
+        "- Spezielle Missionen.",
+        "<1> - Nimbus Medaillen.",
+        "<2> - LGE Missionen.",
+        "<3> - LVE Missionen.",
+        "<4> - GT LGE Missionen.",
+        "<5> - Roter Bereich Missionen.",
+        "<6> - Goku & Cooler WWC.",
+        "<7> - Cell Max Missionen.",
+        "<8> - DB-Geschichte Missionen.",
+        "<12> - Epic battle missionen."
+      ],
+      "es": [
+        "- Set de misiones especificas.",
+        "<1> - Medallas (Nube voladora).",
+        "<2> - Misiones LGE .",
+        "<3> - Misiones  LVE .",
+        "<4> - Misiones GT LGE .",
+        "<5> - Misiones Redzone .",
+        "<6> - Goku & Cooler WWC.",
+        "<7> - Misiones  Cell max .",
+        "<8> - Misiones de la Historia DB .",
+        "<12> - Misiones Epic battles."
+      ],
+      "fr": [
+        "- Terminer les missions.",
+        "missions 0 - farmer les doublons et médailles du Vegetto LR PUI.",
+        "missions 1 - medailles nuage magique",
+        "missions 2 - Goku Rush.",
+        "missions 3 - Vegeta Rush.",
+        "missions 4 - GT Rush.",
+        "missions 5 - \"plus grand guerrier\" panneau.",
+        "missions 6 - redzone.",
+        "missions 7 - cooler MDL.",
+        "missions 8 - cell max.",
+        "missions 9 - Histoire de DB.",
+        "missions 10 - batailles épique.",
+        "missions 11 - 8eme anniversaire.",
+        "missions 12 - trunks MDL.",
+        "missions 13 - blue zone.",
+        "missions 14 - combats mémorables.",
+        "missions 15 - dragons maléfique.",
+        "missions 16 - broly MDL.",
+        "missions 17 - Freezer Rush.",
+        "missions 18 - SBR.",
+        "missions 19 - ESBR."
+      ],
+      "it": [
+        "- specifici gruppi di missioni.",
+        "<1> - medaglie Nimbus.",
+        "<2> - missioni LGE.",
+        "<3> - missioni LVE.",
+        "<4> - missioni GT LGE.",
+        "<5> - missioni Redzone.",
+        "<6> - missioni Goku & Cooler WWC.",
+        "<7> - missioni Cell max.",
+        "<8> - missioni DB History.",
+        "<12> - missioni Epic battles."
+      ],
+      "ko": [
+        "- 특정 미션 세트입니다.",
+        "<1> - 근두운 메달입니다.",
+        "<2> - 열투오공전 미션입니다.",
+        "<3> - 격투 베지터전 미션입니다.",
+        "<4> - GT 열투오공전 미션입니다.",
+        "<5> - 레드 존 미션입니다.",
+        "<6> - 손오공 및 쿠우라 지구 총동원입니다.",
+        "<7> - 셀 최대 미션입니다.",
+        "<8> - 드래곤볼 역사 미션입니다.",
+        "<9> - 무과금 기뉴 특전대를 파밍합니다.",
+        "<10> - 무과금 버독 팀을 파밍합니다.",
+        "<11> - 무과금 드래곤볼 슈퍼 브로리 카드를 파밍합니다."
+      ],
+      "pt": [
+        "- Grupo específico de missões.",
+        "<1> - Medalhas Núvem.",
+        "<2> - Missões LGE.",
+        "<3> - Missões LVE.",
+        "<4> - Missões GT LGE.",
+        "<5> - Missões Red Zone.",
+        "<6> - Missões Goku & Cooler WWC.",
+        "<7> - Missões Cell Max.",
+        "<8> - Missões IDBH.",
+        "<12> - Missões do Epic Battle."
+      ],
+      "ua": [
+        "- певний набір місій.",
+        "<1> - медалі Nimbus.",
+        "<2> - Місії LGE.",
+        "<3> - місії LVE.",
+        "<4> - Місії GT LGE.",
+        "<5> - Місії Redzone.",
+        "<6> - Goku & Cooler WWC.",
+        "<7> - Максимальна кількість місій.",
+        "<8> - Місії з історії БД."
+      ],
+      "ru": [
+        "- конкретный набор миссий.",
+        "<1> - медали Нимб.",
+        "<2> - миссии LGE.",
+        "<3> - Миссии LVE.",
+        "<4> - Миссии GT LGE.",
+        "<5> - Миссии Красной зоны.",
+        "<6> - Гоку и Кулер WWC.",
+        "<7> - Максимальное количество миссий ячейки.",
+        "<8> - Миссии истории БД.",
+        "<12> - Эпические боевые миссии"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "omega": {
+      "en": [
+        "- Finish all uncleared content."
+      ],
+      "ro": [
+        "- Finalizați limita maximă de conținut.\n(toate quest-urile neclarificate, dorințele, evenimentele, misiunile, EZA)"
+      ],
+      "de": [
+        "- Erledigt alle unerledigten Stages (Story,Quests,Events,EZA)"
+      ],
+      "es": [
+        "- Completa TODO EL CONTENIDO DISPONIBLE. OJO ! ! .\n(Termina todos los eventos, EZAs, historia y todo el contenido disponible)"
+      ],
+      "fr": [
+        "- Finir le contenu non terminer."
+      ],
+      "it": [
+        "- completa tutti i contenuti disponibili.\n(tutte le quest non completate, i desideri, gli eventi, le missioni e gli EZA)"
+      ],
+      "ko": [
+        "- 콘텐츠의 최대 제한을 완료합니다.\n(클리어하지 않은 모든 퀘스트, 소원, 이벤트, 미션, 극한 Z 각성입니다)"
+      ],
+      "pt": [
+        "- finaliza todas fases disponiveis.\n(todas quests, desejos, eventos, missioes, ezas)"
+      ],
+      "ua": [
+        "- завершити максимальний ліміт вмісту.\n(усі неочищені квести, бажання, події, місії, ezas)"
+      ],
+      "ru": [
+        "- завершить максимальный лимит контента.\n(все невыполненные квесты, пожелания, события, миссии, эзасы)"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    }
+  },
+  "units": {
+    "box": {
+      "en": [
+        "- View box.",
+        "Optional: box items - View item cards. (Kais, hercules)"
+      ],
+      "ro": [
+        "-Vizualizează toate cărțile tale.\nArgumente suplimentare: <n, r, sr, ssr, ur, lr, obiecte>"
+      ],
+      "de": [
+        "- Zeigt dir alle deine Units an\nadditional arguments: <n, r, sr, ssr, ur, lr, items>"
+      ],
+      "es": [
+        "- view all your cards.\nadditional arguments: <n, r, sr, ssr, ur, lr, items>"
+      ],
+      "fr": [
+        "- Voir la box.",
+        "Optionnel: box items - Afficher les cartes objets. (Kais, hercules)"
+      ],
+      "it": [
+        "- visualizza tutte le tue carte.\nparametri aggiuntivi: <n, r, sr, ssr, ur, lr, items>"
+      ],
+      "ko": [
+        "- 모든 카드를 봅니다.\n추가 인수: <n, r, sr, ssr, ur, lr, items>"
+      ],
+      "pt": [
+        "- ver todas suas cartas.\nargumentos adicionais: <n, r, sr, ssr, ur, lr, items>"
+      ],
+      "ua": [
+        "- переглянути всі ваші картки.\nдодаткові аргументи: <n, r, sr, ssr, ur, lr, items>"
+      ],
+      "ru": [
+        "- просмотреть все свои карты.\nдополнительные аргументы: <n, r, sr, ssr, ur, lr, items>"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 0,
+      "max_args": 2,
+      "example": ""
+    },
+    "capacity": {
+      "en": [
+        "- Increase box capacity.",
+        "capacity <count> - how many times to increase by 5+ (-1 stone)"
+      ],
+      "ro": [
+        " -mărirea dimensiunii cutiei cu 5+ fiecare dată."
+      ],
+      "de": [
+        "- Erhoeht die Box Groesse um +5(benutzt 1 Dragonstone pro +5)"
+      ],
+      "es": [
+        "- AÃƒÆ’Ã‚Â±ade 5 espacios a tu caja, 1 significa 1 stone y por lo tanto se aÃƒÆ’Ã‚Â±aden 5 espacios."
+      ],
+      "fr": [
+        "- Augementer la capacité de la box.",
+        "capacity <count> - nombre de fois où augmenter la capacité de 5+ (-1 pierre)"
+      ],
+      "it": [
+        "- aumenta la capacitÃ  del box di 5 ogni volta."
+      ],
+      "ko": [
+        "- 매번 상자 크기를 5칸 늘립니다."
+      ],
+      "pt": [
+        "- aumenta capacidade da box em +5 por vez."
+      ],
+      "ua": [
+        "- щоразу збільшувати розмір коробки на 5+."
+      ],
+      "ru": [
+        "- каждый раз увеличивать размер поля на 5+."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 1,
+      "example": ""
+    },
+    "favorite": {
+      "en": [
+        "- Lock card.",
+        "favorite <card UID> - favorite/lock card."
+      ],
+      "ro": [
+        "-Adaugă o carte la favorite.\n<uid carte> - ID-ul unic al cărții de adăugat la favorite/blocat."
+      ],
+      "de": [
+        "- Fuegt eine Karte den Favoriten hinzu / Lockt diese\n<card uid> - spezifische ID der Unit, die favorisiert werden soll"
+      ],
+      "es": [
+        "- add a card to favorites.\n<card uid> - the unique box ID of the card to favorite/lock."
+      ],
+      "fr": [
+        "- Verouiller une carte.",
+        "favorite <card UID> - favori/verrouiller une carte."
+      ],
+      "it": [
+        "- aggiungi una carta ai preferiti.\n<uid della card> - l'ID univoco della carta per aggiungerla ai preferiti/bloccarla."
+      ],
+      "ko": [
+        "- 카드를 즐겨찾기에 추가합니다.\n<카드 UID> - 즐겨찾기에 추가하거나, 잠글 카드의 고유 상자 ID입니다."
+      ],
+      "pt": [
+        "- adciona carta aos favoritos.\n<card uid> - identificador unico da carta (uid) na box para favorita/block."
+      ],
+      "ua": [
+        "- додати картку до вибраного.\n<card uid> - унікальний ідентифікатор вікна карти до вибраного/блокування."
+      ],
+      "ru": [
+        "- добавить карту в избранное.\n<uid карты> - уникальный идентификатор ящика карты, которую нужно добавить в избранное/заблокировать."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 1,
+      "example": ""
+    },
+    "sell": {
+      "en": [
+        "- Selling.",
+        "sell junk - sell N & statues for zeni."
+      ],
+      "ro": [
+        "- vânzarea cărților.\n<card uid> - ID-ul unic al cutiei pentru cartea de vânzare.\n<quick> - vinde toate cărțile inutile N și statuile.\nAdițional: puteți furniza cantitatea de obiecte pentru vânzare."
+      ],
+      "de": [
+        "- Karten verkaufen\n<card uid> - spezifische ID der Unit die verkauft werden soll\n<quick> - Verkauft alle N und R Units und erzeugt Zeni (Die Menge der zu verkauften N/R kann man anhand der Anzahl aendern | Beispiel: sell quick 10)"
+      ],
+      "es": [
+        "- Vende cartas.\n<card uid> - ID de la carta que quieras vender.\n<quick> - Vende todas las cartas inutiles (R).\nAddicionalmente: puedes introduccir la cantidad a vende"
+      ],
+      "fr": [
+        "- Vente.",
+        "sell junk - vendre les cartes N & statues contre des zeni."
+      ],
+      "it": [
+        "- vendita delle carte.\n<card uid> - ID univoco della carta da vendere.\n<quick> - vendi tutti gli N inutili e le statue.\ninoltre: puoi specificare la quantità di oggetti da vendere."
+      ],
+      "ko": [
+        "- 카드 처분입니다.\n<카드 UID> - 처분할 카드의 고유 상자 ID입니다.\n<quick> - 쓸모없는 모든 N 및 상태를 처분합니다.\n추가: 처분할 아이템 양을 지정할 수 있습니다."
+      ],
+      "pt": [
+        "- vender cartas.\n<card uid> - ID unico da carta na box para vender.\n<quick> - vende todas N inuteis e estatuas hercule.\nadicional: pode informar qtd de item para vender."
+      ],
+      "ua": [
+        "- продаж картки.\n<card uid> - унікальний ідентифікатор коробки картки для продажу.\n<quick> - продаж усіх непотрібних N і статуй.\nдодатково: ви можете вказати кількість предметів для продажу."
+      ],
+      "ru": [
+        "- продажа карты.\n<uid карты> - уникальный идентификатор коробки продаваемой карты.\n<quick> - продать все бесполезные N и статуи.\nдополнительно: вы можете указать количество предметов для продажи."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "baba": {
+      "en": [
+        "- Baba shop.",
+        "baba junk - exchange R/SR for points."
+      ],
+      "ro": [
+        "- magazinul BABA.\n<listă> - afișează lista de obiecte disponibile pentru cumpărare pe categorii. (bp, zeni, comori)\n<vânzare> - schimbă cărțile după ID-ul unic (UID) pentru BP.\n<cumpărare> - cumpără obiecte după categorie folosind ID-ul obiectului. (bp, zeni, comori)\n<rapid> - vinde rapid toate cărțile R & SR inutile. (excluderi cadouri)\nAdițional: puteți furniza cantitatea de obiecte pentru vânzare."
+      ],
+      "de": [
+        "- Babashop\n<list> - Zeigt die kaufbaren Inhalte (bp,zeni,treasure) | Beispiel: baba list bp\n<sell> - Verkauft Units,Items und erzeugt baba Punkte, anhand der spezifischen ID der Units,Items\n<buy> - Kauft Sachen im Baba Shop,Zeni oder Treasure(bp,zeni,treasure) | Beispiel: baba buy bp 24235 1\n<quick> - Verkauft alle SR und erzeugt Baba Punkte (Die Menge der zu verkauften SR kann man anhand der Anzahl aendern | Beispiel: baba quick 10)"
+      ],
+      "es": [
+        "- Tienda baba (Baba Points).\n<list> - Muestra una lista del contenido disponible en la Tienda Baba. (bp,zeni,treasure)\n<sell> - Cambia cartas por id (UID) para recibir Baba points.\n<buy> - Compra un item por categoria y ID. (bp,zeni,treasure)\n<quick> - Cambia todos tus R y SR por baba points. (Los de regalo se excluyen)\nAdiccionalmente: puedes poner la cantidad."
+      ],
+      "fr": [
+        "- Baba shop.",
+        "baba junk - échanger les R/SR contre des points baba."
+      ],
+      "it": [
+        "- babashop.\n<list> - mostra una lista divisa per categorie degli item da comprare. (bp,zeni,tesori)\n<sell> - scambia carte attraverso il loro ID univoco (UID) in cambio di BP.\n<buy> - compra oggetti divisi per categorie usando l'ID dell'oggetto. (bp,zeni,tesori)\n<quick> - scambia con baba tutti gli R e gli SR inutili. (escludendo i regali)\ninoltre: puoi specificare la quantitÃ  di oggetti a baba."
+      ],
+      "ko": [
+        "- 바바 교환소입니다.\n<list> - 구매할 아이템 목록을 범주별로 출력합니다. (바바 포인트, 제니, 보물입니다)\n<sell> - 바바 포인트를 얻기 위해 UID(고유 ID)로 카드를 교환합니다.\n<buy> - 아이템 ID를 사용하여 범주별로 아이템을 구매합니다. (바바 포인트, 제니, 보물입니다)\n<quick> - 쓸모없는 모든 R 및 SR을 바바에게 처분합니다. (선물은 제외합니다)\n추가: 바바에게 처분할 아이템 양을 지정할 수 있습니다."
+      ],
+      "pt": [
+        "- babashop.\n<list> - mostra lista de items para comprar por categoria. (bp,zeni,treasure)\n<sell> - troca cartas pelo id unico (UID) por BabaPoint.\n<buy> - compra item por categoria usand item ID. (bp,zeni,treasure)\n<quick> - manda para baba todas R & SR inuteis. (menos presentes)\nadicional: pode informar qtd de item para baba."
+      ],
+      "ua": [
+        "- babashop.\n<list> - виводить список предметів для покупки за категоріями. (bp,zeni,treasure)\n<sell> - обмін карток за унікальним ідентифікатором (UID) на BP.\n<buy> - купити предмет за категорією, використовуючи ідентифікатор предмета. (bp,zeni,treasure)\n<quick> - baba всі марні R & SR. (за винятком подарованих)\nдодатково: ви можете надати кількість предметів baba."
+      ],
+      "ru": [
+        ""
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    },
+    "summon": {
+      "en": [
+        "- Summoning.",
+        "summon <banner ID> <S / M> - the banner to summon.",
+        "optional: summon history - view summon history."
+      ],
+      "ro": [
+        "- invocă pe bannere.\n<id> - ID-ul banner-ului.\n<s/m> - s = invocare singulară / m = invocare multiplă.\n<times> - de câte ori / lăsați gol pentru 1.\n<history> - istoricul invocărilor."
+      ],
+      "de": [
+        "- Beschwoerung in einem Banner\n<id> - Die spezifische Banner ID\n<s/m> - s = Einzel summon / m = Multi summon\n<times> - Anzahl an Wiederholungen, falls keine gewollt sind, kann man das weglassen\n<history> - Verlauf der Beschwoerungen"
+      ],
+      "es": [
+        "- Summonea en banners/tira stones.\n<id> - el ID del banner.\n<s/m> - s = 1 summon (5 DS) / m = Multi Summon (50 DS).\n<times> -  Cuantas veces quieres que summonee.\n<history> - Tu historial de summon, ve lo que haz sacado recientemente."
+      ],
+      "fr": [
+        "- Invocation.",
+        "summon <banner ID> <S / M> - invoquer sur la bannière choisie.",
+        "optionnel: summon history - voir l'historique des invocations."
+      ],
+      "it": [
+        "- ottieni personaggi.\n<id> - l'ID del banner\n<s/m> - s = single summon / m = multi summon.\n<times> - il numero di volte oppure lascia vuoto per 1.\n<history> - cronologia delle summon."
+      ],
+      "ko": [
+        "- 배너에서 뽑습니다.\n<ID> - 배너 ID입니다.\n<s/m> - s = 한 번 뽑기 / m = 여러 번 뽑기입니다.\n<횟수> - 횟수 / 1번의 경우 비워둡니다.\n<history> - 뽑기 기록입니다."
+      ],
+      "pt": [
+        "- summona nos banners.\n<id> - o ID do banner.\n<s/m> - s = single summon / m = multi summon.\n<times> - quantas vezes / vazio para 1.\n<history> - historia dos summon."
+      ],
+      "ua": [
+        "- виклик на банерах.\n<id> - ідентифікатор банера.\n<s/m> - s = один виклик / m = багаторазовий виклик.\n<times> - скільки разів / пусто для 1.\n<history> - викликати історію."
+      ],
+      "ru": [
+        "- вызов на баннеры.\n<id> - идентификатор баннера.\n<s/m> - s = одиночный вызов / m = множественный вызов.\n<times> - сколько раз / пусто для 1.\n<history> - вызвать историю."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 2,
+      "max_args": 3,
+      "example": "summon 454 m"
+    },
+    "team": {
+      "en": [
+        "- Teams.",
+        "team set <deck number> - set current deck.",
+        "team build <card UID,card UID...> - build team with specific cards.",
+        "optional: build mono <type> - build mono type team.",
+        "optional: build rain - build rainbow type team.",
+        "optional: build class <class> - build team with specific class.",
+        "optional: build cat <category ID> - build team with specific category."
+      ],
+      "ro": [
+        ""
+      ],
+      "de": [
+        "- Team Management\n<list> - Listet deine kompletten Teams auf\n<set> - Nutzt das Team an der spezifischen Stelle | Beispiel: team set 3\n<build> - Erstellt ein Team in Slot 1 anhand der spezifischen ID der Units | Beispiel: team build 1446708233, 1446708235\n<mono> - Erstellt ein Team mit nur einem Typ(phy,int,teq,agl,str) ; (super,ext) | Beispiel: team build mono super\n<rain> - Erstellt ein Team mit jedem Typ\n<cat> - Erstellt ein Team anhand der gewaehlten Kategorie\n<link> - Erstellt ein Team anhand des gewaehlten Links\n<cost> - Erstellt ein Team unterhalb/genauen Cost Wert | Beispiel: team build cost 70\n<rarity> - Erstellt ein Team anhand der angegebenen Seltenheit (sr,ssr,ur)\n<find> - Automatische Suche der angegebenen Unit in deiner Box und erstellt ein Team damit"
+      ],
+      "es": [
+        "- Administra tus equipos.\n<list> - Lista de todos tus equipos.\n<set> - Selecciona un equipo como principal.\n<build> - Construye un equipo usando UiD de carta(s)\nArgumentos adiccionales para <build>:\n<mono> - Por 1 tipÃƒÆ’Ã‚Â²,\n<rain> - Con todos los tipos,\n<cat> - Por categoria,\n<link> - Por link,\n<cost> - Debajo de el costo de equipo,\n<rarity> - Por raridez,\n<find> - Por nombre de carta."
+      ],
+      "fr": [
+        "- Équipes.",
+        "team set <deck number> - définir le deck actuel.",
+        "team build <card UID,card UID...> - crée une équipe avec des cartes spécifiques.",
+        "optionnel: build mono <type> - crée une équipe mono-type.",
+        "optionnel: build rain - crée une équipe avec tout les types.",
+        "optionnel: build class <class> - crée une équipe avec une classe spécifique.",
+        "optionnel: build cat <category ID> - crée une équipe avec une catégorie spécifique."
+      ],
+      "it": [
+        "- gestione team.\n<list> - lista di tutti i tuoi team.\n<set> - imposta il team in uso per numero.\n<build> - costruisci la squadra nel team 1 usando gli UID delle carte.\nparametri aggiuntivi per <build>:\n<mono> - usando un solo tipo,\n<rain> - con tutti i tipi,\n<cat> - per categoria,\n<link> - per link,\n<costo> - senza superare il costo specificato,\n<rarity> - per raritÃ ,\n<find> - per nome della carta."
+      ],
+      "ko": [
+        "- 팀 관리입니다.\n<list> - 모든 덱 목록입니다.\n<set> - 번호로 덱을 사용하여 설정합니다.\n<build> - 카드 UID를 사용하여 1 덱에서 팀을 구성합니다\n<build>의 추가 인수:\n<mono> - 한 가지 유형으로,\n<rain> - 모든 유형으로,\n<cat> - 범주로,\n<link> - 링크로,\n<cost> - 팀 코스트 미만,\n<rarity> - 레어도로,\n<find> - 카드 이름으로입니다."
+      ],
+      "pt": [
+        "- team management.\n<list> - lista todos os seus decks.\n<set> - escolhe um deck pelo numero.\n<build> - cria um time no deck 1 usando uid(s) das cartas\nargumentos adicionais para <build>:\n<mono> - por 1 type,\n<rain> - com todos type,\n<cat> - por categoria,\n<link> - por link,\n<cost> - abaixo do custo do time,\n<rarity> - por raridade,\n<find> - por nome da carta."
+      ],
+      "ua": [
+        "- керування командою.\n<list> - список усіх ваших колод.\n<set> - встановіть за допомогою колоди за номером.\n<build> - побудуйте команду в колоді 1, використовуючи uid картки\nдодаткові аргументи для <build>:\n<mono> - по 1 типу,\n<rain> - з кожним типом,\n<cat> - по категорії,\n<link> - по посиланню,\n<cost> - під командою вартість,\n<rarity> - за рідкістю,\n<find> - за назвою карти."
+      ],
+      "ru": [
+        "- управление командой.\n<list> - список всех ваших колод.\n<set> - установить с помощью колоды по номеру.\n<build> - собрать команду в колоде 1, используя uid(s) карты\nдополнительные аргументы для <build>:\n<mono> - по 1 типу,\n<rain> - по каждому типу,\n<cat> - по категории,\n<link> - по ссылке,\n<cost> - по команде стоимость,\n<rarity> - по редкости,\n<find> - по названию карты."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 2,
+      "max_args": 2,
+      "example": "team build mono str cat 1"
+    },
+    "train": {
+      "en": [
+        "- Training.",
+        "train <card UID> - the card to train.",
+        "optional: <dupe UID/kai ID> / <UID,UID...> - train a dupe or kai into a card.",
+        "optional: <location ID> - train with a location.",
+        "optional: <item IDxQuantity> / <IDxQuantity,IDxQuantity...> - train with items."
+      ],
+      "ro": [
+        "- gestionare echipă.\n<listă> - listă cu toate deck-urile tale.\n<set> - setează folosind deckul cu numărul specificat.\n<construiește> - construiește o echipă în deckul 1 folosind UID-ul/ID-ul cărții (sau cărților)\nArgumente suplimentare pentru <construiește>:\n<mono> - după un singur tip,\n<rain> - cu fiecare tip,\n<cat> - după categorie,\n<link> - după legătură/link,\n<cost> - sub costul echipei,\n<raritate> - după raritate,\n<găsește> - după numele cărții."
+      ],
+      "de": [
+        "- Unit Training\n<card uid> - spezifische ID der Unit, die du trainieren moechtest\n<card uid(s)> - Units die als Food fungieren | Beispiel: 1234,1234,1234"
+      ],
+      "es": [
+        "- Entrenar cartas.\n<card uid> - ID unico de el equipo donde se encuentra tu carta\n<card uid(s)> - fodder to fight. e.g. 1234,1234,12"
+      ],
+      "fr": [
+        "- Entraînement.",
+        "train <card UID> - faire s'entraîner une carte.",
+        "optionnel: <dupe UID/kai ID> / <UID,UID...> - entraîner un doublon ou un kai sur une carte.",
+        "optionnel: <location ID> - s'entrainer avec un lieu d'entraînement.",
+        "optionnel: <item IDxQuantity> / <IDxQuantity,IDxQuantity...> - s'entraîner avec des items."
+      ],
+      "it": [
+        "- allenamento della carta.\n<uid della carta> - ID univoco della carta che vuoi allenare.\n<uid delle carte> - carta da sacrificare. Per esempio: 1234,1234,1234"
+      ],
+      "ko": [
+        "- 카드 수련입니다.\n<카드 UID> - 수련시키려는 카드의 고유 상자 ID입니다.\n<카드 UID 여러 개> - 전투할 총알받이입니다. 예: 1234,1234,1234"
+      ],
+      "pt": [
+        "- treino de carta.\n<card uid> - identificador unico ID da carta que deseja treinar.\n<card uid(s)> - cartas bonecos para usar de treino. exemplo. 1234,1234,1234"
+      ],
+      "ua": [
+        "- тренування картки.\n<card uid> - унікальний ідентифікатор коробки картки, яку ви хочете тренувати.\n<card uid(s)> - корм для боротьби. Наприклад, 1234,1234,1234"
+      ],
+      "ru": [
+        "- тренировка карты.\n<uid карты> - уникальный идентификатор коробки карты, которую вы хотите обучить.\n<uid(s) карты> - пища для боя. например 1234,1234,1234"
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": "train 7777777 55555 1 3x1,4x1,5x1"
+    },
+    "awaken": {
+      "en": [
+        "- Awakening.",
+        "awaken <card UID> - the card to awaken."
+      ],
+      "ro": [
+        "Trezește cartea după UID (Identificator unic al cutiei).\n<card uid> - ID-ul unic al cutiei pentru cartea de trezit."
+      ],
+      "de": [
+        "- Erwecken der Units\n<card uid> - spezifische ID der Unit, die erweckt werden soll"
+      ],
+      "es": [
+        "- Mejora cartas por UID (Dokkan Awaken)\n<card uid> - Codigo ID unico de la carta que se va a mejorar (Box ID)."
+      ],
+      "fr": [
+        "- Eveil.",
+        "awaken <card UID> - faire éveiller une carte."
+      ],
+      "it": [
+        "- risveglia la carta con il suo UID.\n<uid carta> - l'id univoco nella scatola della carta da risvegliare."
+      ],
+      "ko": [
+        "- UID로 카드를 각성시킵니다.\n<카드 UID> - 각성시킬 카드의 고유 상자 ID입니다."
+      ],
+      "pt": [
+        "- desperta carta pelo UID.\n<card uid> - identificador unico da carta (uid) na box."
+      ],
+      "ua": [
+        "- розбудити картку за UID.\n<card uid> - унікальний box ID карти, яку потрібно пробудити."
+      ],
+      "ru": [
+        "- пробуждать карту по UID.\n<card uid> - уникальный идентификатор ящика пробуждаемой карты."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 1,
+      "example": "awaken 7777777"
+    },
+    "reverse": {
+      "en": [
+        "- Reverse awaken.",
+        "reverse <card UID> - the card to reverse.",
+        "optional: reverse awaken <card UID> - revert reversal."
+      ],
+      "ro": [
+        "-inversarea awakeningului unei cărți.\n<UID carte> - ID-ul unic al cărții de inversat.\nSuplimentar: \"inversare reawakening <UID carte>\" - reînvie(awakening) cartea"
+      ],
+      "de": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        "- Eveille inversée.",
+        "reverse <card UID> - faire l'éveille inversée d'une carte.",
+        "optionnel: reverse awaken <card UID> - annuler l'inversion."
+      ],
+      "it": [
+        ""
+      ],
+      "ko": [
+        "- 카드를 리버스 각성시킵니다.\n<카드 uid> - 리버스시킬 카드의 고유 ID입니다.\n추가: \"reverse reawake <카드 uid>\" - 카드를 다시 각성시킵니다."
+      ],
+      "pt": [
+        "- efetua reverse awaken em uma carta.\n<card uid> - ID único da carta para efetuar o reverse.\nadditional: \"reverse reawake <card uid>\" - efetua reawaken no card."
+      ],
+      "ua": [
+        "- обратное пробуждение карты.\n<card uid> - уникальный идентификатор обратной карты.\nдополнительно: \"reverse reawake <card uid>\" - повторное пробуждение карты."
+      ],
+      "ru": [
+        "- обратное пробуждение карты.\n<card uid> - уникальный идентификатор обратной карты.\nдополнительно: \"reverse reawake <card uid>\" - повторное пробуждение карты."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": "reverse 7777777"
+    },
+    "potential": {
+      "en": [
+        "- Hidden potential.",
+        "potential dupes <card UID> - unlock routes for card with dupes.",
+        "potential orbs <card UID> - unlock potential with orbs."
+      ],
+      "ro": [
+        "- Potențial ascuns.\n<duble> - scanează cutia pentru duble ale unei cărți specifice.\n<UID carte> - UID-ul cărții pe care vrei să o faci rainbow"
+      ],
+      "de": [
+        "- verborgenes Potential\n<dupes> - wird verwendet um Pfade freizuschalten anhand der spezifischen ID der Unit"
+      ],
+      "es": [
+        "- Potencial oculto.\n<dupes> - Usa duplicados para activar caminos en dicha carta por UID."
+      ],
+      "fr": [
+        "- Potentiel caché.",
+        "potential dupes <card UID> - débloquer le potentiel d'une carte en utilisant des doublons.",
+        "potential orbs <card UID> - débloquer le potentiel en utilisant des orbes."
+      ],
+      "it": [
+        "- Hidden Potential.\n<doppioni> - usa i doppioni per sbloccare nuove strade attraverso lo UID di una carta."
+      ],
+      "ko": [
+        "- 잠재 능력입니다.\n<dupes> - 상자에서 특정 카드의 중복을 찾습니다.\n<카드 UID> - 무지개로 만들려는 카드의 UID입니다."
+      ],
+      "pt": [
+        "- hidden potential.\n<dupes> - procura na box dupes de uma carta especifica.\n<card uid> - UID da carta que deseja deixar rainbow."
+      ],
+      "ua": [
+        "- hidden potential.\n<dupes> - вікно сканування для підробок певної картки.\n<card uid> - UID картки, яку ви хочете зробити веселкою."
+      ],
+      "ru": [
+        "- скрытый потенциал.\n<dupes> - поле сканирования на наличие дублей конкретной карты.\n<card uid> - UID карты, которую вы хотите разукрасить."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 2,
+      "max_args": 2,
+      "example": "potential dupes 7777777"
+    },
+    "equip": {
+      "en": [
+        "- Equipment.",
+        "equip <card UID> - the card to equip to."
+      ],
+      "ro": [
+        ""
+      ],
+      "de": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        "- Equipment.",
+        "equip <card UID> - donner des sphères d'aptitude à une carte."
+      ],
+      "it": [
+        ""
+      ],
+      "ko": [
+        "- 카드에 스킬 구슬을 장착합니다.\n<카드 uid> - 장착할 카드의 고유 ID입니다.\n<스킬 ID> - 스킬 구슬 ID입니다.\n<슬롯> - 스킬을 원하는 슬롯입니다."
+      ],
+      "pt": [
+        "- equipa uma skill orb em uma carta.\n<card uid> - ID único da carta para equipar.\n<skill ID> - ID do skill orb.\n<slot> - slot que deseja equipar a skill."
+      ],
+      "ua": [
+        ""
+      ],
+      "ru": [
+        "- экипировать сферу умений на карту.\n<uid карты> - уникальный идентификатор карты, которую нужно экипировать.\n<идентификатор навыка> - идентификатор сферы умений.\n<слот> - слот, в который вы хочу навык."
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 2,
+      "max_args": 2,
+      "example": ""
+    },
+    "lvlink": {
+      "en": [
+        "- Level link by orbs.",
+        "lvlink <card UID> - the card to level."
+      ],
+      "ro": [
+        ""
+      ],
+      "de": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        "- Augmenter les lien via les orbes.",
+        "lvlink <card UID> - la carte à faire level-up ses liens."
+      ],
+      "it": [
+        ""
+      ],
+      "ko": [
+        ""
+      ],
+      "pt": [
+        ""
+      ],
+      "ua": [
+        ""
+      ],
+      "ru": [
+        ""
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 2,
+      "max_args": 2,
+      "example": ""
+    },
+    "f2p": {
+      "en": [
+        "- Farm F2P card & max it.",
+        "f2p <card ID> - the card to farm for."
+      ],
+      "ro": [],
+      "de": [],
+      "es": [],
+      "fr": [
+        "- Farmer un carte F2P et la maxer.",
+        "f2p <card ID> - la carte à farmer et maxer."
+      ],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 2,
+      "max_args": 2,
+      "example": "f2p 55555"
+    },
+    "upgrade": {
+      "en": [
+        "- Upgrade card till maxed.",
+        "upgrade <card UID> - the card to upgrade."
+      ],
+      "ro": [
+        ""
+      ],
+      "de": [
+        ""
+      ],
+      "es": [
+        ""
+      ],
+      "fr": [
+        "- Améliorer une carte jusqu'à son max.",
+        "upgrade <card UID> - la carte à améliorer."
+      ],
+      "it": [
+        ""
+      ],
+      "ko": [
+        ""
+      ],
+      "pt": [
+        ""
+      ],
+      "ua": [
+        ""
+      ],
+      "ru": [
+        ""
+      ],
+      "zh": [],
+      "syntax": "<arg>",
+      "min_args": 1,
+      "max_args": 1,
+      "example": "upgrade 7777777"
+    }
+  },
+  "toggles": {
+    "toggle": {
+      "en": [
+        "- Toggle preferences.",
+        "<stone> - use stones to refill stamina. (ON by default)",
+        "<tb> - build team based on stage conditions. (OFF by default)",
+        "<capacity> - increase box size with stones. (ON by default)",
+        "<meat> - use meat to refill stamina. (OFF by default)",
+        "<keys> - use keys on inactive stages. (OFF by default)",
+        "<boost> - use drops boost if available. (OFF by default)",
+        "<baba> - baba R & SR. (exclude gifts) (OFF by defualt)",
+        "<autosell> - sell N & statues. (ON by default)",
+        "<sellpulls> - autosell after summon. (OFF by default)",
+        "<autonode> - unlock path if dupe summoned. (OFF by default)",
+        "<summongift> - accept gifts after summon. (OFF by default)",
+        "<dbseek> - complete shenron wishes in omega. (OFF by default)",
+        "<items> - set support item(s) to run stage with.",
+        "<memory> - set support memory to run stage with.",
+        "<befriend> - send friend requests to supports. (OFF by default)",
+        "<zenieza> - set EZA for \"farm zeni\".",
+        "<lockpulls> - lock all SSR+ units in summons. (OFF by default)",
+        "<linkstage> - set link lvl farm stage.",
+        "<keyprompt> - ask to use keys on inactive stages. (OFF by default)",
+        "<babassr> - baba SSRs that cannot UR/LR. (OFF by default)",
+        "<zeniendlv> - set EZA end level for \"farm zeni\".",
+        "<autosupport> - select support based on stage conditions. (OFF by default)",
+        "<fpssr> - baba only SSRs on FP banner. (OFF by default)",
+        "<autosupport> - pick required support leader. (OFF by default)",
+        "<turns> - set how many turns in boss fight.",
+        "<cleartime> - set stage/eza clear time.",
+        "<supers> - use supers & skills in fight. (OFF by default)",
+        "<swapmax> - link level each UR/LR in box during \"farm links\" (OFF by default)",
+        "<rb> - build team from clear records. (OFF by default)",
+        "<skiplimits> - skip stages with team conditions. (OFF by default)",
+        "<skipzarea> - skip Z-Area stages. (OFF by default)"
+      ],
+      "ro": [
+        "-comută preferințele.",
+        "<stone> - reumplerea automată a staminei. (ACTIVATĂ în mod implicit)",
+        "<tb> - construirea automată a echipei. (DEZACTIVATĂ în mod implicit)",
+        "<cap> - dimensiunea cutiei 5+ dacă autosellul eșuează. (ACTIVATĂ în mod implicit)",
+        "<drops> - afișează complet picăturile. (ACTIVATĂ în mod implicit)",
+        "<ids> - arată ID-urile cărților peste tot. (DEZACTIVATĂ în mod implicit)",
+        "<cards> - arată DOAR ID-urile cărților. (DEZACTIVATĂ în mod implicit)",
+        "<names> - arată informațiile despre etapă prin baza de date. (ACTIVATĂ în mod implicit)",
+        "<meat> - utilizează carne pentru reîncărcarea staminei. (DEZACTIVATĂ în mod implicit)",
+        "<gifts> - afișează cadourile revendicate. (DEZACTIVATĂ în mod implicit)",
+        "<missions> - afișează misiunile revendicate. (DEZACTIVATĂ în mod implicit)",
+        "<dropnames> - afișează numele picăturilor. (ACTIVATĂ în mod implicit)",
+        "<stack> - organizează și stochează picăturile. (ACTIVATĂ în mod implicit)",
+        "<keys> - utilizează chei dacă evenimentul este inactiv. (DEZACTIVATĂ în mod implicit)",
+        "<boost> - utilizează stimulentele de picături dacă sunt disponibile. (DEZACTIVATĂ în mod implicit)",
+        "<animation> - afișează animațiile invocării. (DEZACTIVATĂ în mod implicit)",
+        "<baba> - vândut inutilele R & SR. (excluzând cadourile) (DEZACTIVATĂ în mod implicit)",
+        "<autosell> - vinde toate cărțile N și statuile dacă cutia este plină. (ACTIVATĂ în mod implicit)",
+        "<sellsummon> - Vânzare automată după invocare. (DEZACTIVATĂ în mod implicit)",
+        "<potential> - deblochează nodul dacă există o duplicare invocată. (DEZACTIVATĂ în mod implicit)",
+        "<links> - afișează nivelurile de legătură. (ACTIVATĂ în mod implicit)",
+        "<summongift> - acceptă cadouri după invocare. (DEZACTIVATĂ în mod implicit)",
+        "<dbs> - îndeplinește dorințele lui Shenron în Omega. (DEZACTIVATĂ în mod implicit)",
+        "<daily> - rulează evenimentele zilnice în Omega. (ACTIVATĂ în mod implicit)",
+        "<items> - setează obiectul de susținere pentru a rula etapa cu el.",
+        "<memory> - setează memoria pentru a rula etapa cu ea.",
+        "<befriend> - trimite cereri de prietenie pentru susținere. (DEZACTIVATĂ în mod implicit)",
+        "<zenieza> - setează EZA pentru \"farm zeni\".",
+        "<logstam> - înregistrează câte pietre și carne au fost utilizate pentru stamina. (DEZACTIVATĂ în mod implicit)",
+        "<listlinks> - afișează legăturile în \"lista de echipe\". (DEZACTIVATĂ în mod implicit)",
+        "<lvlteams> - setează \"farm links\" pentru a crește nivelurile tuturor echipelor create. (DEZACTIVATĂ în mod implicit)",
+        "<lockpulls> - blochează toate unitățile SSR+ din invocări. (DEZACTIVATĂ în mod implicit)",
+        "<linkstage> - setează etapa de farmare a nivelului de legătură.",
+        "<keyprompt> - solicitare pentru utilizarea cheilor dacă etapa este inactivă. (DEZACTIVATĂ în mod implicit)",
+        "<displayprog> - afișează progresul zonelor completate. (DEZACTIVATĂ în mod implicit)",
+        "<babassr> - auto baba SSRs that cannot UR/LR. (OFF by default)",
+        "<swapmax> - swap maxed link unit for unmaxed unit during \"farm links\". (OFF by default)",
+        "<zeniendlv> - set EZA end level for \"farm zeni\".",
+        "<autosupport> - automatically select support leader. (OFF by default)",
+        "<babafp> - auto baba only SSRs on FP banner. (OFF by default)",
+        "<bonus> - auto build team with only bonus units. (OFF by default)"
+      ],
+      "de": [
+        "- Umschalt Einstellungen",
+        "<stone> - Automatische Auffuellung der Stamina (Aktiviert als standard)",
+        "<tb> - Automatischer Team Builder (Deaktiviert als standard)",
+        "<cap> - 5+ box groesse falls auto verkauf nicht funktioniert (Aktiviert als standard)",
+        "<drops> - Zeigt komplette Liste der Drops (Aktiviert als standard)",
+        "<ids> - Zeigt immer die Unit ID an (Deaktiviert als standard)",
+        "<cards> - Zeigt NUR die Unit ID an (Deaktiviert als standard)",
+        "<names> - Zeigt den Namen der Stage an (Aktiviert als standard)",
+        "<meat> - Schaltet auf die alternativen Stamina Auffuelloptionen um (Meat) (Deaktiviert als standard)",
+        "<gifts> - Zeigt akzeptierte Geschenke an (Deaktiviert als standard)",
+        "<missions> - Zeigt beanspruchte Missionen an (Deaktiviert als standard)",
+        "<dropnames> - Zeigt den Namen der Drops an (Aktiviert als standard)",
+        "<stack> - Organisiert und stackt die Drops (Aktiviert als standard)",
+        "<keys> - Schaltet auf Keys um, um inaktive Stages farmen zu kÃƒÂ¯Ã‚Â¿Ã‚Â½nnen (Deaktiviert als standard)",
+        "<boost> - Benutzt drop boost falls vorhanden (Deaktiviert als standard)",
+        "<animation> - Zeigt die Summon Animation an (Deaktiviert als standard)",
+        "<baba> - Babat unnÃƒÂ¯Ã‚Â¿Ã‚Â½tige SR (Geschenke ausgenommen) (Deaktiviert als standard)",
+        "<autosell> - Verkauft alle N/Statuen falls box voll ist (Aktiviert als standard)",
+        "<sellsummon> - Auto Verkauf nach Beschwoerungen (Deaktiviert als standard)",
+        "<potential> - Entsperrt eine Route wenn ein Dupe gezogen wird (Deaktiviert als standard)",
+        "<links> - Zeigt das erhÃƒÂ¯Ã‚Â¿Ã‚Â½hen der Link Level an (Aktiviert als standard)",
+        "<summongift> - Akzeptiert Geschenke nach den BeschwÃƒÂ¯Ã‚Â¿Ã‚Â½rungen (Deaktiviert als standard)",
+        "<dbs> - Erfuellt automatisch Wuensche nach dem Abschluss von dem Befehl Omega (Deaktiviert als standard)",
+        "<daily> - run daily events in omega. (ON by default)",
+        "<items> - Legt Hilfs-Items fÃƒÆ’Ã‚Â¼r die Stages fest.",
+        "<memory> - WÃƒÆ’Ã‚Â¤hlt Hilfs-Erinnerung zum SÃƒÆ’Ã‚Â¤ubern von Stages.",
+        "<befriend> - Schicke Freundschaftsanfragen an Gast-Kämpfer. (standardgemäß AUS)",
+        "<zenieza> - Legt die EZA fÃƒÆ’Ã‚Â¼r den \"farm zeni\" Befehl fest.",
+        "<logstam> - Protokolliere wie viele Steine & Fleisch für Kon verbraucht werden. (standardgemäß AUS)",
+        "<listlinks> - Zeige Link-FÃƒÆ’Ã‚Â¤higk. in \"team list\".",
+        "<lvlteams> - Konfiguriert, ob der Befehl \"farm links\" alle Teams levelt.",
+        "<lockpulls> - Sperrt alle SSR+ Einheiten aus BeschwÃƒÆ’Ã‚Â¶rungen.",
+        "<linkstage> - Konfiguriert die Stage in der Link-Fähigk. gelevelt werden sollen.",
+        "<keyprompt> - prompt to use keys if stage is inactive. (OFF by default)",
+        "<displayprog> - Anzeige des Fortschritts der geclearten Bereiche. (standartgemäß AUS)",
+        "<babassr> - auto baba SSRs that cannot UR/LR. (OFF by default)",
+        "<swapmax> - swap maxed link unit for unmaxed unit during \"farm links\". (OFF by default)",
+        "<zeniendlv> - set EZA end level for \"farm zeni\".",
+        "<autosupport> - automatically select support leader. (OFF by default)",
+        "<babafp> - auto baba only SSRs on FP banner. (OFF by default)",
+        "<bonus> - auto build team with only bonus units. (OFF by default)"
+      ],
+      "es": [
+        "- Enciende o apaga preferencias.",
+        "<stone> - Recarga energia con dragon stones automaticamente. (Encendido por defecto)",
+        "<tb> - Construye un equipo automaticamente cuando se necesite. (Apagado por defecto)",
+        "<cap> - Aumenta la capacidad de la caja si al vender, no encuentra nada que vender. (Encendido por defecto)",
+        "<drops> - Muestra todos los items obtenidos al terminar un evento o escenario. (Encendido por defecto)",
+        "<ids> - Muestra el ID unico de la carta. (Apagado por defecto)",
+        "<cards> - SOLO muesta los IDs de la carta. (Apagado por defecto)",
+        "<names> - Muestra el nombre del escenario desde la base de datos. (Encendido por defecto)",
+        "<meat> - Usa carne para rellenar energia. (Apagado por defecto)",
+        "<gifts> - Muestra los regalos que se aceptaron. (Apagado por defecto)",
+        "<missions> - Muestra las misiones que se aceptaron. (Apagado por defecto)",
+        "<dropnames> - Muestra los nombres de los drops del escenario. (Encendido por defecto)",
+        "<stack> - Organiza drops por nombre y numero. (Encendido por defecto)",
+        "<keys> - Usa llaves si el evento no se encuentra activo. (Encendido por defecto)",
+        "<boost> - Usa boost X2 si se encuentra disponible. (Encendido por defecto)",
+        "<animation> - Muestra las animaciones de summon. (Apagado por defecto)",
+        "<baba> - Cambia R y SR inutiles por puntos baba. (Excluye los regalos) (Apagado por defecto)",
+        "<autosell> - Vende las estatuas si la caja esta llena. (Encendido por defecto)",
+        "<sellsummon> - Vende automaticamente despues de hacer 1 summon. (Apagado por defecto)",
+        "<potential> - Desbloquea un camino en dicha carta si se summonea su duplicado automaticamente. (Apagado por defecto)",
+        "<links> - Muestra si un link sube de nivel. (Encendido por defecto)",
+        "<summongift> - Acepta regalos despues de hacer 1 summon. (Apagado por defecto)",
+        "<dbs> - Recolecta dragon balls en el comando omega. (Apafado por defecto)",
+        "<daily> - Se completaran eventos diarios cuando se utilice el comando omega. (Encendido por defecto)",
+        "<items> - configura el item de soporte para usar en los escenarios.",
+        "<memory> - configura las memorias del recuerdo para usar en los escenarios.",
+        "<befriend> - Envía una solicitud de amistad al compañero con el cual se completó el escenario. (Predeterminadamente esta opción está apagada.)",
+        "<zenieza> - configura el EZA a realizar para conseguir ZENI.",
+        "<logstam> - Crea un registro de cuantas Dragon Stones y Items se han utilizado para regenerar stamina. (Predeterminadamente esta opción está apagada.)",
+        "<listlinks> - muestra los \"links\" de tu equipo.",
+        "<lvlteams> - configura los \"links\" a farmear.",
+        "<lockpulls> - coloca candado den todos los ssr+ conseguidos (para evitar que se borren",
+        "<linkstage> - Configura el escenario para el farmeo de links.",
+        "<keyprompt> - prompt to use keys if stage is inactive. (OFF by default)",
+        "<displayprog> - Muestra el proceso de las areas que se estan completando. (Apagado (OFF) por defecto.)",
+        "<babassr> - auto baba SSRs that cannot UR/LR. (OFF by default)",
+        "<swapmax> - swap maxed link unit for unmaxed unit during \"farm links\". (OFF by default)",
+        "<zeniendlv> - set EZA end level for \"farm zeni\".",
+        "<autosupport> - automatically select support leader. (OFF by default)",
+        "<babafp> - auto baba only SSRs on FP banner. (OFF by default)",
+        "<bonus> - auto build team with only bonus units. (OFF by default)"
+      ],
+      "fr": [
+        "- Activer les préférences.",
+        "<stone> - utiliser des pierres pour restaurer l'endurance. (activé par défaut)",
+        "<tb> - crée l'équipe selon les condition du niveau. (désactivé par défaut)",
+        "<capacity> - augmenter la taille de la box avec des pierres. (activé par défaut)",
+        "<meat> - utiliser de la viande pour restaurer l'endurance. (désactivé par défaut)",
+        "<keys> - utiliser des clés sur les niveaux inactifs. (désactivé par défaut)",
+        "<boost> - utiliser le boost de drop si disponible. (désactivé par défaut)",
+        "<baba> - baba R & SR. (hors cadeaux) (désactivé par défaut)",
+        "<autosell> - vendre les N & statues. (activé par défaut)",
+        "<sellpulls> - vendre automatiquement après invocation. (désactivé par défaut)",
+        "<autonode> - débloquer la route si un doublon est invoqué. (désactivé par défaut)",
+        "<summongift> - accepter les cadeaux après invocation. (désactivé par défaut)",
+        "<dbseek> - compléter les voeux de shenron en omega. (désactivé par défaut)",
+        "<items> - définir les objects de soutien pour jouer un niveau.",
+        "<memory> - définir la mémoir de soutiens pour jouer un niveau.",
+        "<befriend> - envoyer des demandes d'amis aux supports. (désactivé par défaut)",
+        "<zenieza> - definir le Z Battler pour \"farm zeni\".",
+        "<lockpulls> - verrouiller toutes les unités SSR lors des invocations. (désactivé par défaut)",
+        "<linkstage> - définir le niveau pour farm les liens.",
+        "<keyprompt> - demander avant d'utiliser des clés sur les niveaux inactifs. (OFF by default)",
+        "<babassr> - baba les SSR qui ne peuvent pas devenir UR/LR. (désactivé par défaut)",
+        "<zeniendlv> - définir le niveau final du Z Battle pour \"farm zeni\".",
+        "<autosupport> - choisir le support selon les conditions du niveau. (désactivé par défaut)",
+        "<fpssr> - baba uniquement les SSR de la bannière ami. (désactivé par défaut)",
+        "<autosupport> - choisir le leader support requis. (désactivé par défaut)",
+        "<turns> - définir le nombre de tours pour le combat de boss.",
+        "<cleartime> - définir le temps de complétion d'un niveau/zbattle.",
+        "<supers> - utiliser les super et les compétences en combat. (désactivé par défaut)",
+        "<swapmax> - augmenter le niveau des lien de chaque UR/LR dans la box durant \"farm links\" (désactivé par défaut)",
+        "<rb> - crée un team à partir des records de completion. (désactivé par défaut)",
+        "<skiplimits> - ignorer les niveaux avec condition d'équipe. (désactivé par défaut)",
+        "<skipzarea> - ignorer les niveaux Zone Z . (désactivé par défaut)"
+      ],
+      "it": [
+        "- attiva/disattiva impostazioni.",
+        "<stone> - ricarica automatica della stamina. (ON di default)",
+        "<tb> - crea team in automatico. (OFF di default)",
+        "<cap> - aumenta la capacità del box di 5 se la vendita automatica fallisce. (ON di default)",
+        "<drops> - mostra i drop. (ON di default)",
+        "<ids> - mostra gli ID delle carte ovunque. (OFF di default)",
+        "<cards> - mostra SOLO gli ID delle carte. (OFF di default)",
+        "<names> - mostra le informazioni dell'evento tramite il database. (ON di default)",
+        "<meat> - usa la carne per ricaricare la stamina. (OFF di default)",
+        "<gifts> - mostra i regali già riscattati. (OFF di default)",
+        "<missions> - mostra le missioni con ricompense riscattate. (OFF di default)",
+        "<dropnames> - mostra i nomi dei drop. (ON di default)",
+        "<stack> - organizza e raggruppa i drop. (ON di default)",
+        "<keys> - usa le chiavi se l'evento è inattivo. (OFF di default)",
+        "<boost> - use il boost dei drop se disponibile. (OFF di default)",
+        "<animation> - mostra le animazioni delle summon. (OFF di default)",
+        "<baba> - scambia con baba tutti gli R e gli SR inutili. (escludendo i regali) (OFF di default)",
+        "<autosell> - vendi tutti gli N e le statue se il box è pieno. (ON di default)",
+        "<sellsummon> - vendi automaticamente dopo la summon. (OFF di default)",
+        "<potential> - sblocca la strada se una copia viene ottenuta. (OFF di default)",
+        "<links> - mostra gli aumenti dei livelli dei link. (ON di default)",
+        "<summongift> - accetta regali dopo la summon. (OFF di default)",
+        "<dbs> - completa i desideri di shenron nel comando omega. (OFF di default)",
+        "<daily> - completa gli eventi giornalieri in omega. (ON di default)",
+        "<items> - imposta gli oggetti di supporto da usare nello scenario.",
+        "<memory> - imposta i ricordi da usare nello scenario.",
+        "<befriend> - invia richieste di amicizia ai supporti (OFF di default)",
+        "<zenieza> - imposta l'EZA di default per il comando \"farm zeni\".",
+        "<logstam> - mostra quante pietre e carne vengono usate per stam. (OFF di default)",
+        "<listlinks> - mostra i link in \"team list\".",
+        "<lvlteams> - fa in modo che \"farm links\" livelli tutti i team creati.",
+        "<lockpulls> - blocca tutte le unità SSR+ nelle evocazioni.",
+        "<linkstage> - imposta lo scenario per farmare i livelli dei link.",
+        "<keyprompt> - prompt to use keys if stage is inactive. (OFF by default)",
+        "<babassr> - auto baba SSRs that cannot UR/LR. (OFF by default)",
+        "<swapmax> - swap maxed link unit for unmaxed unit during \"farm links\". (OFF by default)",
+        "<zeniendlv> - set EZA end level for \"farm zeni\".",
+        "<autosupport> - automatically select support leader. (OFF by default)",
+        "<babafp> - auto baba only SSRs on FP banner. (OFF by default)",
+        "<bonus> - auto build team with only bonus units. (OFF by default)"
+      ],
+      "ko": [
+        "- 기본 설정을 전환합니다.",
+        "<stone> - 자동 STA 리필입니다. (기본적으로 켜져 있습니다)",
+        "<tb> - 자동 팀 구성기입니다. (기본적으로 꺼져 있습니다)",
+        "<cap> - 자동 처분이 실패하면 상자 크기를 5칸 늘립니다. (기본적으로 켜져 있습니다)",
+        "<drops> - 드롭 전체를 표시합니다. (기본적으로 켜져 있습니다)",
+        "<ids> - 모든 곳에서 카드 ID를 표시합니다. (기본적으로 꺼져 있습니다)",
+        "<cards> - 카드 ID만 표시합니다. (기본적으로 꺼져 있습니다)",
+        "<names> - 데이터베이스를 통해 스테이지 정보를 표시합니다. (기본적으로 켜져 있습니다)",
+        "<meat> - STA를 리필하기 위해 고기를 사용합니다. (기본적으로 꺼져 있습니다)",
+        "<gifts> - 수령한 선물을 표시합니다. (기본적으로 꺼져 있습니다)",
+        "<missions> - 수령한 미션을 표시합니다. (기본적으로 꺼져 있습니다)",
+        "<dropnames> - 드롭의 이름을 표시합니다. (기본적으로 켜져 있습니다)",
+        "<stack> - 드롭을 정리하고 포갭니다. (기본적으로 켜져 있습니다)",
+        "<keys> - 진행 중인 이벤트가 아닌 경우 열쇠를 사용합니다. (기본적으로 꺼져 있습니다)",
+        "<boost> - 사용 가능한 경우 드롭 부스터를 사용합니다. (기본적으로 꺼져 있습니다)",
+        "<animation> - 뽑기 애니메이션을 출력합니다. (기본적으로 꺼져 있습니다)",
+        "<baba> - 쓸모없는 R 및 SR을 바바에게 처분합니다. (선물은 제외합니다) (기본적으로 꺼져 있습니다)",
+        "<autosell> - 최대 상자인 경우 모든 N 및 상태를 처분합니다. (기본적으로 켜져 있습니다)",
+        "<sellsummon> - 뽑기 후 자동 처분합니다. (기본적으로 꺼져 있습니다)",
+        "<potential> - 중복이 뽑힌 경우 칸을 개방합니다. (기본적으로 꺼져 있습니다)",
+        "<links> - 링크 레벨업을 표시합니다. (기본적으로 켜져 있습니다)",
+        "<summongift> - 뽑기 후 선물을 수락합니다. (기본적으로 꺼져 있습니다)",
+        "<dbs> - omega에서 소원을 완료합니다. (기본적으로 꺼져 있습니다)",
+        "<daily> - omega에서 일일 이벤트를 실행합니다. (기본적으로 켜져 있습니다)",
+        "<items> - 스테이지를 플레이할 서포트 아이템을 설정합니다.",
+        "<memory> - 스테이지를 플레이할 메모리를 설정합니다.",
+        "<befriend> - 서포트에게 친구 요청을 보냅니다. (기본적으로 꺼져 있습니다)",
+        "<zenieza> - \"farm zeni\"의 기본 극한 Z 각성을 설정합니다.",
+        "<logstam> - STA에 사용되는 용석 및 고기의 양을 기록합니다. (기본적으로 꺼져 있습니다)",
+        "<listlinks> - \"team list\"에서 링크를 표시합니다.",
+        "<lvlteams> - 만들어진 모든 팀의 레벨을 올리도록 \"farm links\"를 설정합니다.",
+        "<lockpulls> - 뽑기에서 모든 SSR+ 유닛을 잠급니다.",
+        "<linkstage> - 링크 레벨 파밍 스테이지를 설정합니다.",
+        "<keyprompt> - prompt to use keys if stage is inactive. (OFF by default)",
+        "<displayprog> - 클리어한 구역의 진행 상황을 표시합니다. (기본적으로 꺼져 있습니다)",
+        "<babassr> - auto baba SSRs that cannot UR/LR. (OFF by default)",
+        "<swapmax> - swap maxed link unit for unmaxed unit during \"farm links\". (OFF by default)",
+        "<zeniendlv> - set EZA end level for \"farm zeni\".",
+        "<autosupport> - automatically select support leader. (OFF by default)",
+        "<babafp> - auto baba only SSRs on FP banner. (OFF by default)",
+        "<bonus> - auto build team with only bonus units. (OFF by default)"
+      ],
+      "pt": [
+        "- muda configuracoes.",
+        "<stone> - recupera stamina automatico. (LIGADO por padrão)",
+        "<tb> - monta time automatico. (DESLIGADO por padrão)",
+        "<cap> - aumenta box +5 se falhar venda automatico. (LIGADO por padrão)",
+        "<drops> - exibe drops completo. (LIGADO por padrão)",
+        "<ids> - exibe IDs do cards sempre. (DESLIGADO por padrão)",
+        "<cards> - exibe SOMENTE IDs das cartas. (DESLIGADO por padrão)",
+        "<names> - exibe inform da fase pelo banco dados. (LIGADO por padrão)",
+        "<meat> - usa carta para recupera stamina. (DESLIGADO por padrão)",
+        "<gifts> - exibe presentes recebido. (DESLIGADO por padrão)",
+        "<missions> - exibe missao recebida. (DESLIGADO por padrão)",
+        "<dropnames> - exibe nome dos drops. (LIGADO por padrão)",
+        "<stack> - organiza & stack drops. (LIGADO por padrão)",
+        "<keys> - usea chave se o evento estiver inativo. (DESLIGADO por padrão)",
+        "<boost> - use impulso se tiver disponivel. (DESLIGADO por padrão)",
+        "<animation> - externa animacoes do summon (DESLIGADO por padrão)",
+        "<baba> - manda para baba R & SR inuteis. (fora presentes) (DESLIGADO por padrão)",
+        "<autosell> - vende todos N & estatuas se box estiver cheia. (LIGADO por padrão)",
+        "<sellsummon> - Vende automatico depois de sumonar. (DESLIGADO por padrão)",
+        "<potential> - desbloqueia caminho se sumonar um dupe. (DESLIGADO por padrão)",
+        "<links> - exibe levelups dos links. (LIGADO por padrão)",
+        "<summongift> - aceita presente depois do summon. (DESLIGADO por padrão)",
+        "<dbs> - faz desejos shenron no omega. (DESLIGADO por padrão)",
+        "<daily> - faz eventos diarios no omega. (LIGADO por padrão)",
+        "<items> - Seleciona um item de suporte para utilizar na fase.",
+        "<befriend> - envia solicitação de amizade aos amigos. (DESLIGADO por padrão)",
+        "<memory> - Seleciona uma Support Memory para utilizar na fase.",
+        "<zenieza> - Seleciona qual EZA será utilizado no comando \"farm zeni\"",
+        "<logstam> - exibe quantas pedras & carne foram usados para STA. (DESLIGADO por padrão)",
+        "<listlinks> - Exibe os links no comando \"team list\".",
+        "<lvlteams> - Configura o comando \"farm links\" para subir os links de todos times criados.",
+        "<lockpulls> - Coloca cadeado em todas Units SSR+ depois de summonar.",
+        "<linkstage> - define fase para farmar link skills.",
+        "<keyprompt> - prompt to use keys if stage is inactive. (OFF by default)",
+        "<displayprog> - exibe o progresso das fases finalizadas. (desligado por padrão)",
+        "<babassr> - auto baba SSRs that cannot UR/LR. (OFF by default)",
+        "<swapmax> - swap maxed link unit for unmaxed unit during \"farm links\". (OFF by default)",
+        "<zeniendlv> - set EZA end level for \"farm zeni\".",
+        "<autosupport> - automatically select support leader. (OFF by default)",
+        "<babafp> - auto baba only SSRs on FP banner. (OFF by default)",
+        "<bonus> - auto build team with only bonus units. (OFF by default)"
+      ],
+      "ua": [
+        "- toggle preferences.",
+        "<stone> - automatic stamina-refill. (ON by default)",
+        "<tb> - automatic team-builder. (OFF by default)",
+        "<cap> - 5+ box size if autosell fails. (ON by default)",
+        "<drops> - display drops entirely. (ON by default)",
+        "<ids> - show card IDs everywhere. (OFF by default)",
+        "<cards> - show ONLY card IDs. (OFF by default)",
+        "<names> - show stage info via database. (ON by default)",
+        "<meat> - use meat to refill stamina. (OFF by default)",
+        "<gifts> - display claimed gifts. (OFF by default)",
+        "<missions> - display claimed missions. (OFF by default)",
+        "<dropnames> - display names of drops. (ON by default)",
+        "<stack> - organize & stack drops. (ON by default)",
+        "<keys> - use keys if event is inactive. (OFF by default)",
+        "<boost> - use drops boost if available. (OFF by default)",
+        "<animation> - output summon animations. (OFF by default)",
+        "<baba> - baba useless R & SR. (exclude gifts) (OFF by defualt)",
+        "<autosell> - sell all N & statues if max box. (ON by default)",
+        "<sellsummon> - Autosell after Summon. (OFF by default)",
+        "<potential> - unlock node if dupe summoned. (OFF by default)",
+        "<links> - display link levelups. (ON by default)",
+        "<summongift> - accept gifts after summon. (OFF by default)",
+        "<dbs> - complete shenron wishes in omega. (OFF by default)",
+        "<daily> - run daily events in omega. (ON by default)",
+        "<items> - set support item to run stage with.",
+        "<memory> - set memory to run stage with.",
+        "<befriend> - send friend requests to supports. (OFF by default)",
+        "<zenieza> - set EZA for \"farm zeni\".",
+        "<logstam> - log how much stones & meat used for stam. (OFF by default)",
+        "<listlinks> - display links in \"team list\". (OFF by default)",
+        "<lvlteams> - set \"farm links\" to level all teams made. (OFF by default)",
+        "<lockpulls> - lock all SSR+ units in summons. (OFF by default)",
+        "<linkstage> - set link lvl farm stage.",
+        "<keyprompt> - prompt to use keys if stage is inactive. (OFF by default)",
+        "<displayprog> - відображення прогресу очищених областей. (ВИМКНЕНО за замовчуванням)",
+        "<babassr> - auto baba SSRs that cannot UR/LR. (OFF by default)",
+        "<swapmax> - swap maxed link unit for unmaxed unit during \"farm links\". (OFF by default)",
+        "<zeniendlv> - set EZA end level for \"farm zeni\".",
+        "<autosupport> - automatically select support leader. (OFF by default)",
+        "<babafp> - auto baba only SSRs on FP banner. (OFF by default)",
+        "<bonus> - auto build team with only bonus units. (OFF by default)"
+      ],
+      "ru": [
+        "- переключить настройки.",
+        "<камень> - автоматическое пополнение выносливости. (ВКЛ по умолчанию)",
+        "<tb> - автоматический тимбилдинг. (выключено по умолчанию)",
+        "<cap> - размер коробки более 5, если автопродажа не удалась. (ВКЛ по умолчанию)",
+        "<drops> - отображение полностью закрывается. (ВКЛ по умолчанию)",
+        "<ids> - показывать идентификаторы карт везде. (по умолчанию отключено)",
+        "<cards> - показывать ТОЛЬКО идентификаторы карт. (по умолчанию отключено)",
+        "<имена> - показывать информацию о сцене через базу данных. (ВКЛ. по умолчанию)",
+        "<meat> - используйте мясо для восполнения выносливости. (по умолчанию выключено)",
+        "<gifts> - отображать заявленные подарки. (по умолчанию отключено)",
+        "<миссии> - отображение заявленных миссий. (по умолчанию отключено)",
+        "<dropnames> - отображать названия дропов. (по умолчанию включено)",
+        "<stack> – организовывать и складывать капли. (ВКЛ. по умолчанию)",
+        "<keys> - использовать клавиши, если событие неактивно. (по умолчанию выключено)",
+        "<boost> - использовать усиление капель, если оно доступно. (по умолчанию выключено)",
+        "<анимация> - выводить анимацию призыва. (по умолчанию отключено)",
+        "<баба> - баба бесполезная R&SR. (исключить подарки) (выкл. по умолчанию)",
+        "<autosell> - продать все N статуй, если ящик макс. (ВКЛ. по умолчанию)",
+        "<sellsummon> - автопродажа после призыва. (по умолчанию выключено)",
+        "<потенциал> - разблокировать узел, если вызван дублер. (выключено по умолчанию)",
+        "<links> - отображать уровни ссылок. (по умолчанию включено)",
+        "<summongift> - принимать подарки после призыва. (по умолчанию отключено)",
+        "<dbs> - выполнить пожелания Шенрона в омеге. (по умолчанию выключено)",
+        "<daily> - запуск ежедневных событий в омеге. (ВКЛ по умолчанию)",
+        "<items> - установить элемент поддержки для запуска этапа.",
+        "<память> - установить память для запуска сцены.",
+        "<befriend> - отправлять запросы на добавление в друзья саппортам. (по умолчанию отключено)",
+        "<zenieza> - установить EZA для \"фермы зени\".",
+        "<logstam> - записать, сколько камней и мяса использовано для стама. (по умолчанию отключено)",
+        "<listlinks> - отображать ссылки в \"списке команды\". (по умолчанию отключено)",
+        "<lvlteams> — установите «ссылки на ферму» для выравнивания всех созданных команд. (по умолчанию отключено)",
+        "<lockpulls> - заблокировать все юниты SSR+ в призыве. (Выключено по умолчанию)",
+        "<linkstage> - установить стадию фермы уровня ссылки.",
+        "<keyprompt> - запрос на использование клавиш, если стадия неактивна. (по умолчанию отключено)",
+        "<displayprog> - отображение прогресса очищенных областей. (по умолчанию отключено)",
+        "<babassr> - auto baba SSRs that cannot UR/LR. (OFF by default)",
+        "<swapmax> - swap maxed link unit for unmaxed unit during \"farm links\". (OFF by default)",
+        "<zeniendlv> - set EZA end level for \"farm zeni\".",
+        "<autosupport> - automatically select support leader. (OFF by default)",
+        "<babafp> - auto baba only SSRs on FP banner. (OFF by default)",
+        "<bonus> - auto build team with only bonus units. (OFF by default)"
+      ],
+      "zh": [],
+      "syntax": "<toggle name>",
+      "min_args": 1,
+      "max_args": 2,
+      "example": ""
+    }
+  }
 }
