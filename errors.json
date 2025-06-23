@@ -504,10 +504,10 @@
         "ru": ""
     },
     "can_not_destroy_the_supporter_leader_card": {
-        "en": "Impossible de vendre/échanger le leader support!",
+        "en": "Cannot sell/exchange support leader!",
         "de": "",
         "es": "",
-        "fr": "",
+        "fr": "Impossible de vendre/échanger le leader support!",
         "it": "",
         "ko": "",
         "pt": "",
@@ -588,7 +588,7 @@
         "ru": ""
     },
     "open_ssl/cipher/cipher_error": {
-        "en": "Invalid sign sent!",
+        "en": "Invalid cipher sent!",
         "de": "",
         "es": "",
         "fr": "Signature invalide envoyée!",
