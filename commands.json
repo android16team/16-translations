@@ -339,33 +339,15 @@
       "en": [
         "- Toggles"
       ],
-      "ro": [
-        "- Unelte și liste"
-      ],
-      "de": [
-        "- Tools & Lists"
-      ],
-      "es": [
-        "- Herramientas y Listas"
-      ],
-      "fr": [
-        "- Activer"
-      ],
-      "it": [
-        "- Utility & Liste"
-      ],
-      "ko": [
-        "- 도구 및 목록"
-      ],
-      "pt": [
-        "- Ferramentas & Listas"
-      ],
-      "ua": [
-        "- інструменти та списки"
-      ],
-      "ru": [
-        "- Инструменты и списки"
-      ],
+      "ro": [],
+      "de": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
       "zh": [],
       "syntax": "<arg>",
       "min_args": 1,
@@ -376,33 +358,15 @@
       "en": [
         "- Custom commands"
       ],
-      "ro": [
-        "- Magazine și Summonuri"
-      ],
-      "de": [
-        "- Shops & Beschwoerungen"
-      ],
-      "es": [
-        "- Tienda y Summons"
-      ],
-      "fr": [
-        "- Commandes personalisées"
-      ],
-      "it": [
-        "- Shop & Summon"
-      ],
-      "ko": [
-        "- 상점 및 뽑기"
-      ],
-      "pt": [
-        "- Lojas & Summons"
-      ],
-      "ua": [
-        "- магазини і повістки"
-      ],
-      "ru": [
-        "- Магазины и призывы"
-      ],
+      "ro": [],
+      "de": [],
+      "es": [],
+      "fr": [],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
       "zh": [],
       "syntax": "<arg>",
       "min_args": 1,
@@ -414,32 +378,18 @@
         "- Navigate help pages"
       ],
       "ro": [
-        "Folosește \"help<page>\" pentru a naviga.\nctrl+c pentru a opri botul"
+        "Folosește \"help<page>\" pentru a naviga."
       ],
-      "de": [
-        "use \"help <page>\" to navigate.\nstrg + c Stoppt den Bot"
-      ],
-      "es": [
-        "use \"help <page>\" to navigate.\nPresiona ctrl+c para detener el bot.."
-      ],
+      "de": [],
+      "es": [],
       "fr": [
         "- Parcourir les pages d'aides"
       ],
-      "it": [
-        "use \"help <page>\" to navigate.\nctrl+c per arrestare il bot."
-      ],
-      "ko": [
-        "use \"help <page>\" to navigate.\n봇을 정지하려면 Ctrl+C를 누르세요."
-      ],
-      "pt": [
-        "use \"help <page>\" to navigate.\nctrl+c para parar o bot."
-      ],
-      "ua": [
-        "use \"help <page>\" to navigate.\nctrl + c, щоб зупинити бота."
-      ],
-      "ru": [
-        "use \"help <page>\" to navigate.\nctrl + c, используете чтобы остановить бота."
-      ],
+      "it": [],
+      "ko": [],
+      "pt": [],
+      "ua": [],
+      "ru": [],
       "zh": [],
       "syntax": "<arg>",
       "min_args": 1,
@@ -450,17 +400,33 @@
       "en": [
         "- Stop a task"
       ],
-      "ro": [],
-      "de": [],
-      "es": [],
+      "ro": [
+          "ctrl+c pentru a opri botul"
+      ],
+      "de": [
+          "strg + c Stoppt den Bot"
+      ],
+      "es": [
+          "Presiona ctrl+c para detener el bot.."
+      ],
       "fr": [
         "- Arrêter une tâche"
       ],
-      "it": [],
-      "ko": [],
-      "pt": [],
-      "ua": [],
-      "ru": [],
+      "it": [
+          "ctrl+c per arrestare il bot."
+      ],
+      "ko": [
+          "봇을 정지하려면 Ctrl+C를 누르세요."
+      ],
+      "pt": [
+          "ctrl+c para parar o bot."
+      ],
+      "ua": [
+          "ctrl + c, щоб зупинити бота."
+      ],
+      "ru": [
+          "ctrl + c, используете чтобы остановить бота."
+      ],
       "zh": [],
       "syntax": "<arg>",
       "min_args": 1,
@@ -771,7 +737,9 @@
       "example": ""
     },
     "safemode": {
-      "en": [],
+      "en": [
+          "- Traverse the map like a player. (Enabled by Default)"
+      ],
       "ro": [
         "- stage run-uri și date ale echipei mai realiste , dar mai puține recompense per stage. ( DEZACTIVAT din fabrică)"
       ],
