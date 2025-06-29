@@ -471,307 +471,348 @@
       "example": ""
     }
   },
-  "settings": {
-    "color": {
-      "en": [],
-      "ro": [
-        "- Setează culoarea textului botului.\n== Tipuri ==\ncommands - comanda din ajutor.\ndescriptions - detalii comandă în ajutor.\nerror - text de eroare.\nsuccess - text de succes.\nmessage - culoarea mesajelor.\ndrops - culoarea recompenselor/cadourilor.\n== Culori ==\nred (roșu), green (verde), cyan, blue (albastru), yellow (galben), white (alb), purple (mov)."
-      ],
-      "de": [
-        "- Set bot text color.\n== Types ==\ncommands - command in help.\ndescriptions - Befehl Details unter help\nerror - Fehler Text\nsuccess - Erfolgreich Text\nmessage - Nachrichten Text\ndrops - Belohnung/Drops Text\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
-      ],
-      "es": [
-        "- Set bot text color.\n== Types ==\ncommands - Nombre de los comandos en el comando 'help'.\ndescriptions - Descripcion de los comandos en el comando 'help'.\nerror - Texto de error.\nsuccess - Texto de exito (al completar alguna accion).\nmessage - Color de los mensajes.\ndrops - Color de las recompensas.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
-      ],
-      "fr": [],
-      "it": [
-        "- Set bot text color.\n== Types ==\ncommands - i comandi nell'help.\ndescriptions - i dettagli riguardo i comandi nell'help.\nerror - testi di errore.\nsuccess - testi di successo.\nmessage - messaggi.\ndrops - ricompense/drop.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
-      ],
-      "ko": [
-        "- Set bot text color.\n== Types ==\ncommands - 도움말의 명령어입니다.\ndescriptions - 도움말의 명령어 세부 정보입니다.\nerror - 오류 텍스트입니다.\nsuccess - 성공 텍스트입니다.\nmessage - 메시지 색입니다.\ndrops - 보상/드롭 색입니다.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
-      ],
-      "pt": [
-        "- Set bot text color.\n== Types ==\ncommands - commandos da ajuda.\ndescriptions - detalhes do comando na ajuda.\nerror - texto de erro.\nsuccess - texto de sucesso.\nmessage - cor de mensagens.\ndrops - cor de recompensas/drops.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
-      ],
-      "ua": [
-        ""
-      ],
-      "ru": [
-        "Установить цвет текста бота.\n== Типы ==\ncommands - команда в справке.\ndescriptions - подробности команды в справке.\nerror - текст ошибки.\nsuccess - текст успеха.\nmessage - цвет сообщений.\ndrops - награды/ падает цвет.\n== Цвета ==\nкрасный, зеленый, голубой, синий, желтый, белый, фиолетовый"
-      ],
-      "zh": [],
-      "syntax": "<arg>",
-      "min_args": 1,
-      "max_args": 2,
-      "example": ""
+    "settings": {
+        "color": {
+            "en": [],
+            "ro": [
+                "- Setează culoarea textului botului.\n== Tipuri ==\ncommands - comanda din ajutor.\ndescriptions - detalii comandă în ajutor.\nerror - text de eroare.\nsuccess - text de succes.\nmessage - culoarea mesajelor.\ndrops - culoarea recompenselor/cadourilor.\n== Culori ==\nred (roșu), green (verde), cyan, blue (albastru), yellow (galben), white (alb), purple (mov)."
+            ],
+            "de": [
+                "- Set bot text color.\n== Types ==\ncommands - command in help.\ndescriptions - Befehl Details unter help\nerror - Fehler Text\nsuccess - Erfolgreich Text\nmessage - Nachrichten Text\ndrops - Belohnung/Drops Text\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+            ],
+            "es": [
+                "- Set bot text color.\n== Types ==\ncommands - Nombre de los comandos en el comando 'help'.\ndescriptions - Descripcion de los comandos en el comando 'help'.\nerror - Texto de error.\nsuccess - Texto de exito (al completar alguna accion).\nmessage - Color de los mensajes.\ndrops - Color de las recompensas.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+            ],
+            "fr": [],
+            "it": [
+                "- Set bot text color.\n== Types ==\ncommands - i comandi nell'help.\ndescriptions - i dettagli riguardo i comandi nell'help.\nerror - testi di errore.\nsuccess - testi di successo.\nmessage - messaggi.\ndrops - ricompense/drop.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+            ],
+            "ko": [
+                "- Set bot text color.\n== Types ==\ncommands - 도움말의 명령어입니다.\ndescriptions - 도움말의 명령어 세부 정보입니다.\nerror - 오류 텍스트입니다.\nsuccess - 성공 텍스트입니다.\nmessage - 메시지 색입니다.\ndrops - 보상/드롭 색입니다.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+            ],
+            "pt": [
+                "- Set bot text color.\n== Types ==\ncommands - commandos da ajuda.\ndescriptions - detalhes do comando na ajuda.\nerror - texto de erro.\nsuccess - texto de sucesso.\nmessage - cor de mensagens.\ndrops - cor de recompensas/drops.\n== Colors ==\nred, green, cyan, blue, yellow, white, purple"
+            ],
+            "ua": [
+                ""
+            ],
+            "ru": [
+                "Установить цвет текста бота.\n== Типы ==\ncommands - команда в справке.\ndescriptions - подробности команды в справке.\nerror - текст ошибки.\nsuccess - текст успеха.\nmessage - цвет сообщений.\ndrops - награды/ падает цвет.\n== Цвета ==\nкрасный, зеленый, голубой, синий, желтый, белый, фиолетовый"
+            ],
+            "zh": [],
+            "syntax": "<arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": ""
+        },
+        "lang": {
+            "en": [],
+            "ro": [
+                "- Setează limba botului.\nen - engleză.\nfr - franceză.\nde - germană.\nko - coreeană.\nit - italiană.\npt - portugheză.\nes - spaniolă."
+            ],
+            "de": [
+                "- wechsel die Bot Sprache\nen - english.\nfr - french.\nde - german.\nko - korean.\nit - italian.\npt - portugues.\nes - spanish."
+            ],
+            "es": [
+                "- Selecciona un lenguaje para el bot.\nen - Ingles.\nfr - Frances.\nde - Aleman.\nko - Coreano.\nit - Italiano.\npt - portugues.\nes - Español (Activo)."
+            ],
+            "fr": [],
+            "it": [
+                "- imposta la lingua del bot.\nen - inglese.\nfr - francese.\nde - tedesco.\nko - coreano.\nes - spagnolo.\npt - portugues.\nit - italiano."
+            ],
+            "ko": [
+                "- 봇 언어를 설정합니다.\nen - 영어입니다.\nfr - 프랑스어입니다.\nde - 독일어입니다.\nko - 한국어입니다.\nes - 스페인어입니다.\nit - 이탈리아어입니다."
+            ],
+            "pt": [
+                "- seleciona idioma do bot.\nen - ingles.\nfr - frances.\nde - alemao.\nko - koreano.\nit - italiano.\npt - portugues.\nes - espanhol."
+            ],
+            "ua": [
+                "- встановити мову бота.\nen - англійська.\nfr - французька.\nde - німецька.\nko - корейська.\nit - італійська.\npt - португальська.\nes - іспанська.\nua - українська.\nru - русский."
+            ],
+            "ru": [
+                "- установить язык бота.\nen - английский.\nfr - французский.\nde - немецкий.\nko - корейский.\nit - итальянский.\npt - португальский.\nes - испанский.\nru - русский"
+            ],
+            "zh": [],
+            "syntax": "<arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": ""
+        },
+        "rerolls": {
+            "en": [],
+            "ro": [
+                "- setează numărul maxim de rorolluri"
+            ],
+            "de": [
+                "- Stellt die maximale Reroll Anzahl ein"
+            ],
+            "es": [
+                "- Ajusta el limite maximo de \"rerolls\"."
+            ],
+            "fr": [],
+            "it": [
+                "- imposta la quantità massima di reroll."
+            ],
+            "ko": [
+                "- 최대 리세마라 수를 설정합니다."
+            ],
+            "pt": [
+                "- seleciona o max de vezes reroll."
+            ],
+            "ua": [
+                "- встановити максимальну кількість \"reroll\"."
+            ],
+            "ru": [
+                "- установить максимальное количество перебросов."
+            ],
+            "zh": [],
+            "syntax": "<arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": ""
+        },
+        "autoname": {
+            "en": [],
+            "ro": [
+                "- Setează numele automat pentru fișierele de salvare la reroll."
+            ],
+            "de": [
+                "- Automatisches benennen deiner Rerolls"
+            ],
+            "es": [
+                "- Automaticamente nombra el archivo de guardado de una cuenta reroll (nueva)."
+            ],
+            "fr": [],
+            "it": [
+                "- scegli automaticamente il nome dei file di salvataggio dei reroll."
+            ],
+            "ko": [
+                "- 리세마라 저장 파일의 이름을 자동으로 지정합니다."
+            ],
+            "pt": [
+                "- renomeia automaticamente contas reroll."
+            ],
+            "ua": [
+                "- автоматично іменувати файли збереження, перезавантажувати."
+            ],
+            "ru": [
+                "- автоматически переименовывать файлы сохранения."
+            ],
+            "zh": [],
+            "syntax": "<arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": ""
+        },
+        "dailyevents": {
+            "en": [],
+            "ro": [
+                "- Rulează evenimentele folosind comanda \"daily\"."
+            ],
+            "de": [
+                "- Schaltet waehrend der dailys, die Events um"
+            ],
+            "es": [
+                "- Hacer ademas los eventos cuando se active el comando \"daily\"."
+            ],
+            "fr": [],
+            "it": [
+                "- completa gli eventi nel comando \"daily\"."
+            ],
+            "ko": [
+                "- \"daily\" 명령어에서 이벤트 수행을 전환합니다."
+            ],
+            "pt": [
+                "- executa eventos do comando \"daily\"."
+            ],
+            "ua": [
+                "- запускати події в команді \"daily\"."
+            ],
+            "ru": [
+                "- запускать события командой \"daily\"."
+            ],
+            "zh": [],
+            "syntax": "<arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": ""
+        },
+        "dailies": {
+            "en": [],
+            "ro": [
+                "- Setează evenimentele pentru comanda zilnică."
+            ],
+            "de": [
+                "- legt die Events fÃƒÆ’Ã‚Â¼r die tÃƒÆ’Ã‚Â¤glichen Aufgaben fest."
+            ],
+            "es": [
+                "- Configura eventos para el comando diarias."
+            ],
+            "fr": [],
+            "it": [
+                "- imposta gli eventi per il comando daily."
+            ],
+            "ko": [
+                "- daily 명령어의 이벤트를 설정합니다."
+            ],
+            "pt": [
+                "- Configura eventos para o comando de diários"
+            ],
+            "ua": [
+                "- встановити події для щоденної команди"
+            ],
+            "ru": [
+                "- установить события для ежедневной команды."
+            ],
+            "zh": [],
+            "syntax": "<arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": ""
+        },
+        "logdrops": {
+            "en": [],
+            "ro": [
+                "- activează dacă vrei să vezi datele recompensei per stage . (ACTIVAT din fabrică)"
+            ],
+            "de": [
+                ""
+            ],
+            "es": [
+                ""
+            ],
+            "fr": [],
+            "it": [
+                ""
+            ],
+            "ko": [
+                "- 드롭 데이터 저장 여부를 전환합니다. (기본적으로 켜져 있습니다)"
+            ],
+            "pt": [
+                "- mude para gravar os dados de itens coletados. (LIGADO por padrão)"
+            ],
+            "ua": [
+                "- увімкнути чи зберігати дані випадання. (УВІМКНЕНО за замовчуванням)"
+            ],
+            "ru": [
+                "- переключить, сохранять ли данные о выпадении. (ВКЛ. по умолчанию)"
+            ],
+            "zh": [],
+            "syntax": "<arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": ""
+        },
+        "gui": {
+            "en": [],
+            "ro": [
+                "- activează afișajul interfeței digirale. (ACTIVAT din fabrică)"
+            ],
+            "de": [
+                ""
+            ],
+            "es": [
+                ""
+            ],
+            "fr": [],
+            "it": [
+                ""
+            ],
+            "ko": [
+                "- GUI 표시를 전환합니다. (기본적으로 켜져 있습니다)"
+            ],
+            "pt": [
+                "- mude para exibir interface gráfica de usuário. (LIGADO por padrão)"
+            ],
+            "ua": [
+                "- перемикання відображення GUI. (УВІМКНЕНО за замовчуванням)"
+            ],
+            "ru": [
+                "- переключить отображение графического интерфейса. (ВКЛ. по умолчанию)"
+            ],
+            "zh": [],
+            "syntax": "<arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": ""
+        },
+        "safemode": {
+            "en": [
+                "- Traverse the map like a player. (Enabled by Default)"
+            ],
+            "ro": [
+                "- stage run-uri și date ale echipei mai realiste , dar mai puține recompense per stage. ( DEZACTIVAT din fabrică)"
+            ],
+            "de": [
+                ""
+            ],
+            "es": [
+                ""
+            ],
+            "fr": [],
+            "it": [
+                ""
+            ],
+            "ko": [
+                "- 스테이지 플레이 및 팀 데이터가 더욱 현실적이게 되지만 드롭은 적어집니다. (기본적으로 꺼져 있습니다)"
+            ],
+            "pt": [
+                "- finalização de fases mais reais $ dados de time mas menos itens. (DESLIGADO por padrão)"
+            ],
+            "ua": [
+                "- більш реалістичні етапи та дані про команди, але менше падінь. (ВИМКНЕНО за замовчуванням)"
+            ],
+            "ru": [
+                "- Более реалистичные этапы и данные команды, но меньше выпадений. (выключено по умолчанию)"
+            ],
+            "zh": [],
+            "syntax": "<arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": ""
+        },
+        "smroute": {
+            "en": [
+                "- How safemode traverses the map.",
+                "fast - travels shortest routes.",
+                "random - travels random routes.",
+                "loot - travels to specific loot. (Dragonballs etc)"
+            ],
+            "ro": [],
+            "de": [],
+            "es": [],
+            "fr": [],
+            "it": [],
+            "ko": [],
+            "pt": [],
+            "ua": [],
+            "ru": [],
+            "zh": [],
+            "syntax": "settings rmoute <arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": "settings smroute loot"
+        },
+        "rpc": {
+            "en": [
+                "- Toggle Discord status."
+            ],
+            "ro": [],
+            "de": [],
+            "es": [],
+            "fr": [],
+            "it": [],
+            "ko": [],
+            "pt": [],
+            "ua": [],
+            "ru": [],
+            "zh": [],
+            "syntax": "settings <arg>",
+            "min_args": 1,
+            "max_args": 2,
+            "example": "settings rpc"
+        }
     },
-    "lang": {
-      "en": [],
-      "ro": [
-        "- Setează limba botului.\nen - engleză.\nfr - franceză.\nde - germană.\nko - coreeană.\nit - italiană.\npt - portugheză.\nes - spaniolă."
-      ],
-      "de": [
-        "- wechsel die Bot Sprache\nen - english.\nfr - french.\nde - german.\nko - korean.\nit - italian.\npt - portugues.\nes - spanish."
-      ],
-      "es": [
-        "- Selecciona un lenguaje para el bot.\nen - Ingles.\nfr - Frances.\nde - Aleman.\nko - Coreano.\nit - Italiano.\npt - portugues.\nes - Español (Activo)."
-      ],
-      "fr": [],
-      "it": [
-        "- imposta la lingua del bot.\nen - inglese.\nfr - francese.\nde - tedesco.\nko - coreano.\nes - spagnolo.\npt - portugues.\nit - italiano."
-      ],
-      "ko": [
-        "- 봇 언어를 설정합니다.\nen - 영어입니다.\nfr - 프랑스어입니다.\nde - 독일어입니다.\nko - 한국어입니다.\nes - 스페인어입니다.\nit - 이탈리아어입니다."
-      ],
-      "pt": [
-        "- seleciona idioma do bot.\nen - ingles.\nfr - frances.\nde - alemao.\nko - koreano.\nit - italiano.\npt - portugues.\nes - espanhol."
-      ],
-      "ua": [
-        "- встановити мову бота.\nen - англійська.\nfr - французька.\nde - німецька.\nko - корейська.\nit - італійська.\npt - португальська.\nes - іспанська.\nua - українська.\nru - русский."
-      ],
-      "ru": [
-        "- установить язык бота.\nen - английский.\nfr - французский.\nde - немецкий.\nko - корейский.\nit - итальянский.\npt - португальский.\nes - испанский.\nru - русский"
-      ],
-      "zh": [],
-      "syntax": "<arg>",
-      "min_args": 1,
-      "max_args": 2,
-      "example": ""
-    },
-    "rerolls": {
-      "en": [],
-      "ro": [
-        "- setează numărul maxim de rorolluri"
-      ],
-      "de": [
-        "- Stellt die maximale Reroll Anzahl ein"
-      ],
-      "es": [
-        "- Ajusta el limite maximo de \"rerolls\"."
-      ],
-      "fr": [],
-      "it": [
-        "- imposta la quantità massima di reroll."
-      ],
-      "ko": [
-        "- 최대 리세마라 수를 설정합니다."
-      ],
-      "pt": [
-        "- seleciona o max de vezes reroll."
-      ],
-      "ua": [
-        "- встановити максимальну кількість \"reroll\"."
-      ],
-      "ru": [
-        "- установить максимальное количество перебросов."
-      ],
-      "zh": [],
-      "syntax": "<arg>",
-      "min_args": 1,
-      "max_args": 2,
-      "example": ""
-    },
-    "autoname": {
-      "en": [],
-      "ro": [
-        "- Setează numele automat pentru fișierele de salvare la reroll."
-      ],
-      "de": [
-        "- Automatisches benennen deiner Rerolls"
-      ],
-      "es": [
-        "- Automaticamente nombra el archivo de guardado de una cuenta reroll (nueva)."
-      ],
-      "fr": [],
-      "it": [
-        "- scegli automaticamente il nome dei file di salvataggio dei reroll."
-      ],
-      "ko": [
-        "- 리세마라 저장 파일의 이름을 자동으로 지정합니다."
-      ],
-      "pt": [
-        "- renomeia automaticamente contas reroll."
-      ],
-      "ua": [
-        "- автоматично іменувати файли збереження, перезавантажувати."
-      ],
-      "ru": [
-        "- автоматически переименовывать файлы сохранения."
-      ],
-      "zh": [],
-      "syntax": "<arg>",
-      "min_args": 1,
-      "max_args": 2,
-      "example": ""
-    },
-    "dailyevents": {
-      "en": [],
-      "ro": [
-        "- Rulează evenimentele folosind comanda \"daily\"."
-      ],
-      "de": [
-        "- Schaltet waehrend der dailys, die Events um"
-      ],
-      "es": [
-        "- Hacer ademas los eventos cuando se active el comando \"daily\"."
-      ],
-      "fr": [],
-      "it": [
-        "- completa gli eventi nel comando \"daily\"."
-      ],
-      "ko": [
-        "- \"daily\" 명령어에서 이벤트 수행을 전환합니다."
-      ],
-      "pt": [
-        "- executa eventos do comando \"daily\"."
-      ],
-      "ua": [
-        "- запускати події в команді \"daily\"."
-      ],
-      "ru": [
-        "- запускать события командой \"daily\"."
-      ],
-      "zh": [],
-      "syntax": "<arg>",
-      "min_args": 1,
-      "max_args": 2,
-      "example": ""
-    },
-    "dailies": {
-      "en": [],
-      "ro": [
-        "- Setează evenimentele pentru comanda zilnică."
-      ],
-      "de": [
-        "- legt die Events fÃƒÆ’Ã‚Â¼r die tÃƒÆ’Ã‚Â¤glichen Aufgaben fest."
-      ],
-      "es": [
-        "- Configura eventos para el comando diarias."
-      ],
-      "fr": [],
-      "it": [
-        "- imposta gli eventi per il comando daily."
-      ],
-      "ko": [
-        "- daily 명령어의 이벤트를 설정합니다."
-      ],
-      "pt": [
-        "- Configura eventos para o comando de diários"
-      ],
-      "ua": [
-        "- встановити події для щоденної команди"
-      ],
-      "ru": [
-        "- установить события для ежедневной команды."
-      ],
-      "zh": [],
-      "syntax": "<arg>",
-      "min_args": 1,
-      "max_args": 2,
-      "example": ""
-    },
-    "logdrops": {
-      "en": [],
-      "ro": [
-        "- activează dacă vrei să vezi datele recompensei per stage . (ACTIVAT din fabrică)"
-      ],
-      "de": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [],
-      "it": [
-        ""
-      ],
-      "ko": [
-        "- 드롭 데이터 저장 여부를 전환합니다. (기본적으로 켜져 있습니다)"
-      ],
-      "pt": [
-        "- mude para gravar os dados de itens coletados. (LIGADO por padrão)"
-      ],
-      "ua": [
-        "- увімкнути чи зберігати дані випадання. (УВІМКНЕНО за замовчуванням)"
-      ],
-      "ru": [
-        "- переключить, сохранять ли данные о выпадении. (ВКЛ. по умолчанию)"
-      ],
-      "zh": [],
-      "syntax": "<arg>",
-      "min_args": 1,
-      "max_args": 2,
-      "example": ""
-    },
-    "gui": {
-      "en": [],
-      "ro": [
-        "- activează afișajul interfeței digirale. (ACTIVAT din fabrică)"
-      ],
-      "de": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [],
-      "it": [
-        ""
-      ],
-      "ko": [
-        "- GUI 표시를 전환합니다. (기본적으로 켜져 있습니다)"
-      ],
-      "pt": [
-        "- mude para exibir interface gráfica de usuário. (LIGADO por padrão)"
-      ],
-      "ua": [
-        "- перемикання відображення GUI. (УВІМКНЕНО за замовчуванням)"
-      ],
-      "ru": [
-        "- переключить отображение графического интерфейса. (ВКЛ. по умолчанию)"
-      ],
-      "zh": [],
-      "syntax": "<arg>",
-      "min_args": 1,
-      "max_args": 2,
-      "example": ""
-    },
-    "safemode": {
-      "en": [
-          "- Traverse the map like a player. (Enabled by Default)"
-      ],
-      "ro": [
-        "- stage run-uri și date ale echipei mai realiste , dar mai puține recompense per stage. ( DEZACTIVAT din fabrică)"
-      ],
-      "de": [
-        ""
-      ],
-      "es": [
-        ""
-      ],
-      "fr": [],
-      "it": [
-        ""
-      ],
-      "ko": [
-        "- 스테이지 플레이 및 팀 데이터가 더욱 현실적이게 되지만 드롭은 적어집니다. (기본적으로 꺼져 있습니다)"
-      ],
-      "pt": [
-        "- finalização de fases mais reais $ dados de time mas menos itens. (DESLIGADO por padrão)"
-      ],
-      "ua": [
-        "- більш реалістичні етапи та дані про команди, але менше падінь. (ВИМКНЕНО за замовчуванням)"
-      ],
-      "ru": [
-        "- Более реалистичные этапы и данные команды, но меньше выпадений. (выключено по умолчанию)"
-      ],
-      "zh": [],
-      "syntax": "<arg>",
-      "min_args": 1,
-      "max_args": 2,
-      "example": ""
-    }
-  },
   "account": {
     "info": {
       "en": [
