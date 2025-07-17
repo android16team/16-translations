@@ -341,7 +341,9 @@
       ],
       "ro": [],
       "de": [],
-      "es": [],
+      "es": [
+        " - Acciones configurables "
+      ],
       "fr": [],
       "it": [],
       "ko": [],
@@ -360,7 +362,9 @@
       ],
       "ro": [],
       "de": [],
-      "es": [],
+      "es": [
+         " - Comandos Personalizados "
+      ],
       "fr": [],
       "it": [],
       "ko": [],
@@ -381,7 +385,9 @@
         "Folosește \"help<page>\" pentru a naviga."
       ],
       "de": [],
-      "es": [],
+      "es": [
+        " - Navegar paginas de ayuda "
+      ],
       "fr": [
         "- Parcourir les pages d'aides"
       ],
@@ -679,7 +685,7 @@
                 ""
             ],
             "es": [
-                ""
+                "- Activar para ver los objetos obtenidos"
             ],
             "fr": [],
             "it": [
@@ -712,7 +718,7 @@
                 ""
             ],
             "es": [
-                ""
+                " - Activar interfaz grafica!"
             ],
             "fr": [],
             "it": [
@@ -747,7 +753,7 @@
                 ""
             ],
             "es": [
-                ""
+                " - El bot recorrera el mapa como un jugador para mas seguridad de la cuenta"
             ],
             "fr": [],
             "it": [
@@ -780,7 +786,12 @@
             ],
             "ro": [],
             "de": [],
-            "es": [],
+            "es": [
+              "- Como el modo seguro recorre el mapa?.",
+                "fast - Las rutas mas rapidas.",
+                "random - Recorre rutas aleatorias.",
+                "loot - Recorre hasta objetos en especifico. (Dragonballs etc)"
+            ],
             "fr": [],
             "it": [],
             "ko": [],
@@ -799,7 +810,9 @@
             ],
             "ro": [],
             "de": [],
-            "es": [],
+            "es": [
+              " - Activar estatus en discord "
+            ],
             "fr": [],
             "it": [],
             "ko": [],
@@ -857,7 +870,9 @@
       ],
       "ro": [],
       "de": [],
-      "es": [],
+      "es": [
+        " - Acepta regalos y misiones "
+      ],
       "fr": [
         "- Accepter les cadeaux et missions."
       ],
@@ -879,7 +894,10 @@
       ],
       "ro": [],
       "de": [],
-      "es": [],
+      "es": [
+        "- Restaurar stamina. (-1 Dragon Stone)",
+        "Opcional: stamina <meat ID> - Restaurar estamina con carne."
+      ],
       "fr": [
         "- Restaurer l'endurance. (-1 stone)",
         "optionnel: stamina <meat ID> - restaure l'endurance avec de la viande."
@@ -906,7 +924,7 @@
         "- support, training, orbs, treasure, spezial"
       ],
       "es": [
-        "- support, training, orbs, treasure, special."
+        "- Soporte, Entrenamiento, Orbes, Tesoro, Especial."
       ],
       "fr": [
         "- Liste des items."
@@ -975,7 +993,9 @@
       ],
       "ro": [],
       "de": [],
-      "es": [],
+      "es": [
+       " - Refrescar la sesion"
+      ],
       "fr": [
         "- Rafraîchir la session."
       ],
@@ -1173,7 +1193,9 @@
         ""
       ],
       "es": [
-        ""
+      "- Completar records (logros).",
+        "records stage <ID de escenario> <dificultad> - ver logros de nivel.",
+        "records eza <ID de EZA> - ver logros de EZA."
       ],
       "fr": [
         "- Record de completion.",
@@ -1215,7 +1237,17 @@
       ],
       "ro": [],
       "de": [],
-      "es": [],
+      "es": [
+        "- Lista de IDs.",
+        "list banners - Lista de IDs de banners.",
+        "list types - Lista de tipos de cartas.",
+        "list rarity - Lista de rarezas.",
+        "list category - Lista de categorias.",
+        "list awakens <card ID> - Lista de awakenings de cartas.",
+        "list links / list links <card ID> - Lista de habilidades vinculo",
+        "list transforms <card ID> - Lista de transformaciones de carta.",
+        "list raisepercent <card ID> <card ID> - Calculador de porcentaje de super ataque."
+      ],
       "fr": [
         "- Liste des ID.",
         "list banners - liste des ID des bannières .",
@@ -1377,7 +1409,9 @@
       ],
       "ro": [],
       "de": [],
-      "es": [],
+      "es": [
+        " - Pettan battle."
+      ],
       "fr": [
         "- Pettan battle."
       ],
@@ -1925,7 +1959,7 @@
         "- Zeigt dir alle deine Units an\nadditional arguments: <n, r, sr, ssr, ur, lr, items>"
       ],
       "es": [
-        "- view all your cards.\nadditional arguments: <n, r, sr, ssr, ur, lr, items>"
+        "- Observar todas tus cartas (BOX).\nadditional arguments: <n, r, sr, ssr, ur, lr, items>"
       ],
       "fr": [
         "- Voir la box.",
@@ -2295,7 +2329,9 @@
         ""
       ],
       "es": [
-        ""
+        "- Revertir awakening.",
+        "reverse <card UID> - la carta para revertir.",
+        "opcional: reverse awaken <card UID> - revertir revertir."
       ],
       "fr": [
         "- Eveille inversée.",
@@ -2376,7 +2412,8 @@
         ""
       ],
       "es": [
-        ""
+        "- Equipar carta (skill orb).",
+        "equip <card UID> - La carta a equipar."
       ],
       "fr": [
         "- Equipment.",
@@ -2415,7 +2452,8 @@
         ""
       ],
       "es": [
-        ""
+       "- Aumentar nivel LINK con ORBES.",
+        "lvlink <card UID> - la carta a mejorar."
       ],
       "fr": [
         "- Augmenter les lien via les orbes.",
@@ -2449,7 +2487,10 @@
       ],
       "ro": [],
       "de": [],
-      "es": [],
+      "es": [
+        "- Farmear una unidad F2P y MEJORARLA AL MAXIMO",
+        "f2p <ID de carta> - La carta a mejorar."
+      ],
       "fr": [
         "- Farmer un carte F2P et la maxer.",
         "f2p <card ID> - la carte à farmer et maxer."
@@ -2477,7 +2518,8 @@
         ""
       ],
       "es": [
-        ""
+        "- Mejorar carta hasta el tope.",
+        "upgrade <card UID> - la carta a mejorar."
       ],
       "fr": [
         "- Améliorer une carte jusqu'à son max.",
